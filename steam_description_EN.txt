@@ -1,0 +1,34 @@
+[h1]French UI and Localization Fixes[/h1]
+
+This mod is primarily intended for players using the French version of Crusader Kings III. It fixes various localization errors and inconsistencies, along with a few UI display issues.
+
+Whenever possible, fixes are made to text rather than interface elements, to maintain maximum compatibility with other mods.
+
+[h2]Interface[/h2]
+[list]
+[*] Coronations: the intention text "Impress the attendees" no longer overflows its button
+[*] Schemes: corrected the size of the columns and potential agent list entries to match the UI used for puppets
+[*] Message settings: the interface no longer overflows the window
+[*] Character window: mercenary realm coats of arms no longer display a decoration in the diplomacy section that shifts the whole layout
+[*] Faiths: the text describing attitudes towards tenets is now displayed in full
+[/list]
+
+[h2]Localization[/h2]
+[list]
+[*] Artifacts: removed the leftover English terms "Pin" / "Badge" at the end of pilgrim badge names
+[*] College of Cardinals: principle names now all use proper capitalization
+[*] College of Cardinals: fixed the dominant rite name being displayed instead of the character's rite
+[*] Corrected French wording around references to the Pope and the Papacy in the interface and decisions
+[*] Schemes: fixed the Retreat from Public Life tooltip displaying an extra "')]"
+[*] Inventory: the number of claims no longer overlaps the button label
+[*] Character window: rite names now use proper capitalization
+[*] Faiths: the text describing attitudes towards tenets is correctly formatted and no longer truncated
+[*] Memories: added the missing "relation_subordinate_male_FR_OnA" and "relation_subordinate_female_FR_OnA" keys, used when clergy titles are inherited
+[/list]
+
+[h2]Events[/h2]
+[list]
+[*] coronation_events.0100 "A Historic Oath": fixed truncated oath labels for "Provide for the Poor", "Provide for the Faithful", and "Become the Greatest Hunter"
+[*] pam_secular_faith_events.0014 "Prophetic Judgment": fixed the display of option 1 so its full text is visible
+[*] pam_the_christian_church.*: corrected all occurrences of the French phrase "l'Chrétienté" to "la Chrétienté"
+[/list]

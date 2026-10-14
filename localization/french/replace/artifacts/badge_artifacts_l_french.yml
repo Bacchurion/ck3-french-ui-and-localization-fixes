@@ -1,0 +1,6 @@
+﻿l_french:
+
+ # Retrait "Pin" / "Badge" résiduels de la loc anglaise en fin de ligne
+ prosperity_badge_name_2: "Insigne étincelant de [newly_created_artifact.MakeScope.Var('pilgrim_badge_location').GetProvince.GetNameNoTooltip]"
+ virility_badge_name_1: "Broche solide de [newly_created_artifact.MakeScope.Var('pilgrim_badge_location').GetProvince.GetNameNoTooltip]"
+ wisdom_badge_name_1: "Broche recouverte de [newly_created_artifact.MakeScope.Var('pilgrim_badge_location').GetProvince.GetNameNoTooltip]"

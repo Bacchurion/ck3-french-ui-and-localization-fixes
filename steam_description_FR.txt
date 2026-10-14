@@ -1,11 +1,12 @@
 [h1]Interface et traduction françaises corrigées[/h1]
 
-Corrige plusieurs problèmes de localisation et d'interface utilisateur lorque l'on joue en français.
-J'ai agit chaque fois que cela était possible sur les textes plutôt que les éléments de l'interface afin de rester au maximum compatible avec les mods
+Ce mod s'adresse avant tout aux joueurs utilisant la version française de Crusader Kings III. Il corrige diverses erreurs et incohérences de localisation, ainsi que quelques problèmes d'affichage dans l'interface.
+
+Lorsque c'est possible, les corrections sont appliquées aux textes plutôt qu'aux éléments d'interface, afin de conserver une compatibilité maximale avec les autres mods.
 
 [h2]Interface[/h2]
 [list]
-[*] Coronnements : le texte d'intention "Impressionner les personnes présentes" ne dépasse plus du bouton
+[*] Couronnements : le texte d'intention "Impressionner les personnes présentes" ne dépasse plus du bouton
 [*] Intrigue : Taille des colonnes et des éléments de la liste des agents potentiels corrigée pour se caler sur l'UI des fantoches
 [*] Paramètre des messages : l'interface ne dépasse plus de la fenêtre
 [*] Personnage : les emblèmes des pays Mercenaires n'affichent plus une décoration dans la partie diplomatie qui décale tout l'affichage
@@ -14,6 +15,7 @@ J'ai agit chaque fois que cela était possible sur les textes plutôt que les é
 
 [h2]Localisation[/h2]
 [list]
+[*] Artéfacts : retrait des termes "Pin" / "Badge" résiduels de la localisation anglaise en fin de nom pour les insignes de pèlerin
 [*] Collège des cardinaux : les noms des principes ont bien tous une majuscule
 [*] Collège des cardinaux : fix du nom du rite dominant affiché à la place du rite du personnage
 [*] Correction de "au Papauté" => "au Pape" ou "à la Papauté" selon les cas (interface, décisions)
