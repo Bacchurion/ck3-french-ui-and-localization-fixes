@@ -1,0 +1,9 @@
+﻿l_french:
+  # L'Chrétienté => la Chrétienté
+  pam_the_christian_church.0052.desc.intro: "Un chœur de voix s’élève dans l’obscurité qui enveloppe la [GetSituation('the_christian_church').GetTopSubRegion.GetName].\n\n« #EMP Rome se présente comme une Sodome moderne !#! »\n\n« #EMP Le pape se fait à la fois proxénète et prostituée !#! »\n\nMême ceux qui ont un point de vue plutôt modéré doivent admettre que l’Église est en crise et que des réformes sont nécessaires."
+  pam_the_christian_church.0053.desc.intro: "Nous devons nous réjouir des progrès remarquables de notre mission ! Les frontières de la [GetSituation('the_christian_church').GetTopSubRegion.GetName] s’étendent, car les sauvages païens apprennent à suivre la voie du Christ.\n\nMalheureusement, tous n’accueillent pas favorablement les enseignements de l’Église. Il n’y a rien à craindre, car s’ils rejettent nos missionnaires, ils découvriront nos prières par la pointe de l’épée !\n\n"
+  pam_the_christian_church.0053.desc.eastern: "Même si Rome prétend ne vouloir que la conversion de ceux qui vivent en dehors de la [GetSituation('the_christian_church').GetTopSubRegion.GetName], nous devons rester vigilants au cas où elle nous priverait de notre rite [ROOT.Char.GetRite.GetAdherentName] – ou pire encore : brandirait ses épées encore maculées de sang païen contre ses frères chrétiens."
+  pam_the_christian_church.0057.desc.intro.common: "Les conflits au sein de l’Église prennent fin. La [GetSituation('the_christian_church').GetTopSubRegion.GetName] entre dans une ère de paix et de communion"
+  
+  # du Papauté => de la Papauté
+  pam_the_christian_church.0057.desc.intro.head: "$pam_the_christian_church.0057.desc.intro.common$ sous la supervision de la [christianity.GetReligiousHeadTitle.GetName].\n\n"

@@ -1,0 +1,34 @@
+[h1]Interface et traduction françaises corrigées[/h1]
+
+Corrige plusieurs problèmes de localisation et d'interface utilisateur lorque l'on joue en français.
+J'ai agit chaque fois que cela était possible sur les textes plutôt que les éléments de l'interface afin de rester au maximum compatible avec les mods
+
+[h2]Interface[/h2]
+[list]
+[*] Coronnements : le texte d'intention "Impressionner les personnes présentes" ne dépasse plus du bouton
+[*] Intrigue : Taille des colonnes et des éléments de la liste des agents potentiels corrigée pour se caler sur l'UI des fantoches
+[*] Paramètre des messages : l'interface ne dépasse plus de la fenêtre
+[*] Personnage : les emblèmes des pays Mercenaires n'affichent plus une décoration dans la partie diplomatie qui décale tout l'affichage
+[*] Religions : Le texte d'attitude envers les rites est affiché en entier
+[/list]
+
+[h2]Localisation[/h2]
+[list]
+[*] Collège des cardinaux : les noms des principes ont bien tous une majuscule
+[*] Collège des cardinaux : fix du nom du rite dominant affiché à la place du rite du personnage
+[*] Correction de "au Papauté" => "au Pape" ou "à la Papauté" selon les cas (interface, décisions)
+[*] Intrigue : fix du tooltip du Retrait de la vie publique qui affichait un "')]"
+[*] Inventaire : Le nombre de revendications n'empiète plus sur le libellé du bouton
+[*] Personnage : Le nom du rite a bien une majuscule
+[*] Religions : Le texte d'attitude envers les rites est correctement mis en forme et n'est plus tronqué
+[*] Souvenirs : ajout des clés "relation_subordinate_male_FR_OnA" et "relation_subordinate_female_FR_OnA" (utilisé pour l'héritage de titres au sein du clergé mais non définies)
+[/list]
+
+[h2]Événements[/h2]
+[list]
+[*] coronation_events.0100 "Un serment historique" : fix des libelles tronqués des serments "Subvenir aux besoins des pauvres", "Subvenir aux besoins des fidèles" et "Devenir le meilleur chasseur"
+[*] pam_secular_faith_events.0014 "Jugement prophétique" : fix affichage de l'option 1, tout le texte est désormais affiché
+[*] pam_the_christian_church.* : fix de toutes les occurences de "l'Chrétienté" en "la Chrétienté"
+[/list]
+
+

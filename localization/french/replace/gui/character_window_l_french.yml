@@ -1,0 +1,3 @@
+﻿l_french:
+  # Upppercase du nom du rite
+  RITE_CHARACTER_WINDOW: "[Rite.GetAdjectiveNoTooltip|U]"

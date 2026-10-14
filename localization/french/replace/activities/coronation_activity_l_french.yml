@@ -1,0 +1,10 @@
+﻿l_french:
+ # Réduction du texte "Impressionner les personnes présentes" qui déborde du bouton
+ coronation_impress_attendees: "Impressionner l’assemblée"
+ coronation_events.0312.cultural_acceptance: "Grâce à l’[intent|El] d’#V impressionner l’assemblée#! [host.Custom('FR_du_Char_Pi')][host.GetTitledFirstNameNoTooltip] l’[cultural_acceptance|El] entre les [ROOT.Char.GetCulture.GetCollectiveNoun] et les [host.GetCulture.GetCollectiveNoun] a augmenté."
+ cultural_acceptance_gain_coronation_host_reward: "Intention de couronnement d’impressionner l'assemblée'"
+
+ # Serments : réduction du texte pour qu'il ne soit plus tronqué dans la fenêtre d'évènement
+ coronation_events.0100.provide_for_the_faithful: "Soutenir les fidèles"
+ coronation_events.0100.provide_for_the_poor: "Aider les pauvres"
+ GetGreatestHunterOathText: "Exceller à la chasse"

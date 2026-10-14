@@ -1,0 +1,2 @@
+﻿l_french:
+  pam_secular_faith_events.0014.a: "[prophet.GetSheHe|U] est un[prophet.Custom('FR_E')] véritable [Select_CString(prophet.IsFemale,'prophétesse','prophète')]."

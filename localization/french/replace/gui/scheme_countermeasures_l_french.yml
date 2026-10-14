@@ -1,0 +1,2 @@
+﻿l_french:
+ indirect_schemes_boilerplate.tt: "\n$BULLET_WITH_TAB$[GetScheme('claim_throne').GetTypeName]\n$BULLET_WITH_TAB$[GetScheme('fabricate_hook').GetTypeName][AddLocalizationIf( GetPlayer.GetGovernment.HasGovernmentFlag( 'government_is_mandala' ), 'tgp_disbelieve_mandala_boilerplate.tt' )]"
