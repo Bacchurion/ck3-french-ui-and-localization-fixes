@@ -32,10 +32,13 @@ Lorsque c'est possible, les corrections sont appliquées aux textes plutôt qu'a
 - Inventaire : le nombre de revendications n'empiète plus sur le libellé du bouton.
 - Personnage : le nom du rite a bien une majuscule.
 - Religions : le texte d'attitude envers les rites est correctement mis en forme et n'est plus tronqué.
-- Souvenirs : ajout des clés `relation_subordinate_male_FR_OnA` et `relation_subordinate_female_FR_OnA`, utilisées pour l'héritage de titres au sein du clergé mais non définies.
 
 ## Événements
 
 - `coronation_events.0100` "Un serment historique" : correction des libellés tronqués des serments "Subvenir aux besoins des pauvres", "Subvenir aux besoins des fidèles" et "Devenir le meilleur chasseur".
 - `pam_secular_faith_events.0014` "Jugement prophétique" : correction de l'affichage de l'option 1, dont tout le texte est désormais visible.
 - `pam_the_christian_church.*` : correction de toutes les occurrences de "l'Chrétienté" en "la Chrétienté".
+
+## Divers
+
+- Fix de tous les articles pour les titres ecclésiastiques ("L'Prince-Archevêque", "L'Cardinal", "Le Archevêque", etc) dans les évènements et les interfaces

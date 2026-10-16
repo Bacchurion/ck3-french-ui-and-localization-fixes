@@ -23,7 +23,6 @@ Lorsque c'est possible, les corrections sont appliquées aux textes plutôt qu'a
 [*] Inventaire : Le nombre de revendications n'empiète plus sur le libellé du bouton
 [*] Personnage : Le nom du rite a bien une majuscule
 [*] Religions : Le texte d'attitude envers les rites est correctement mis en forme et n'est plus tronqué
-[*] Souvenirs : ajout des clés "relation_subordinate_male_FR_OnA" et "relation_subordinate_female_FR_OnA" (utilisé pour l'héritage de titres au sein du clergé mais non définies)
 [/list]
 
 [h2]Événements[/h2]
