@@ -2,7 +2,7 @@
 
 Ce mod s'adresse avant tout aux joueurs utilisant la version française de Crusader Kings III. Il corrige diverses erreurs et incohérences de localisation, ainsi que quelques problèmes d'affichage dans l'interface.
 
-Lorsque c'est possible, les corrections sont appliquées aux textes plutôt qu'aux éléments d'interface, afin de conserver une compatibilité maximale avec les autres mods.
+Lorsque c'est possible, les corrections sont appliquées aux textes plutôt qu'aux éléments d'interface, afin de conserver une compatibilité maximale avec les autres mods. En cas de doute, mettez ce mod tout en haut dans l'ordre de chargement
 
 [h2]Interface[/h2]
 [list]
@@ -10,6 +10,7 @@ Lorsque c'est possible, les corrections sont appliquées aux textes plutôt qu'a
 [*] Intrigue : Taille des colonnes et des éléments de la liste des agents potentiels corrigée pour se caler sur l'UI des fantoches
 [*] Paramètre des messages : l'interface ne dépasse plus de la fenêtre
 [*] Personnage : les emblèmes des pays Mercenaires n'affichent plus une décoration dans la partie diplomatie qui décale tout l'affichage
+[*] Personnage : les emblèmes de la diplomatie ne sortent plus de leur cadre si les personnages ont plus de 7 revendications
 [*] Religions : Le texte d'attitude envers les rites est affiché en entier
 [/list]
 
@@ -29,6 +30,7 @@ Lorsque c'est possible, les corrections sont appliquées aux textes plutôt qu'a
 [list]
 [*] coronation_events.0100 "Un serment historique" : fix des libelles tronqués des serments "Subvenir aux besoins des pauvres", "Subvenir aux besoins des fidèles" et "Devenir le meilleur chasseur"
 [*] ecumenical_council_events.0010 "Notre position sur XXX" : fix de la clé de relation manquante ("m <nom>" => "mon vassal <nom>" / "ma vassale <nom>")
+[*] pam_decision_events.0006.desc.secret_sin "Derniers sacrements" : reformulation d'une phrase maladroite pour la confession d'une liaison
 [*] pam_secular_faith_events.0014 "Jugement prophétique" : fix affichage de l'option 1, tout le texte est désormais affiché
 [*] pam_the_christian_church.* : fix de toutes les occurences de "l'Chrétienté" en "la Chrétienté"
 [/list]
@@ -36,4 +38,5 @@ Lorsque c'est possible, les corrections sont appliquées aux textes plutôt qu'a
 [h2]Divers[/h2]
 [list]
 [*] Fix de tous les articles pour les titres ecclésiastiques ("L'Prince-Archevêque", "L'Cardinal", "Le Archevêque", etc) dans les évènements et les interfaces
+[*] Fix préfixe `Need` anglais devant les warnings de conditions à certains endroits
 [/list]

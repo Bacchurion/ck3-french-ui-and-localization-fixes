@@ -1,4 +1,4 @@
-version="1.0"
+version="1.2"
 tags={
 	"1.20 'Crozier'"
 	"Fixes"

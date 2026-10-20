@@ -10,6 +10,7 @@ Lorsque c'est possible, les corrections sont appliquées aux textes plutôt qu'a
 - Intrigue : taille des colonnes et des éléments de la liste des agents potentiels corrigée pour se caler sur l'UI des fantoches.
 - Paramètres des messages : l'interface ne dépasse plus de la fenêtre.
 - Personnage : les emblèmes des pays mercenaires n'affichent plus une décoration dans la partie diplomatie qui décale tout l'affichage.
+- Personnage : les emblèmes de la diplomatie ne sortent plus de leur cadre si les personnages ont plus de 7 revendications
 - Religions : le texte d'attitude envers les rites est affiché en entier.
 
 ![Paramètres des messages avant et après correction](screenshots/screenshot1.jpg)
@@ -36,9 +37,11 @@ Lorsque c'est possible, les corrections sont appliquées aux textes plutôt qu'a
 ## Événements
 
 - `coronation_events.0100` "Un serment historique" : correction des libellés tronqués des serments "Subvenir aux besoins des pauvres", "Subvenir aux besoins des fidèles" et "Devenir le meilleur chasseur".
+- `pam_decision_events.0006.desc.secret_sin` "Derniers sacrements" : reformulation d'une phrase maladroite pour la confession d'une liaison
 - `pam_secular_faith_events.0014` "Jugement prophétique" : correction de l'affichage de l'option 1, dont tout le texte est désormais visible.
 - `pam_the_christian_church.*` : correction de toutes les occurrences de "l'Chrétienté" en "la Chrétienté".
 
 ## Divers
 
 - Fix de tous les articles pour les titres ecclésiastiques ("L'Prince-Archevêque", "L'Cardinal", "Le Archevêque", etc) dans les évènements et les interfaces
+- Fix préfixe `Need` anglais devant les warnings de conditions
