@@ -1936,15 +1936,16 @@ window = {
 									datamodel_wrap = 8
 								}
 
+								# FIX 2 : Réduction du nombre de claims de 8 -> 7
 								blockoverride "claims_extra_items"
 								{
-									visible = "[GreaterThan_int32( GetDataModelSize(CharacterWindow.GetClaims), '(int32)8' )]"
-									text = "[GetNumberAbove_int32(GetDataModelSize(CharacterWindow.GetClaims), '(int32)8' )|=]"
+									visible = "[GreaterThan_int32( GetDataModelSize(CharacterWindow.GetClaims), '(int32)7' )]"
+									text = "[GetNumberAbove_int32(GetDataModelSize(CharacterWindow.GetClaims), '(int32)7' )|=]"
 								}
 
 								blockoverride "claims_max_slots"
 								{
-									datamodel_wrap = 8
+									datamodel_wrap = 7
 								}
 							}
 
@@ -4094,6 +4095,7 @@ window = {
 
 												tooltip = "[DiplomacyItem.GetTooltip]"
 
+												# FIX 1 : Masquer la décoration supérieure pour éviter les conflits visuels
 												blockoverride "top_decor_visible" { visible = no }
 
 												text_single = {
@@ -4962,9 +4964,9 @@ types CharacterWindow
 					text_single = {
 						align = nobaseline
 						default_format = "#weak"
-
-						visible = "[GreaterThan_int32( GetDataModelSize(CharacterWindow.GetClaims), '(int32)8' )]"
-						text = "[GetNumberAbove_int32(GetDataModelSize(CharacterWindow.GetClaims), '(int32)8' )|=]"
+						# FIX 2 : Réduction du nombre de claims de 8 -> 7 (pour compter le +X claims à afficher)
+						visible = "[GreaterThan_int32( GetDataModelSize(CharacterWindow.GetClaims), '(int32)7' )]"
+						text = "[GetNumberAbove_int32(GetDataModelSize(CharacterWindow.GetClaims), '(int32)7' )|=]"
 					}
 				}
 			}
@@ -4980,7 +4982,8 @@ types CharacterWindow
 					addcolumn = 38
 					maxverticalslots = 1
 
-					block "titles_max_slots" {
+					# FIX 2 : fix typo titles_max_slots -> claims_max_slots
+					block "claims_max_slots" {
 						datamodel_wrap = 0
 					}
 
