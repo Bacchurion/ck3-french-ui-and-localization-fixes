@@ -23,6 +23,18 @@ Lorsque c'est possible, les corrections sont appliquées aux textes plutôt qu'a
 
 ![Intentions de couronnement avant et après correction](screenshots/screenshot5.jpg)
 
+## Articles des titres
+
+Correction des articles devant les titres mal accordés dans les évènements et les interfaces.
+
+Les titres concernés sont :
+
+- Tous les titres ecclésiastiques ("L'Prince-Archevêque", "L'Cardinal", "Le Archevêque", "du Abbé", etc)
+- Les titres de régents japonais ("à l'Shogun", "l'Kampaku", etc)
+- Les titres de conseillers chinois ("L'Ministre", "de l'Grand Chancelier", etc), ainsi que leurs vassaux
+- Les dirigeants coréens (Jipjeong)
+- Les Chanoinesses sont appelées ainsi et non plus "Princesses"
+
 ## Localisation
 
 - Artéfacts : retrait des termes "Pin" / "Badge" résiduels de la localisation anglaise en fin de nom pour les insignes de pèlerin.
@@ -37,11 +49,11 @@ Lorsque c'est possible, les corrections sont appliquées aux textes plutôt qu'a
 ## Événements
 
 - `coronation_events.0100` "Un serment historique" : correction des libellés tronqués des serments "Subvenir aux besoins des pauvres", "Subvenir aux besoins des fidèles" et "Devenir le meilleur chasseur".
+- `ecumenical_council_events.0010` "Notre position sur XXX" : correction de la clé de relation manquante ("m <nom>" devient "mon vassal <nom>" ou "ma vassale <nom>").
 - `pam_decision_events.0006.desc.secret_sin` "Derniers sacrements" : reformulation d'une phrase maladroite pour la confession d'une liaison
 - `pam_secular_faith_events.0014` "Jugement prophétique" : correction de l'affichage de l'option 1, dont tout le texte est désormais visible.
 - `pam_the_christian_church.*` : correction de toutes les occurrences de "l'Chrétienté" en "la Chrétienté".
 
 ## Divers
 
-- Fix de tous les articles pour les titres ecclésiastiques ("L'Prince-Archevêque", "L'Cardinal", "Le Archevêque", etc) dans les évènements et les interfaces
 - Fix préfixe `Need` anglais devant les warnings de conditions

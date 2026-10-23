@@ -13,13 +13,15 @@ FR_le_Char = {
 		}
 		localization_key = FR_le
 	}
-	text = { # FIX ecclésiastiques (Archevêques)
+
+	# START FIX
+
+	# FIX Archevêques
+	text = {
         trigger = {
+			is_female = no
             pam_is_antipope_trigger = no
             holds_landed_title = no
-            NOT = {
-                exists = clerical_elector_title
-            }
             OR = {
                 faith = faith:catholic
                 rite = {
@@ -30,6 +32,81 @@ FR_le_Char = {
         }
         localization_key = FR_l
     }
+
+	# FIX ecclésiastiques (Abbés)
+	text = { 
+        trigger = {
+			is_female = no
+			government_has_flag = government_is_monastic_holy_order
+        }
+        localization_key = FR_l
+    }
+
+	# FIX Kampaku (régent ritsuryo)
+	text = { 
+        trigger = {
+			has_government = japan_administrative_government
+			has_title = title:e_japan
+			NOT = { has_title = title:k_chrysanthemum_throne }
+        }
+        localization_key = FR_le
+    }
+
+	# FIX Daijo-Daijin / Shogun (régent soryo)
+	text = { 
+        trigger = {
+			has_government = japan_feudal_government
+			has_title = title:e_japan
+			NOT = { has_title = title:k_chrysanthemum_throne }
+        }
+        localization_key = FR_le
+    }
+
+	# FIX conseillers chinois
+	text = { 
+        trigger = {
+			tgp_is_any_minister = yes
+        }
+        localization_key = FR_le
+    }
+
+	# FIX Intendant chinois
+	text = { 
+        trigger = {
+			is_independent_ruler = no
+			highest_held_title_tier = tier_kingdom
+
+			OR = {
+				has_government = celestial_government
+				has_government = meritocratic_government
+				has_government = steppe_admin_government
+			}
+
+			OR = {
+				vassal_contract_has_flag = celestial_province_standard
+				vassal_contract_has_flag = celestial_province_metropolitan
+				vassal_contract_has_flag = celestial_province_industrial
+				vassal_contract_has_flag = meritocratic_province_standard
+				vassal_contract_has_flag = meritocratic_province_industrial
+			}
+		}
+        localization_key = FR_l
+    }
+
+	# FIX dirigeant coréen
+	text = { 
+        trigger = {
+			has_title = title:e_goryeo
+			has_character_flag = ceremonial_regent_flag
+			culture = {
+				has_cultural_pillar = heritage_korean
+			}
+		}
+        localization_key = FR_le
+    }
+	
+	# END FIX
+
 	text = {
 		trigger = {
 			OR = {
@@ -262,13 +339,15 @@ FR_du_Char = {
 		}
 		localization_key = FR_du
 	}
-	text = { # FIX ecclésiastiques (Archevêques)
+
+	# START FIX
+
+	# FIX Archevêques
+
+	text = {
         trigger = {
             pam_is_antipope_trigger = no
             holds_landed_title = no
-            NOT = {
-                exists = clerical_elector_title
-            }
             OR = {
                 faith = faith:catholic
                 rite = {
@@ -279,6 +358,81 @@ FR_du_Char = {
         }
         localization_key = FR_del
     }
+
+	# FIX ecclésiastiques (Abbés)
+	text = { 
+        trigger = {
+			is_female = no
+			government_has_flag = government_is_monastic_holy_order
+        }
+        localization_key = FR_del
+    }
+
+	# FIX Kampaku (régent ritsuryo)
+	text = { 
+        trigger = {
+			has_government = japan_administrative_government
+			has_title = title:e_japan
+			NOT = { has_title = title:k_chrysanthemum_throne }
+        }
+        localization_key = FR_du
+    }
+
+	# FIX Daijo-Daijin / Shogun (régent soryo)
+	text = { 
+        trigger = {
+			has_government = japan_feudal_government
+			has_title = title:e_japan
+			NOT = { has_title = title:k_chrysanthemum_throne }
+        }
+        localization_key = FR_du
+    }
+
+	# Fix conseillers chinois
+	text = { 
+        trigger = {
+			tgp_is_any_minister = yes
+        }
+        localization_key = FR_du
+    }
+
+	# FIX Intendant chinois
+	text = { 
+        trigger = {
+			is_independent_ruler = no
+			highest_held_title_tier = tier_kingdom
+
+			OR = {
+				has_government = celestial_government
+				has_government = meritocratic_government
+				has_government = steppe_admin_government
+			}
+
+			OR = {
+				vassal_contract_has_flag = celestial_province_standard
+				vassal_contract_has_flag = celestial_province_metropolitan
+				vassal_contract_has_flag = celestial_province_industrial
+				vassal_contract_has_flag = meritocratic_province_standard
+				vassal_contract_has_flag = meritocratic_province_industrial
+			}
+		}
+        localization_key = FR_del
+    }
+
+	# FIX dirigeant coréen
+	text = { 
+        trigger = {
+			has_title = title:e_goryeo
+			has_character_flag = ceremonial_regent_flag
+			culture = {
+				has_cultural_pillar = heritage_korean
+			}
+		}
+        localization_key = FR_du
+    }
+
+	# END FIX
+
 	text = {
 		trigger = {
 			OR = {
@@ -511,13 +665,15 @@ FR_au_Char = {
 		}
 		localization_key = FR_au
 	}
+	
+	# START FIX
+
+	# FIX Archevêques
+
 	text = { # FIX ecclésiastiques (Archevêques)
         trigger = {
             pam_is_antipope_trigger = no
             holds_landed_title = no
-            NOT = {
-                exists = clerical_elector_title
-            }
             OR = {
                 faith = faith:catholic
                 rite = {
@@ -528,6 +684,80 @@ FR_au_Char = {
         }
         localization_key = FR_a_l
     }
+
+	# FIX ecclésiastiques (Abbés)
+	text = { 
+        trigger = {
+			is_female = no
+			government_has_flag = government_is_monastic_holy_order
+        }
+        localization_key = FR_a_l
+    }
+
+	# FIX Kampaku (régent ritsuryo)
+	text = { 
+        trigger = {
+			has_government = japan_administrative_government
+			has_title = title:e_japan
+			NOT = { has_title = title:k_chrysanthemum_throne }
+        }
+        localization_key = FR_au
+    }
+
+	# FIX Daijo-Daijin / Shogun (régent soryo)
+	text = { 
+        trigger = {
+			has_government = japan_feudal_government
+			has_title = title:e_japan
+			NOT = { has_title = title:k_chrysanthemum_throne }
+        }
+        localization_key = FR_au
+    }
+
+	# Fix conseillers chinois
+	text = { 
+        trigger = {
+			tgp_is_any_minister = yes
+        }
+        localization_key = FR_au
+    }
+
+	# FIX Intendant chinois
+	text = { 
+        trigger = {
+			is_independent_ruler = no
+			highest_held_title_tier = tier_kingdom
+
+			OR = {
+				has_government = celestial_government
+				has_government = meritocratic_government
+				has_government = steppe_admin_government
+			}
+
+			OR = {
+				vassal_contract_has_flag = celestial_province_standard
+				vassal_contract_has_flag = celestial_province_metropolitan
+				vassal_contract_has_flag = celestial_province_industrial
+				vassal_contract_has_flag = meritocratic_province_standard
+				vassal_contract_has_flag = meritocratic_province_industrial
+			}
+		}
+        localization_key = FR_a_l
+    }
+
+	# FIX dirigeant coréen
+	text = { 
+        trigger = {
+			has_title = title:e_goryeo
+			has_character_flag = ceremonial_regent_flag
+			culture = {
+				has_cultural_pillar = heritage_korean
+			}
+		}
+        localization_key = FR_au
+    }
+
+	# END FIX
 	text = {
 		trigger = {
 			OR = {

@@ -1,0 +1,9 @@
+﻿
+# FIX Princesse => Chanoinesse
+holy_order_imperial_canonesses_female = {
+    type = character
+    gender = female
+    special = holder
+    titles = { d_imperial_canonesses }
+    priority = 100
+}

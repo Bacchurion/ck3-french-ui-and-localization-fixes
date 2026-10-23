@@ -14,6 +14,20 @@ Lorsque c'est possible, les corrections sont appliquées aux textes plutôt qu'a
 [*] Religions : Le texte d'attitude envers les rites est affiché en entier
 [/list]
 
+[h2]Articles des titres[/h2]
+
+Correction des articles devant les titres mal accordés ("L'Prince-Archevêque", "L'Cardinal", "Le Archevêque", "du Abbé", etc) dans les interfaces et évènements
+Les titres concernées sont :
+
+[list]
+[*] Tous les titres ecclésiastiques ("L'Prince-Archevêque", "L'Cardinal", "Le Archevêque", "du Abbé", etc)
+[*] Les titres de régents japonais ("à l'Shogun", "l'Kampaku", etc)
+[*] Les titres de conseillers chinois ("L'Ministre", "de l'Grand Chancelier", etc) ainsi que des vassaux
+[*] Les dirigeants coréens (Jipjeong)
+[*] Les Chanoinesses sont appelées ainsi et non plus "Princesses"
+[/list]
+
+
 [h2]Localisation[/h2]
 [list]
 [*] Artéfacts : retrait des termes "Pin" / "Badge" résiduels de la localisation anglaise en fin de nom pour les insignes de pèlerin
@@ -37,6 +51,5 @@ Lorsque c'est possible, les corrections sont appliquées aux textes plutôt qu'a
 
 [h2]Divers[/h2]
 [list]
-[*] Fix de tous les articles pour les titres ecclésiastiques ("L'Prince-Archevêque", "L'Cardinal", "Le Archevêque", etc) dans les évènements et les interfaces
 [*] Fix préfixe `Need` anglais devant les warnings de conditions à certains endroits
 [/list]
