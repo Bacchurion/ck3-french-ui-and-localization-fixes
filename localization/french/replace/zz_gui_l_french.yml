@@ -26,11 +26,21 @@
  # Affichage du rite du perso et non pas du rite principal
  CARDINALS_VIEW_YOU_WILL_CHANGE_RITE: "Si élu à la [Character.GetFaith.GetCollegeElectionTitle.GetNameNoTooltip], vous pourrez modifier le [Character.GetRite.GetName|l] et changer ses [core_tenets|El] et [doctrines|El]"
 
+################### Contrat vassalique
+
+ # Fix pipe sans effet + format vert illisible dans l'interface
+ special_contract: "[Concept( 'vassal_contract', 'Contrat spécial' )]"
+
  ################### Effets
 
  # Uppercase
  change_appointment_investment_global_investor: "[CHARACTER.Custom('FR_le_Char_U_Pi')|U][CHARACTER.GetShortUIName|U] [Select_CString(CHARACTER.IsLocalPlayer,'soutenez','soutient')] [Select_CString(TARGET_CHARACTER.IsLocalPlayer,'votre','la')] [Concept('candidate_score','candidature')|E][TARGET_CHARACTER.LocalPlayerString('', 'Loc_FR_du_GetShortUIName')] pour [TITLE.GetName] avec $EFFECTIVE_CHANGE|P0$$INVESTMENT_CAP_WARNING$"
  change_appointment_investment_third_investor: "[CHARACTER.Custom('FR_le_Char_U_Pi')|U][CHARACTER.GetShortUIName|U] [Select_CString(CHARACTER.IsLocalPlayer,'soutenez','soutient')] [Select_CString(TARGET_CHARACTER.IsLocalPlayer,'votre','la')] [Concept('candidate_score','candidature')|E][TARGET_CHARACTER.LocalPlayerString('', 'Loc_FR_du_GetShortUIName')] pour [TITLE.GetName] avec $EFFECTIVE_CHANGE|P0$$INVESTMENT_CAP_WARNING$"
+
+#################### Guerre
+
+ # Fix text "Vous" + accord de genre
+ japan_install_bloc_member_cb_victory_desc: "[attacker.Custom('FR_le_Char_U_Pi')|U][attacker.GetShortUIName|U] [attacker.LocalPlayerString('saisirez', 'saisira')] les [titles|El] contestés pour le [attacker.GetConfederation.GetName], et décidera comment les distribuer."
 
 
  ################### Intrigue
