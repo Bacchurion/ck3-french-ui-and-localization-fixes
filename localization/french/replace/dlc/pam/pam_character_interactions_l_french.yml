@@ -1,3 +1,0 @@
-l_french:
-  # Fix uppercase WarGod
-  pam_interactions_events.0070.a: "« [ROOT.Char.GetFaith.WarGodName|U] est à nos côtés ! #EMP Aux armes !#! »"

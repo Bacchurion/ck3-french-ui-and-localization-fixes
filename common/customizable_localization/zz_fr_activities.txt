@@ -1,4 +1,4 @@
-FR_ActivityFull_template = { 
+﻿FR_ActivityFull_template = {
 	type = activity
 	log_loc_errors = no
 	text = {

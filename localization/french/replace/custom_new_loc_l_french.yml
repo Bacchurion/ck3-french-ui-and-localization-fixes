@@ -21,5 +21,3 @@
   FR_activity_funeral_Au: "aux "
   FR_activity_funeral_Du: "des "
   FR_activity_funeral_E: ""
-
-  renounce_noble_family_title_decision_toast_desc: "[new_player.Custom('FR_le_Char_Pi')|U][new_player.GetTitledFirstName] est [Select_CString(new_player.IsFemale,'la nouvelle dirigeante','le nouveau dirigeant')] du pays"

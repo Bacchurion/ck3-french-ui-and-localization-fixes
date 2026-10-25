@@ -1,0 +1,60 @@
+﻿l_french:
+
+ ################### Activités
+
+ # Réduction du texte "Impressionner les personnes présentes" qui déborde du bouton
+ coronation_impress_attendees: "Impressionner l’assemblée"
+ coronation_events.0312.cultural_acceptance: "Grâce à l’[intent|El] d’#V impressionner l’assemblée#! [host.Custom('FR_du_Char_Pi')][host.GetTitledFirstNameNoTooltip] l’[cultural_acceptance|El] entre les [ROOT.Char.GetCulture.GetCollectiveNoun] et les [host.GetCulture.GetCollectiveNoun] a augmenté."
+ cultural_acceptance_gain_coronation_host_reward: "Intention de couronnement d’impressionner l'assemblée'"
+
+ # Serments : réduction du texte pour qu'il ne soit plus tronqué dans la fenêtre d'évènement
+ coronation_events.0100.provide_for_the_faithful: "Soutenir les fidèles"
+ coronation_events.0100.provide_for_the_poor: "Aider les pauvres"
+ GetGreatestHunterOathText: "Exceller à la chasse"
+
+ ################### Artéfacts
+
+ # Retrait "Pin" / "Badge" résiduels de la loc anglaise en fin de ligne
+ prosperity_badge_name_2: "Insigne étincelant de [newly_created_artifact.MakeScope.Var('pilgrim_badge_location').GetProvince.GetNameNoTooltip]"
+ virility_badge_name_1: "Broche solide de [newly_created_artifact.MakeScope.Var('pilgrim_badge_location').GetProvince.GetNameNoTooltip]"
+ wisdom_badge_name_1: "Broche recouverte de [newly_created_artifact.MakeScope.Var('pilgrim_badge_location').GetProvince.GetNameNoTooltip]"
+
+ ################### Collège des cardinaux
+
+ # Uppercase du second principe
+ CARDINALS_VIEW_WILL_CHANGE_TENET: "Si [Character.Custom('FR_le_Char_U_Pi')][Character.GetShortUINameNoTooltip] [Select_CString(Character.IsLocalPlayer,'êtes','est')] élu[Character.Custom('FR_E')] à la [Character.GetFaith.GetCollegeElectionTitle.GetNameNoTooltip], [Select_CString(Character.IsLocalPlayer,'vous',Character.Custom('FR_IlElle'))] [Select_CString(Character.IsLocalPlayer,'remplacerez','remplacera')] [CardinalCandidateItem.GetSwappedOutTenet.GetName( Character.GetRite )] avec [Select_CString(Character.IsLocalPlayer,'votre','son')] [core_tenet|El] préféré : [CardinalCandidateItem.GetPreferredTenet.GetName( Character.GetRite )|U]"
+ # Affichage du rite du perso et non pas du rite principal
+ CARDINALS_VIEW_YOU_WILL_CHANGE_RITE: "Si élu à la [Character.GetFaith.GetCollegeElectionTitle.GetNameNoTooltip], vous pourrez modifier le [Character.GetRite.GetName|l] et changer ses [core_tenets|El] et [doctrines|El]"
+
+ ################### Effets
+
+ # Uppercase
+ change_appointment_investment_global_investor: "[CHARACTER.Custom('FR_le_Char_U_Pi')|U][CHARACTER.GetShortUIName|U] [Select_CString(CHARACTER.IsLocalPlayer,'soutenez','soutient')] [Select_CString(TARGET_CHARACTER.IsLocalPlayer,'votre','la')] [Concept('candidate_score','candidature')|E][TARGET_CHARACTER.LocalPlayerString('', 'Loc_FR_du_GetShortUIName')] pour [TITLE.GetName] avec $EFFECTIVE_CHANGE|P0$$INVESTMENT_CAP_WARNING$"
+ change_appointment_investment_third_investor: "[CHARACTER.Custom('FR_le_Char_U_Pi')|U][CHARACTER.GetShortUIName|U] [Select_CString(CHARACTER.IsLocalPlayer,'soutenez','soutient')] [Select_CString(TARGET_CHARACTER.IsLocalPlayer,'votre','la')] [Concept('candidate_score','candidature')|E][TARGET_CHARACTER.LocalPlayerString('', 'Loc_FR_du_GetShortUIName')] pour [TITLE.GetName] avec $EFFECTIVE_CHANGE|P0$$INVESTMENT_CAP_WARNING$"
+
+
+ ################### Intrigue
+ 
+ # Retrait du ")]" affiché dans le tooltip
+ indirect_schemes_boilerplate.tt: "\n$BULLET_WITH_TAB$[GetScheme('claim_throne').GetTypeName]\n$BULLET_WITH_TAB$[GetScheme('fabricate_hook').GetTypeName][AddLocalizationIf( GetPlayer.GetGovernment.HasGovernmentFlag( 'government_is_mandala' ), 'tgp_disbelieve_mandala_boilerplate.tt' )]"
+
+ ################### Inventaire
+
+ # Retrait du "Mes" pour raccourcir le texte
+ INVENTORY_TAB_CLAIMS_HIS_HER_MY: "$INVENTORY_TAB_CLAIMS|U$"
+
+ ################### Personnage
+
+ # Upppercase du nom du rite
+ RITE_CHARACTER_WINDOW: "[Rite.GetAdjectiveNoTooltip|U]"
+
+ ################### Religion
+
+ # Texte plus court + fix mise en forme
+ RITE_VIEW_OUR_VIEW: "Nous les considérons comme #medium [GetPlayer.GetRite.GetRelationNameTo( Rite.Self )|l]#L #V #medium s#!#!#!#!"
+ # Fix mise en forme
+ RITE_VIEW_THEIR_VIEW: "Ils nous considèrent comme #medium [Rite.GetRelationNameTo( GetPlayer.GetRite )|l]#L #V #medium s#!#!#!#!"
+
+################### Tooltip
+
+TRIGGER_BLOCKER_GROUP: "Nécessite $BLOCKER|l$"

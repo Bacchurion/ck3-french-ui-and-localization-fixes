@@ -1,4 +1,4 @@
-# MODIF : Largeur des boutons pour influencer les candidatures
+﻿# MODIF : Largeur des boutons pour influencer les candidatures
 @invest_button_width = 220 # from 180
 
 #####################################################################################

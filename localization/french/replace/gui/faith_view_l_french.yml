@@ -1,5 +1,0 @@
-﻿l_french:
- # Texte plus court + fix mise en forme
- RITE_VIEW_OUR_VIEW: "Nous les considérons comme #medium [GetPlayer.GetRite.GetRelationNameTo( Rite.Self )|l]#L #V #medium s#!#!#!#!"
- # Fix mise en forme
- RITE_VIEW_THEIR_VIEW: "Ils nous considèrent comme #medium [Rite.GetRelationNameTo( GetPlayer.GetRite )|l]#L #V #medium s#!#!#!#!"

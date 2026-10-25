@@ -1,4 +1,0 @@
-l_french:
- # Uppercase
- change_appointment_investment_global_investor: "[CHARACTER.Custom('FR_le_Char_U_Pi')|U][CHARACTER.GetShortUIName|U] [Select_CString(CHARACTER.IsLocalPlayer,'soutenez','soutient')] [Select_CString(TARGET_CHARACTER.IsLocalPlayer,'votre','la')] [Concept('candidate_score','candidature')|E][TARGET_CHARACTER.LocalPlayerString('', 'Loc_FR_du_GetShortUIName')] pour [TITLE.GetName] avec $EFFECTIVE_CHANGE|P0$$INVESTMENT_CAP_WARNING$"
- change_appointment_investment_third_investor: "[CHARACTER.Custom('FR_le_Char_U_Pi')|U][CHARACTER.GetShortUIName|U] [Select_CString(CHARACTER.IsLocalPlayer,'soutenez','soutient')] [Select_CString(TARGET_CHARACTER.IsLocalPlayer,'votre','la')] [Concept('candidate_score','candidature')|E][TARGET_CHARACTER.LocalPlayerString('', 'Loc_FR_du_GetShortUIName')] pour [TITLE.GetName] avec $EFFECTIVE_CHANGE|P0$$INVESTMENT_CAP_WARNING$"

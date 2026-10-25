@@ -14,7 +14,7 @@ FR_le_Char = {
 		localization_key = FR_le
 	}
 
-	# START FIX
+	################### START FIX
 
 	# FIX Archevêques
 	text = {
@@ -105,7 +105,7 @@ FR_le_Char = {
         localization_key = FR_le
     }
 	
-	# END FIX
+	################### END FIX
 
 	text = {
 		trigger = {
@@ -340,7 +340,7 @@ FR_du_Char = {
 		localization_key = FR_du
 	}
 
-	# START FIX
+	################### START FIX
 
 	# FIX Archevêques
 
@@ -431,7 +431,7 @@ FR_du_Char = {
         localization_key = FR_du
     }
 
-	# END FIX
+	################### END FIX
 
 	text = {
 		trigger = {
@@ -666,7 +666,7 @@ FR_au_Char = {
 		localization_key = FR_au
 	}
 	
-	# START FIX
+	################### START FIX
 
 	# FIX Archevêques
 
@@ -757,7 +757,8 @@ FR_au_Char = {
         localization_key = FR_au
     }
 
-	# END FIX
+	################### END FIX
+
 	text = {
 		trigger = {
 			OR = {

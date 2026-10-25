@@ -1,0 +1,15 @@
+﻿l_french:
+
+################### Flux
+
+# Inversion nom et adjectif
+monastic_holy_order_founded_title: "Ordre monastique [LEFT_CHARACTER.GetFaith.GetAdherentNameNoTooltip] fondé"
+
+################### Toast
+
+# Fix "vous  renvoyé XXX"
+liege_dismiss_temporary_regency_interaction.tt.recipient_notification: "[actor.Custom('FR_le_Char_U_Pi')|U][actor.GetShortUINameNoTooltip|U] [Select_CString(actor.IsLocalPlayer,'avez','a')] renvoyé [recipient.Custom('FR_le_Char_U_Pi')][recipient.GetShortUINameNoTooltip] du poste de régent"
+
+# Fix mauvais scope sur une variable
+renounce_noble_family_title_decision_toast_desc: "[new_player.Custom('FR_le_Char_Pi')|U][new_player.GetTitledFirstName] est [Select_CString(new_player.IsFemale,'la nouvelle dirigeante','le nouveau dirigeant')] du pays"
+

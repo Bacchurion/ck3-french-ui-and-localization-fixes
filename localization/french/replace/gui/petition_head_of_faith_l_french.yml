@@ -1,3 +1,0 @@
-﻿l_french:
- # Fix "au papauté"
- petition_head_of_faith_decision: "Faire une demande officielle au [ROOT.Char.GetFaith.ReligiousHeadName]"

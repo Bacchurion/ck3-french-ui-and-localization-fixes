@@ -1,3 +1,0 @@
-﻿l_french:
-  # Retrait du "Mes" pour raccourcir le texte
-  INVENTORY_TAB_CLAIMS_HIS_HER_MY: "$INVENTORY_TAB_CLAIMS|U$"

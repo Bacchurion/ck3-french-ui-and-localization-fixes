@@ -1,4 +1,0 @@
-﻿l_french:
- # Fix "au papauté"
- pam_renounce_papal_candidacy_decision: "Renoncer à la [ROOT.Char.GetFaith.ReligiousHeadTitleName|l]"
- pam_renounce_papal_candidacy_decision_embrace: "Viser la [ROOT.Char.GetFaith.ReligiousHeadTitleName|l]"

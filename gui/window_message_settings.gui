@@ -2,7 +2,7 @@
 	datacontext = "[MessageSettingsWindow.GetCustomMessageWindow]"
 	name = "window_message_settings"
 	parentanchor = center
-	size = { 750 800 } # CR : Changed size 690 => 750
+	size = { 750 800 } # FIX : Changed size 690 => 750
 
 	allow_outside = yes
 	layer = middle
@@ -841,10 +841,10 @@ types MessageSettingsTypes {
 				layoutpolicy_horizontal = expanding
 				layoutpolicy_vertical = expanding
 
-				addcolumn = 100% # CR : Changed size 575 => 100%
-				maxhorizontalslots = 1 # CR : Added line
+				addcolumn = 100% # FIX : Changed size 575 => 100%
+				maxhorizontalslots = 1 # FIX : Added line
 				addrow = 34
-				setitemsizefromcell = yes # CR : Added line
+				setitemsizefromcell = yes # FIX : Added line
 
 				datamodel = "[MessageGroupItem.GetFilterItems]"
 				item = {

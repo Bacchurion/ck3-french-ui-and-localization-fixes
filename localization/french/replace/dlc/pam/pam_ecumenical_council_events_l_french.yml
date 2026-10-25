@@ -1,8 +1,0 @@
-﻿l_french: 
- # Fix "m <prenom>" : court_chaplain => 
- ecumenical_council_events.0010.desc.intro_permit_promote: "\n\n« De plus en plus de gens considèrent cela comme un élément fondamental de leur culte », me fait remarquer m[ROOT.Char.Custom2( 'FR_RelationToMeShort_OnA', SCOPE.sC('court_chaplain'))] [court_chaplain.GetFirstName]."
- ecumenical_council_events.0010.desc.intro_permit_demote: "\n\n« Interdire une pratique comporte des risques, mais dans ce cas précis, c’est tout à fait justifié », me rassure m[ROOT.Char.Custom2( 'FR_RelationToMeShort_OnA', SCOPE.sC('court_chaplain'))] [court_chaplain.GetFirstName]."
- ecumenical_council_events.0010.desc.intro_core_demote_bad: "\n\n« Cette pratique reste populaire. La condamner présente certains risques », s’inquiète m[ROOT.Char.Custom2( 'FR_RelationToMeShort_OnA', SCOPE.sC('court_chaplain'))] [court_chaplain.GetFirstName]."
- ecumenical_council_events.0010.desc.intro_core_demote_good: "\n\n« Cette pratique perd en popularité. C’est le bon moment pour arrêter de la soutenir », me conseille m[ROOT.Char.Custom2( 'FR_RelationToMeShort_OnA', SCOPE.sC('court_chaplain'))] [court_chaplain.GetFirstName]."
- ecumenical_council_events.0010.desc.intro_prohibited_promote_good: "\n\n« Cette pratique gagne en popularité. Il serait peut-être judicieux d’envisager de la soutenir », suggère m[ROOT.Char.Custom2( 'FR_RelationToMeShort_OnA', SCOPE.sC('court_chaplain'))] [court_chaplain.GetFirstName]."
- ecumenical_council_events.0010.desc.intro_prohibited_promote_bad: "\n\n« Cette pratique est obscure. La soutenir pourrait être dangereux », m’avertit m[ROOT.Char.Custom2( 'FR_RelationToMeShort_OnA', SCOPE.sC('court_chaplain'))] [court_chaplain.GetFirstName]."

@@ -1,5 +1,0 @@
-﻿l_french:
- # Uppercase du second principe
- CARDINALS_VIEW_WILL_CHANGE_TENET: "Si [Character.Custom('FR_le_Char_U_Pi')][Character.GetShortUINameNoTooltip] [Select_CString(Character.IsLocalPlayer,'êtes','est')] élu[Character.Custom('FR_E')] à la [Character.GetFaith.GetCollegeElectionTitle.GetNameNoTooltip], [Select_CString(Character.IsLocalPlayer,'vous',Character.Custom('FR_IlElle'))] [Select_CString(Character.IsLocalPlayer,'remplacerez','remplacera')] [CardinalCandidateItem.GetSwappedOutTenet.GetName( Character.GetRite )] avec [Select_CString(Character.IsLocalPlayer,'votre','son')] [core_tenet|El] préféré : [CardinalCandidateItem.GetPreferredTenet.GetName( Character.GetRite )|U]"
- # Affichage du rite du perso et non pas du rite principal
- CARDINALS_VIEW_YOU_WILL_CHANGE_RITE: "Si élu à la [Character.GetFaith.GetCollegeElectionTitle.GetNameNoTooltip], vous pourrez modifier le [Character.GetRite.GetName|l] et changer ses [core_tenets|El] et [doctrines|El]"
