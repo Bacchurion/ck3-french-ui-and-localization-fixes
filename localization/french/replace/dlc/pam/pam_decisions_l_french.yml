@@ -1,3 +1,7 @@
 ﻿l_french:
   # Reformulation pour la confession d'une liaison dans pam_decision_events.0006.desc.secret_sin ([my_secret.GetName|l] = "liaison")
   pam_decision_events.0006.desc.secret_sin: "J’ai dissimulé ma [my_secret.GetName|l] adultère dans un havre d’obscurité."
+
+  # Uppercase
+  pam_decision_events.0011.desc.permitted: "À partir de ce jour, l’estimable [pam_tenet_stance_tenet.GetName( pam_tenet_stance_issuer.GetRite )|l] fera partie des enseignements reconnus de notre foi.\n\nQue ceux qui le pratiquaient en secret sortent de l’ombre."
+  pam_decision_events.0011.desc.prohibited: "À partir de ce jour, l’immonde [pam_tenet_stance_tenet.GetName( pam_tenet_stance_issuer.GetRite )|l] est cause d’anathème. Tous ceux qui s’y accrochent se séparent des fidèles."

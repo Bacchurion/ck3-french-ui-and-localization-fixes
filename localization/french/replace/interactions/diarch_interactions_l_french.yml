@@ -1,0 +1,2 @@
+﻿l_french:
+  liege_dismiss_temporary_regency_interaction.tt.recipient_notification: "[actor.Custom('FR_le_Char_U_Pi')|U][actor.GetShortUINameNoTooltip|U] [Select_CString(actor.IsLocalPlayer,'avez','a')] renvoyé [recipient.Custom('FR_le_Char_U_Pi')][recipient.GetShortUINameNoTooltip] du poste de régent"

@@ -27,6 +27,17 @@ Les titres concernées sont :
 [*] Les Chanoinesses sont appelées ainsi et non plus "Princesses"
 [/list]
 
+[h2]Articles des activités[/h2]
+
+Les articles des activités sont corrigés pour les activités suivantes :
+[list]
+[*] Examens de la capitale
+[*] Examens locaux
+[*] Festivals japonais
+[*] Funérailles
+[/list]
+
+Sans cela, on observe des "le fête", "au Examen de la capitale", etc
 
 [h2]Localisation[/h2]
 [list]
@@ -49,7 +60,13 @@ Les titres concernées sont :
 [*] pam_the_christian_church.* : fix de toutes les occurences de "l'Chrétienté" en "la Chrétienté"
 [/list]
 
+[h2]Notifications[/h2]
+[list]
+[*] Ordre monastique fondé : inversion du nom et de l'adjectif dans le titre affiché
+[/list]
+
 [h2]Divers[/h2]
 [list]
 [*] Fix préfixe `Need` anglais devant les warnings de conditions à certains endroits
+[*] Beaucoup de fix de casse dans la localisation de manière générale, ou de petites corrections diverses
 [/list]
