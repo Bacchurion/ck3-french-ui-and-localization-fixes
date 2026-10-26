@@ -6,11 +6,13 @@ Lorsque c'est possible, les corrections sont appliquées aux textes plutôt qu'a
 
 [h2]Interface[/h2]
 [list]
+[*] Contrats vassaliques : ajustement de la taille du texte des obligations pour qu'il ne dépasse plus du cadre
 [*] Couronnements : le texte d'intention "Impressionner les personnes présentes" ne dépasse plus du bouton
 [*] Intrigue : Taille des colonnes et des éléments de la liste des agents potentiels corrigée pour se caler sur l'UI des fantoches
 [*] Paramètre des messages : l'interface ne dépasse plus de la fenêtre
-[*] Personnage : les emblèmes des pays Mercenaires n'affichent plus une décoration dans la partie diplomatie qui décale tout l'affichage
+[*] Personnage : les emblèmes des pays Mercenaires et Écclésiastiques n'affichent plus une décoration dans la partie diplomatie qui décale tout l'affichage
 [*] Personnage : les emblèmes de la diplomatie ne sortent plus de leur cadre si les personnages ont plus de 7 revendications
+[*] Positions de cour : les traits et aptitudes des candidats ne débordent plus de leur cadre
 [*] Religions : Le texte d'attitude envers les rites est affiché en entier
 [/list]
 
