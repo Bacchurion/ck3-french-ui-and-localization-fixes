@@ -16,6 +16,14 @@ FR_le_Char = {
 
 	################### START FIX
 
+	# FIX Cardinal (priorité sur Archevêques)
+	text = {
+        trigger = {
+			portrait_is_cardinal_trigger = yes
+        }
+        localization_key = FR_le
+    }
+
 	# FIX Archevêques
 	text = {
         trigger = {
@@ -342,8 +350,15 @@ FR_du_Char = {
 
 	################### START FIX
 
-	# FIX Archevêques
+	# FIX Cardinal (priorité sur Archevêques)
+	text = {
+        trigger = {
+			portrait_is_cardinal_trigger = yes
+        }
+        localization_key = FR_du
+    }
 
+	# FIX Archevêques
 	text = {
         trigger = {
             pam_is_antipope_trigger = no
@@ -668,8 +683,15 @@ FR_au_Char = {
 	
 	################### START FIX
 
-	# FIX Archevêques
+	# FIX Cardinal (priorité sur Archevêques)
+	text = {
+        trigger = {
+			portrait_is_cardinal_trigger = yes
+        }
+        localization_key = FR_au
+    }
 
+	# FIX Archevêques
 	text = { # FIX ecclésiastiques (Archevêques)
         trigger = {
             pam_is_antipope_trigger = no
