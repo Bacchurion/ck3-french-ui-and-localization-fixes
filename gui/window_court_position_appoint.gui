@@ -1,4 +1,5 @@
-﻿# MODIF : Largeur des boutons pour influencer les candidatures
+﻿# MODIF : Agrandissement de la largeur de la fenêtre des positions de cour pour éviter
+# que les traits/aptitudes ne débordent de leur cadre
 @obligation_box_width = 700 # from 680
 
 #####################################################################################

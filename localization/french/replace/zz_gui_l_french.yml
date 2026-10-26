@@ -19,6 +19,9 @@
  virility_badge_name_1: "Broche solide de [newly_created_artifact.MakeScope.Var('pilgrim_badge_location').GetProvince.GetNameNoTooltip]"
  wisdom_badge_name_1: "Broche recouverte de [newly_created_artifact.MakeScope.Var('pilgrim_badge_location').GetProvince.GetNameNoTooltip]"
 
+ # "Il a reçu" => "reçu" pour genrer neutre (peut s'appliqer à UN arc comme UNE épée)
+ coronation_blessed_artifact_desc: "[my_artifact.GetDesc]\n\nUne lumière tremblante semble s’en dégager. Un rappel de la bénédiction reçue lors du couronnement [artifact_owner.Custom('FR_du_Char_Pi')][artifact_owner.GetTitledFirstName]."
+
  ################### Collège des cardinaux
 
  # Uppercase du second principe
@@ -57,6 +60,9 @@
 
  # Upppercase du nom du rite
  RITE_CHARACTER_WINDOW: "[Rite.GetAdjectiveNoTooltip|U]"
+
+ # Diplomatie : "de la" -> "de". Peut s'appliquer à une confédération ou à un bloc de maison, donc genre neutre
+ REALM_WINDOW_DIPLOMACY_TOOLTIP_CONFEDERATION: "#T Membre de [CONFEDERATION.GetName]#!\n"
 
  ################### Religion
 
