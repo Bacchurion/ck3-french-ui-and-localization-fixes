@@ -13,3 +13,6 @@ liege_dismiss_temporary_regency_interaction.tt.recipient_notification: "[actor.C
 # Fix mauvais scope sur une variable
 renounce_noble_family_title_decision_toast_desc: "[new_player.Custom('FR_le_Char_Pi')|U][new_player.GetTitledFirstName] est [Select_CString(new_player.IsFemale,'la nouvelle dirigeante','le nouveau dirigeant')] du pays"
 
+# Conjugaison 1er personne singulier
+tgp_bloc_change_cohesion_install_bloc_member_tt: "[attacker.Custom('FR_le_Char_U_Pi')|U][attacker.GetShortUIName|U] [Select_CString(attacker.IsLocalPlayer,'avez','a')] remporté la [bloc_expansion_war|El] pour [target_title.GetBaseName]"
+tgp_bloc_change_cohesion_festival_tt: "[icon.Custom('FR_le_Char_U_Pi')|U][icon.GetShortUIName|U] [Select_CString(icon.IsLocalPlayer,'avez','a')] renforcé l’unité lors d’une [GetActivityType( 'activity_festival').GetName|l]"

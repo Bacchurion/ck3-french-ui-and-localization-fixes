@@ -61,9 +61,6 @@
  # Upppercase du nom du rite
  RITE_CHARACTER_WINDOW: "[Rite.GetAdjectiveNoTooltip|U]"
 
- # Diplomatie : "de la" -> "de". Peut s'appliquer à une confédération ou à un bloc de maison, donc genre neutre
- REALM_WINDOW_DIPLOMACY_TOOLTIP_CONFEDERATION: "#T Membre de [CONFEDERATION.GetName]#!\n"
-
  ################### Religion
 
  # Texte plus court + fix mise en forme

@@ -27,6 +27,7 @@ Les titres concernées sont :
 [*] Les titres de conseillers chinois ("L'Ministre", "de l'Grand Chancelier", etc) ainsi que des vassaux
 [*] Les dirigeants coréens (Jipjeong)
 [*] Les Chanoinesses sont appelées ainsi et non plus "Princesses"
+[*] Les blocs de maison japonais sont correctement genrés au masculin
 [/list]
 
 [h2]Articles des activités[/h2]

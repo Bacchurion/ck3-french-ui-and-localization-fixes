@@ -1,0 +1,84 @@
+FR_LeLa_Confederation = {
+    type = confederation
+    log_loc_errors = no
+
+    text = {
+        trigger = {
+            is_house_based = yes
+        }
+        localization_key = FR_le
+    }
+
+    text = {
+        localization_key = FR_la
+        fallback = yes
+    }
+}
+
+FR_DuDela_Confederation = {
+    type = confederation
+    log_loc_errors = no
+
+    text = {
+        trigger = {
+            is_house_based = yes
+        }
+        localization_key = FR_du
+    }
+
+    text = {
+        localization_key = FR_dela
+        fallback = yes
+    }
+}
+
+FR_E_Confederation = {
+    type = confederation
+    log_loc_errors = no
+
+    text = {
+        trigger = {
+            is_house_based = yes
+        }
+        localization_key = FR_empty
+    }
+
+    text = {
+        localization_key = FR_female_E
+        fallback = yes
+    }
+}
+
+FR_AuAla_Confederation = {
+    type = confederation
+    log_loc_errors = no
+
+    text = {
+        trigger = {
+            is_house_based = yes
+        }
+        localization_key = FR_male_AuAla
+    }
+
+    text = {
+        localization_key = FR_female_AuAla
+        fallback = yes
+    }
+}
+
+FR_LuiElle_Confederation = {
+    type = confederation
+    log_loc_errors = no
+
+    text = {
+        trigger = {
+            is_house_based = yes
+        }
+        localization_key = FR_male_LuiElle
+    }
+
+    text = {
+        localization_key = FR_female_LuiElle
+        fallback = yes
+    }
+}
