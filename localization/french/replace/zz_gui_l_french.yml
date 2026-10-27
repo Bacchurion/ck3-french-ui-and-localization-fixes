@@ -71,3 +71,4 @@
 ################### Tooltip
 
 TRIGGER_BLOCKER_GROUP: "Nécessite $BLOCKER|l$"
+THEY_LEASE_OUT_TO_HOLY_ORDER_EFFECT: "[TITLE.GetHolder.Custom('FR_le_Char_U_Pi')|U][TITLE.GetHolder.GetShortUIName|U] [Select_CString(TITLE.GetHolder.IsLocalPlayer,'baillez','baille')] à rente [TITLE.GetName] à un ordre ([HOLY_ORDER.GetName])"

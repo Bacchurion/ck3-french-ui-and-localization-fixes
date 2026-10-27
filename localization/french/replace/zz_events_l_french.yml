@@ -11,8 +11,8 @@
  # du Papauté => de la Papauté
  pam_the_christian_church.0057.desc.intro.head: "$pam_the_christian_church.0057.desc.intro.common$ sous la supervision de la [christianity.GetReligiousHeadTitle.GetName].\n\n"
 
- # Reformulation pour la confession d'une liaison dans pam_decision_events.0006.desc.secret_sin ([my_secret.GetName|l] = "liaison")
- pam_decision_events.0006.desc.secret_sin: "J’ai dissimulé ma [my_secret.GetName|l] adultère dans un havre d’obscurité."
+ # Reformulation pour la confession d'une liaison dans pam_decision_events.0006.desc.secret_sin
+ pam_decision_events.0006.desc.secret_sin: "J’ai dissimulé [my_secret.GetName|l] dans un havre d’obscurité."
 
  # Uppercase
  pam_decision_events.0011.desc.permitted: "À partir de ce jour, l’estimable [pam_tenet_stance_tenet.GetName( pam_tenet_stance_issuer.GetRite )|l] fera partie des enseignements reconnus de notre foi.\n\nQue ceux qui le pratiquaient en secret sortent de l’ombre."
@@ -31,3 +31,6 @@
 
  # Uppercase WarGod
  great_holy_war.0053.a: "[the_faith.WarGodName|U] nous a abandonné !"
+
+ # Fix scope
+ bp2_yearly_8040_confess_crush: "Vous et [crush.GetFirstName] pourriez devenir [Select_CString(And(crushee.IsFemale, crush.IsFemale), 'amantes', 'amants')]"

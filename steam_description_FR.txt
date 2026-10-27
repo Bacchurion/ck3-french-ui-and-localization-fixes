@@ -56,6 +56,7 @@ Sans cela, on observe des "le fête", "au Examen de la capitale", etc
 
 [h2]Événements[/h2]
 [list]
+[*] bp2_yearly_8040_confess_crush : fix du scope pour l'affichage correct des amants/amantes
 [*] coronation_events.0100 "Un serment historique" : fix des libelles tronqués des serments "Subvenir aux besoins des pauvres", "Subvenir aux besoins des fidèles" et "Devenir le meilleur chasseur"
 [*] ecumenical_council_events.0010 "Notre position sur XXX" : fix de la clé de relation manquante ("m <nom>" => "mon vassal <nom>" / "ma vassale <nom>")
 [*] pam_decision_events.0006.desc.secret_sin "Derniers sacrements" : reformulation d'une phrase maladroite pour la confession d'une liaison
