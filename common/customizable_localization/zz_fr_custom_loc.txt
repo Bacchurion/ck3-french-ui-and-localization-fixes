@@ -9,6 +9,8 @@ FR_le_Char = {
 	log_loc_errors = no
 	text = { # chef de foi
 		trigger = {
+			# FIX chef de foi femme
+			is_female = no
 			any_held_title = { is_head_of_faith = yes }
 		}
 		localization_key = FR_le
@@ -19,6 +21,7 @@ FR_le_Char = {
 	# FIX Cardinal (priorité sur Archevêques)
 	text = {
         trigger = {
+			is_female = no
 			portrait_is_cardinal_trigger = yes
         }
         localization_key = FR_le
@@ -27,7 +30,6 @@ FR_le_Char = {
 	# FIX Archevêques
 	text = {
         trigger = {
-			is_female = no
             pam_is_antipope_trigger = no
             holds_landed_title = no
             OR = {
@@ -50,9 +52,19 @@ FR_le_Char = {
         localization_key = FR_l
     }
 
+	# FIX Tenno
+	text = { 
+        trigger = {
+			is_female = yes
+			has_title = title:k_chrysanthemum_throne
+        }
+        localization_key = FR_la
+    }
+
 	# FIX Kampaku (régent ritsuryo)
 	text = { 
         trigger = {
+			is_female = no
 			has_government = japan_administrative_government
 			has_title = title:e_japan
 			NOT = { has_title = title:k_chrysanthemum_throne }
@@ -60,14 +72,35 @@ FR_le_Char = {
         localization_key = FR_le
     }
 
+	text = { 
+        trigger = {
+			is_female = yes
+			has_government = japan_administrative_government
+			has_title = title:e_japan
+			NOT = { has_title = title:k_chrysanthemum_throne }
+        }
+        localization_key = FR_la
+    }
+
 	# FIX Daijo-Daijin / Shogun (régent soryo)
 	text = { 
         trigger = {
+			is_female = no
 			has_government = japan_feudal_government
 			has_title = title:e_japan
 			NOT = { has_title = title:k_chrysanthemum_throne }
         }
         localization_key = FR_le
+    }
+
+	text = { 
+        trigger = {
+			is_female = yes
+			has_government = japan_feudal_government
+			has_title = title:e_japan
+			NOT = { has_title = title:k_chrysanthemum_throne }
+        }
+        localization_key = FR_la
     }
 
 	# FIX conseillers chinois
@@ -104,13 +137,45 @@ FR_le_Char = {
 	# FIX dirigeant coréen
 	text = { 
         trigger = {
+			is_female = no
 			has_title = title:e_goryeo
-			has_character_flag = ceremonial_regent_flag
 			culture = {
 				has_cultural_pillar = heritage_korean
 			}
 		}
         localization_key = FR_le
+    }
+
+	text = { 
+        trigger = {
+			is_female = yes
+			has_title = title:e_goryeo
+			culture = {
+				has_cultural_pillar = heritage_korean
+			}
+		}
+        localization_key = FR_la
+    }
+
+	# Fix Khagan (empereur mongol)
+	text = { 
+        trigger = {
+			is_female = no
+			highest_held_title_tier = tier_empire
+			has_government = nomad_government
+
+		}
+        localization_key = FR_le
+    }
+
+	text = { 
+        trigger = {
+			is_female = yes
+			highest_held_title_tier = tier_empire
+			has_government = nomad_government
+
+		}
+        localization_key = FR_la
     }
 	
 	################### END FIX
@@ -343,6 +408,8 @@ FR_du_Char = {
 	log_loc_errors = no
 	text = { # chef de foi
 		trigger = {
+			# FIX chef de foi femme
+			is_female = no
 			any_held_title = { is_head_of_faith = yes }
 		}
 		localization_key = FR_du
@@ -353,6 +420,7 @@ FR_du_Char = {
 	# FIX Cardinal (priorité sur Archevêques)
 	text = {
         trigger = {
+			is_female = no
 			portrait_is_cardinal_trigger = yes
         }
         localization_key = FR_du
@@ -383,9 +451,19 @@ FR_du_Char = {
         localization_key = FR_del
     }
 
+	# FIX Tenno
+	text = { 
+        trigger = {
+			is_female = yes
+			has_title = title:k_chrysanthemum_throne
+        }
+        localization_key = FR_dela
+    }
+
 	# FIX Kampaku (régent ritsuryo)
 	text = { 
         trigger = {
+			is_female = no
 			has_government = japan_administrative_government
 			has_title = title:e_japan
 			NOT = { has_title = title:k_chrysanthemum_throne }
@@ -393,14 +471,35 @@ FR_du_Char = {
         localization_key = FR_du
     }
 
+	text = { 
+        trigger = {
+			is_female = yes
+			has_government = japan_administrative_government
+			has_title = title:e_japan
+			NOT = { has_title = title:k_chrysanthemum_throne }
+        }
+        localization_key = FR_dela
+    }
+
 	# FIX Daijo-Daijin / Shogun (régent soryo)
 	text = { 
         trigger = {
+			is_female = no
 			has_government = japan_feudal_government
 			has_title = title:e_japan
 			NOT = { has_title = title:k_chrysanthemum_throne }
         }
         localization_key = FR_du
+    }
+
+	text = { 
+        trigger = {
+			is_female = yes
+			has_government = japan_feudal_government
+			has_title = title:e_japan
+			NOT = { has_title = title:k_chrysanthemum_throne }
+        }
+        localization_key = FR_dela
     }
 
 	# Fix conseillers chinois
@@ -437,13 +536,45 @@ FR_du_Char = {
 	# FIX dirigeant coréen
 	text = { 
         trigger = {
+			is_female = no
 			has_title = title:e_goryeo
-			has_character_flag = ceremonial_regent_flag
 			culture = {
 				has_cultural_pillar = heritage_korean
 			}
 		}
         localization_key = FR_du
+    }
+
+	text = { 
+        trigger = {
+			is_female = yes
+			has_title = title:e_goryeo
+			culture = {
+				has_cultural_pillar = heritage_korean
+			}
+		}
+        localization_key = FR_dela
+    }
+
+	# Fix Khagan (empereur mongol)
+	text = { 
+        trigger = {
+			is_female = no
+			highest_held_title_tier = tier_empire
+			has_government = nomad_government
+
+		}
+        localization_key = FR_du
+    }
+
+	text = { 
+        trigger = {
+			is_female = yes
+			highest_held_title_tier = tier_empire
+			has_government = nomad_government
+
+		}
+        localization_key = FR_dela
     }
 
 	################### END FIX
@@ -676,6 +807,8 @@ FR_au_Char = {
 	log_loc_errors = no
 	text = { # chef de foi
 		trigger = {
+			# FIX chef de foi femme
+			is_female = no
 			any_held_title = { is_head_of_faith = yes }
 		}
 		localization_key = FR_au
@@ -686,6 +819,7 @@ FR_au_Char = {
 	# FIX Cardinal (priorité sur Archevêques)
 	text = {
         trigger = {
+			is_female = no
 			portrait_is_cardinal_trigger = yes
         }
         localization_key = FR_au
@@ -716,9 +850,19 @@ FR_au_Char = {
         localization_key = FR_a_l
     }
 
+	# FIX Tenno
+	text = { 
+        trigger = {
+			is_female = yes
+			has_title = title:k_chrysanthemum_throne
+        }
+        localization_key = FR_a_la
+    }
+
 	# FIX Kampaku (régent ritsuryo)
 	text = { 
         trigger = {
+			is_female = no
 			has_government = japan_administrative_government
 			has_title = title:e_japan
 			NOT = { has_title = title:k_chrysanthemum_throne }
@@ -726,14 +870,35 @@ FR_au_Char = {
         localization_key = FR_au
     }
 
+	text = { 
+        trigger = {
+			is_female = yes
+			has_government = japan_administrative_government
+			has_title = title:e_japan
+			NOT = { has_title = title:k_chrysanthemum_throne }
+        }
+        localization_key = FR_a_la
+    }
+
 	# FIX Daijo-Daijin / Shogun (régent soryo)
 	text = { 
         trigger = {
+			is_female = no
 			has_government = japan_feudal_government
 			has_title = title:e_japan
 			NOT = { has_title = title:k_chrysanthemum_throne }
         }
         localization_key = FR_au
+    }
+
+	text = { 
+        trigger = {
+			is_female = yes
+			has_government = japan_feudal_government
+			has_title = title:e_japan
+			NOT = { has_title = title:k_chrysanthemum_throne }
+        }
+        localization_key = FR_a_la
     }
 
 	# Fix conseillers chinois
@@ -770,13 +935,45 @@ FR_au_Char = {
 	# FIX dirigeant coréen
 	text = { 
         trigger = {
+			is_female = no
 			has_title = title:e_goryeo
-			has_character_flag = ceremonial_regent_flag
 			culture = {
 				has_cultural_pillar = heritage_korean
 			}
 		}
         localization_key = FR_au
+    }
+
+	text = { 
+        trigger = {
+			is_female = yes
+			has_title = title:e_goryeo
+			culture = {
+				has_cultural_pillar = heritage_korean
+			}
+		}
+        localization_key = FR_a_la
+    }
+
+	# Fix Khagan (empereur mongol)
+	text = { 
+        trigger = {
+			is_female = no
+			highest_held_title_tier = tier_empire
+			has_government = nomad_government
+
+		}
+        localization_key = FR_au
+    }
+
+	text = { 
+        trigger = {
+			is_female = yes
+			highest_held_title_tier = tier_empire
+			has_government = nomad_government
+
+		}
+        localization_key = FR_a_la
     }
 
 	################### END FIX
