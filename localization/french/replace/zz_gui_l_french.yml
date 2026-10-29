@@ -45,11 +45,26 @@
  # Fix text "Vous" + accord de genre
  japan_install_bloc_member_cb_victory_desc: "[attacker.Custom('FR_le_Char_U_Pi')|U][attacker.GetShortUIName|U] [attacker.LocalPlayerString('saisirez', 'saisira')] les [titles|El] contestés pour le [attacker.GetConfederation.GetName], et décidera comment les distribuer."
 
+ # Ajout espace pour le coût de la redirection d'une guerre sainte
+ CHANGE_GHW_TARGET_COST: "Coût : [ChangeGHWTargetWindow.GetCost]"
 
  ################### Intrigue
  
  # Retrait du ")]" affiché dans le tooltip
  indirect_schemes_boilerplate.tt: "\n$BULLET_WITH_TAB$[GetScheme('claim_throne').GetTypeName]\n$BULLET_WITH_TAB$[GetScheme('fabricate_hook').GetTypeName][AddLocalizationIf( GetPlayer.GetGovernment.HasGovernmentFlag( 'government_is_mandala' ), 'tgp_disbelieve_mandala_boilerplate.tt' )]"
+
+ # Fix mot fantoche
+ game_concept_clerical_puppet: "Prêtre du pays fantoche"
+ game_concept_clerical_puppets: "Prêtres du pays fantoches"
+ theological_agent_puppet: "Prêtre du pays fantoche"
+
+ game_concept_external_clerical_puppet: "Dirigeant clérical fantoche"
+ game_concept_external_clerical_puppets: "Dirigeants cléricaux fantoches"
+ external_theological_agent_puppet: "Dirigeant clérical fantoche"
+ 
+ game_concept_external_ruler_puppet: "Dirigeant laïc fantoche"
+ game_concept_external_ruler_puppets: "Dirigeants laïcs fantoches"
+ external_ruler_puppet: "Dirigeant laïc fantoche"
 
  ################### Inventaire
 

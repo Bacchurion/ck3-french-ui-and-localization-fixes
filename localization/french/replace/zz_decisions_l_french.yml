@@ -5,3 +5,6 @@
 
  # Fix "au papauté"
  petition_head_of_faith_decision: "Faire une demande officielle au [ROOT.Char.GetFaith.ReligiousHeadName]"
+
+ # FIX "de se unir"
+ unite_the_western_slavs_decision_desc: "Nous étions un seul peuple lorsque nous sommes arrivés sur ces terres. Au fil des ans, nous nous sommes dispersés et divisés en plusieurs tribus. Alors que des forces étrangères sont à nos portes, il est temps de s'unir de nouveau."

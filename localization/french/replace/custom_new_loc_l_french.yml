@@ -6,7 +6,7 @@
   FR_activity_festival_Le: "la "
   FR_activity_festival_Au: "à la "
   FR_activity_festival_Du: "de la "
-  FR_activity_festival_E: ""
+  FR_activity_festival_E: "e"
 
   # Examen local
   FR_activity_local_examination: "l'"
@@ -20,4 +20,11 @@
   FR_activity_funeral_Le: "les "
   FR_activity_funeral_Au: "aux "
   FR_activity_funeral_Du: "des "
-  FR_activity_funeral_E: ""
+  FR_activity_funeral_E: "e"
+
+  # Inspection
+  FR_activity_survey: "une"
+  FR_activity_survey_Le: "l'"
+  FR_activity_survey_Au: "à l'"
+  FR_activity_survey_Du: "de l'"
+  FR_activity_survey_E: "e"

@@ -31,6 +31,11 @@
 		localization_key = FR_activity_funeral
 	}
 
+	text = {
+		trigger = { has_activity_type = activity_survey } # Inspection
+		localization_key = FR_activity_survey
+	}
+
 	# END FIX
 
 	text = {
@@ -68,6 +73,79 @@
 	text = {
 		trigger = { has_activity_type = activity_witch_ritual } # Grand rite
 		localization_key = FR_activity_witch_ritual
+	}
+	text = {
+		localization_key = FR_activity_fallback
+		fallback = yes
+	}
+}
+
+FR_ActivityShort_template = { 
+	type = activity
+	log_loc_errors = no
+
+	# FIX Ajout d'activités manquantes
+	text = {
+		trigger = { has_activity_type = activity_festival } # Festival
+		localization_key = FR_activity_festival
+	}
+
+    text = {
+		trigger = { has_activity_type = activity_local_examination } # Examen local
+		localization_key = FR_activity_local_examination
+	}
+
+    text = {
+		trigger = { has_activity_type = activity_imperial_examination } # Examen de la capitale
+		localization_key = FR_activity_local_examination # (réutilisation de la key)
+	}
+
+    text = {
+		trigger = { has_activity_type = activity_funeral } # Funérailles
+		localization_key = FR_activity_funeral
+	}
+
+	text = {
+		trigger = { has_activity_type = activity_survey } # Inspection
+		localization_key = FR_activity_survey
+	}
+	# END FIX
+
+	text = {
+		trigger = { has_activity_type = activity_feast }
+		localization_key = FR_activity_feast # Festin
+	}
+	text = {
+		trigger = { has_activity_type = activity_gruesome_festival }
+		localization_key = FR_activity_gruesome_festival # Fête sacrificielle
+	}
+	text = {
+		trigger = { has_activity_type = activity_hunt }
+		localization_key = FR_activity_hunt # Chasse
+	}
+	text = {
+		trigger = { has_activity_type = activity_pilgrimage }
+		localization_key = FR_activity_pilgrimage # Pèlerinage
+	}
+	text = {
+		trigger = { has_activity_type = activity_playdate }
+		localization_key = FR_activity_playdate # Rencontre des pairs
+	}
+	text = {
+		trigger = { has_activity_type = activity_tour }
+		localization_key = FR_activity_tour # Grande tournée
+	}
+	text = {
+		trigger = { has_activity_type = activity_tournament }
+		localization_key = FR_activity_tournament # Grand tournoi
+	}
+	text = {
+		trigger = { has_activity_type = activity_wedding }
+		localization_key = FR_activity_wedding # Grand mariage
+	}
+	text = {
+		trigger = { has_activity_type = activity_witch_ritual }
+		localization_key = FR_activity_witch_ritual # Grand rite
 	}
 	text = {
 		localization_key = FR_activity_fallback
