@@ -43,6 +43,15 @@ FR_le_Char = {
         localization_key = FR_l
     }
 
+	# FIX évèques
+	text = {
+        trigger = {
+			is_landed = no
+			has_council_position = councillor_court_chaplain
+        }
+        localization_key = FR_l
+    }
+
 	# FIX ecclésiastiques (Abbés)
 	text = { 
         trigger = {
@@ -442,6 +451,16 @@ FR_du_Char = {
         localization_key = FR_del
     }
 
+	# FIX évèques
+	text = {
+        trigger = {
+			is_landed = no
+			has_council_position = councillor_court_chaplain
+        }
+        localization_key = FR_del
+    }
+
+
 	# FIX ecclésiastiques (Abbés)
 	text = { 
         trigger = {
@@ -840,6 +859,16 @@ FR_au_Char = {
         }
         localization_key = FR_a_l
     }
+
+	# FIX évèques
+	text = {
+        trigger = {
+			is_landed = no
+			has_council_position = councillor_court_chaplain
+        }
+        localization_key = FR_a_l
+    }
+
 
 	# FIX ecclésiastiques (Abbés)
 	text = { 
