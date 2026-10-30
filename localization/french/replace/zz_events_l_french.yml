@@ -34,3 +34,7 @@
 
  # Fix scope
  bp2_yearly_8040_confess_crush: "Vous et [crush.GetFirstName] pourriez devenir [Select_CString(And(crushee.IsFemale, crush.IsFemale), 'amantes', 'amants')]"
+
+ # FIX : "le [ROOT.Char.GetPrimaryTitle.GetTierAsNameNoTooltip]" peut donner "le Administration" au Japon à cause de la flavor; changement pour un terme plus neutre
+ hold_court.8160.desc.intro_me: "« [ROOT.Char.Custom('FR_MonseigneurMadame')|U], j’ai la conviction que quelqu’un dans notre [ROOT.Char.GetPrimaryTitle.GetTierAsNameNoTooltip] essaie de m’atteindre !"
+ hold_court.8160.desc.intro_other: "« [ROOT.Char.Custom('FR_MonseigneurMadame')|U], j’ai la conviction que quelqu’un dans notre [ROOT.Char.GetPrimaryTitle.GetTierAsNameNoTooltip] essaie de s’en prendre à m[concerned.Custom2('FR_RelationToMeShort_OnA', SCOPE.sC('victim'))] !"

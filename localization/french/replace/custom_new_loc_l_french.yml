@@ -28,3 +28,27 @@
   FR_activity_survey_Au: "à l'"
   FR_activity_survey_Du: "de l'"
   FR_activity_survey_E: "e"
+
+  # Elision 1
+  FR_activity_elision: "l'"
+  FR_activity_elision_Le: "l'"
+  FR_activity_elision_Au: "à l'"
+  FR_activity_elision_Du: "de l'"
+  FR_activity_elision_E: ""
+
+  # Féminin singulier
+  FR_activity_female: "la"
+  FR_activity_female_Le: "la "
+  FR_activity_female_Au: "à la "
+  FR_activity_female_Du: "de la "
+  FR_activity_female_E: "e"
+
+  # Masculin pluriel
+  FR_activity_male_plural: "les"
+  FR_activity_male_plural_Le: "les "
+  FR_activity_male_plural_Au: "aux "
+  FR_activity_male_plural_Du: "des "
+  FR_activity_male_plural_E: ""
+
+  # Ajout d'un cas pour afficher "Vos" pour des funérailles
+  ACTIVITY_FULL_NAME: "[Select_CString(Character.IsLocalPlayer, Select_CString(EqualTo_string(ActivityType.GetKey, 'activity_funeral'), 'Vos ', 'Votre '), '')][Select_CString(Character.IsLocalPlayer,ActivityType.GetNameNoTooltip,'')|l][Select_CString(Character.IsLocalPlayer,'',ActivityType.GetNameNoTooltip)][Character.LocalPlayerString('', 'Loc_FR_du_GetShortUINameNoTooltip')]"

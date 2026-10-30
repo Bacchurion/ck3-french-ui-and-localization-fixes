@@ -1,4 +1,4 @@
-FR_LeLa_Confederation = {
+﻿FR_LeLa_Confederation = {
     type = confederation
     log_loc_errors = no
 

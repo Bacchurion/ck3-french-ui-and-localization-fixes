@@ -37,8 +37,13 @@ Les titres concernées sont :
 
 [h2]Articles des activités[/h2]
 
-Les articles des activités sont corrigés pour les activités suivantes :
+Les articles des activités et de leurs phases sont corrigés pour les activités suivantes :
 [list]
+[*] Concile d’investiture
+[*] Concile oecuménique
+[*] Couronnement
+[*] Courses de chariots
+[*] Débat
 [*] Examens de la capitale
 [*] Examens locaux
 [*] Festivals japonais
@@ -62,6 +67,7 @@ Sans cela, on observe des "le fête", "au Examen de la capitale", etc
 
 [h2]Événements[/h2]
 [list]
+[*] [b]"Accusation publique"[/b] : fix d'un déterminant dans le cas où l'on est dirigeant du Japon
 [*] [b]bp2_yearly_8040_confess_crush[/b] : fix du scope pour l'affichage correct des amants/amantes
 [*] [b]"Derniers sacrements"[/b] : reformulation d'une phrase maladroite pour la confession d'une liaison
 [*] [b]"Jugement prophétique"[/b] : fix affichage de l'option 1, tout le texte est désormais affiché

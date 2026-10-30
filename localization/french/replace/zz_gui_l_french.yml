@@ -12,6 +12,11 @@
  coronation_events.0100.provide_for_the_poor: "Aider les pauvres"
  GetGreatestHunterOathText: "Exceller à la chasse"
 
+ # Retrait déterminant parasite
+ activity_investiture_council: "Concile d’investiture"
+ investiture_council_phase_debate: "débat"
+
+
  ################### Artéfacts
 
  # Retrait "Pin" / "Badge" résiduels de la loc anglaise en fin de ligne

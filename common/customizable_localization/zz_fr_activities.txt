@@ -13,7 +13,7 @@
 	# FIX Ajout d'activités manquantes
 	text = {
 		trigger = { has_activity_type = activity_festival } # Festival
-		localization_key = FR_activity_festival
+		localization_key = FR_activity_female
 	}
 
     text = {
@@ -34,6 +34,11 @@
 	text = {
 		trigger = { has_activity_type = activity_survey } # Inspection
 		localization_key = FR_activity_survey
+	}
+
+	text = {
+		trigger = { has_activity_type = activity_chariot_race } # Inspection
+		localization_key = FR_activity_female
 	}
 
 	# END FIX
@@ -80,6 +85,7 @@
 	}
 }
 
+########################################################################################################
 FR_ActivityShort_template = { 
 	type = activity
 	log_loc_errors = no
@@ -87,7 +93,7 @@ FR_ActivityShort_template = {
 	# FIX Ajout d'activités manquantes
 	text = {
 		trigger = { has_activity_type = activity_festival } # Festival
-		localization_key = FR_activity_festival
+		localization_key = FR_activity_female
 	}
 
     text = {
@@ -108,6 +114,11 @@ FR_ActivityShort_template = {
 	text = {
 		trigger = { has_activity_type = activity_survey } # Inspection
 		localization_key = FR_activity_survey
+	}
+
+	text = {
+		trigger = { has_activity_type = activity_chariot_race } # Inspection
+		localization_key = FR_activity_female
 	}
 	# END FIX
 
@@ -149,6 +160,293 @@ FR_ActivityShort_template = {
 	}
 	text = {
 		localization_key = FR_activity_fallback
+		fallback = yes
+	}
+}
+
+#################################################################################################
+FR_ActivityPhase_template = { 
+	type = activity
+	log_loc_errors = no
+
+	# FIX Ajout de phases d'activités manquantes
+	text = {
+		trigger = {
+			has_activity_type = activity_funeral
+			has_current_phase = funeral_phase_wake
+		}
+		localization_key = FR_activity_female # Veillée funèbre
+	}
+	text = {
+		trigger = {
+			has_activity_type = activity_funeral
+			has_current_phase = funeral_phase_ceremony
+		}
+		localization_key = FR_activity_female # Cérémonie
+	}
+	text = {
+		trigger = {
+			has_activity_type = activity_survey
+			has_current_phase = phase_surveying
+		}
+		localization_key = FR_activity_elision # Inspection
+	}
+	text = {
+		trigger = {
+			has_activity_type = activity_festival
+			has_current_phase = festival_phase
+		}
+		localization_key = FR_activity_female # Fête
+	}
+	text = {
+		trigger = {
+			has_activity_type = activity_chariot_race
+			has_current_phase = chariot_race_gambling
+		}
+		localization_key = FR_activity_male_plural # Paris
+	}
+	text = {
+		trigger = {
+			has_activity_type = activity_chariot_race
+			has_current_phase = chariot_race_phase
+		}
+		localization_key = FR_activity_female # Course
+	}
+	text = {
+		trigger = {
+			has_activity_type = activity_chariot_race
+			has_current_phase = chariot_race_phase_ceremony
+		}
+		localization_key = FR_activity_female # Cérémonie
+	}
+	text = {
+		trigger = {
+			has_activity_type = activity_coronation
+			has_current_phase = coronation_phase_coronation
+		}
+		localization_key = FR_activity_female # Cérémonie
+	}
+	text = {
+		trigger = {
+			has_activity_type = activity_debate
+			has_current_phase = debate_phase_discussion
+		}
+		localization_key = FR_activity_female # Discussion
+	}
+	text = {
+		trigger = {
+			has_activity_type = activity_local_examination
+			has_current_phase = local_examination_phase_assembly
+		}
+		localization_key = FR_activity_elision # Assemblée
+	}
+	text = {
+		trigger = {
+			has_activity_type = activity_local_examination
+			has_current_phase = local_examination_phase_preparation
+		}
+		localization_key = FR_activity_female # Préparation
+	}
+	text = {
+		trigger = {
+			has_activity_type = activity_local_examination
+			has_current_phase = local_examination_phase_examination
+		}
+		localization_key = FR_activity_elision # Examen
+	}
+	text = {
+		trigger = {
+			has_activity_type = activity_imperial_examination
+			has_current_phase = imperial_examination_phase_assembly
+		}
+		localization_key = FR_activity_elision # Assemblée
+	}
+	text = {
+		trigger = {
+			has_activity_type = activity_imperial_examination
+			has_current_phase = imperial_examination_phase_preparation
+		}
+		localization_key = FR_activity_female # Préparation
+	}
+	text = {
+		trigger = {
+			has_activity_type = activity_imperial_examination
+			has_current_phase = imperial_examination_phase_examination
+		}
+		localization_key = FR_activity_elision # Examen
+	}
+	text = {
+		trigger = {
+			has_activity_type = activity_imperial_examination
+			has_current_phase = imperial_examination_phase_palace_examination
+		}
+		localization_key = FR_activity_elision # Examen palatial
+	}
+	# END FIX
+	
+	text = {
+		trigger = {
+			has_activity_type = activity_witch_ritual
+			has_current_phase = witch_ritual_phase
+		}
+		localization_key = FR_witch_ritual_phase # Rituel des ténèbres
+	}
+	text = {
+		trigger = {
+			has_activity_type = activity_feast
+			has_current_phase = feast_phase_meal
+		}
+		localization_key = FR_feast_phase_meal # Banquet
+	}
+	text = {
+		trigger = {
+			has_activity_type = activity_feast
+			has_current_phase = feast_phase_toast
+		}
+		localization_key = FR_feast_phase_toast # Trinquée
+	}
+	text = {
+		trigger = {
+			has_activity_type = activity_pilgrimage
+			has_current_phase = pilgrimage_phase_solo
+		}
+		localization_key = FR_pilgrimage_phase_solo # Pèlerinage
+	}
+	text = {
+		trigger = {
+			has_activity_type = activity_playdate
+			has_current_phase = playdate_phase
+		}
+		localization_key = FR_playdate_phase # Rencontre
+	}
+	text = {
+		trigger = {
+			has_activity_type = activity_wedding
+			has_current_phase = wedding_phase_ceremony
+		}
+		localization_key = FR_wedding_phase_ceremony # Cérémonie de mariage
+	}
+	text = {
+		trigger = {
+			has_activity_type = activity_wedding
+			has_current_phase = wedding_phase_banquet
+		}
+		localization_key = FR_wedding_phase_banquet # Repas de noces
+	}
+	text = {
+		trigger = {
+			has_activity_type = activity_wedding
+			has_current_phase = wedding_phase_wnight
+		}
+		localization_key = FR_wedding_phase_wnight # Nuit de noces
+	}
+	text = {
+		trigger = {
+			has_activity_type = activity_tournament
+			has_current_phase = tournament_phase_melee
+		}
+		localization_key = FR_tournament_phase_melee # Mêlée
+	}
+	text = {
+		trigger = {
+			has_activity_type = activity_tournament
+			has_current_phase = tournament_phase_archery
+		}
+		localization_key = FR_tournament_phase_archery # Tir à l’arc
+	}
+	text = {
+		trigger = {
+			has_activity_type = activity_tournament
+			has_current_phase = tournament_phase_recital
+		}
+		localization_key = FR_tournament_phase_recital # Récital
+	}
+	text = {
+		trigger = {
+			has_activity_type = activity_tournament
+			has_current_phase = tournament_phase_joust
+		}
+		localization_key = FR_tournament_phase_joust # Joute
+	}
+	text = {
+		trigger = {
+			has_activity_type = activity_tournament
+			has_current_phase = tournament_phase_duel
+		}
+		localization_key = FR_tournament_phase_duel # Duel
+	}
+	text = {
+		trigger = {
+			has_activity_type = activity_tournament
+			has_current_phase = tournament_phase_wrestling
+		}
+		localization_key = FR_tournament_phase_wrestling # Lutte
+	}
+	text = {
+		trigger = {
+			has_activity_type = activity_tournament
+			has_current_phase = tournament_phase_board_game
+		}
+		localization_key = FR_tournament_phase_board_game # Jeu de plateau
+	}
+	text = {
+		trigger = {
+			has_activity_type = activity_tournament
+			has_current_phase = tournament_phase_horse_race
+		}
+		localization_key = FR_tournament_phase_horse_race # Course de chevaux
+	}
+	text = {
+		trigger = {
+			has_activity_type = activity_tournament
+			has_current_phase = tournament_phase_ceremony
+		}
+		localization_key = FR_tournament_phase_ceremony # Cérémonie
+	}
+	text = {
+		trigger = {
+			has_activity_type = activity_tour
+			has_current_phase = tour_phase_tour_grounds
+		}
+		localization_key = FR_tour_phase_tour_grounds # Visite des terres
+	}
+	text = {
+		trigger = {
+			has_activity_type = activity_tour
+			has_current_phase = tour_phase_dinner
+		}
+		localization_key = FR_tour_phase_dinner # Dîner organisé
+	}
+	text = {
+		trigger = {
+			has_activity_type = activity_tour
+			has_current_phase = tour_phase_cultural_festival
+		}
+		localization_key = FR_tour_phase_cultural_festival # Festival culturel
+	}
+	text = {
+		trigger = {
+			has_activity_type = activity_tour
+			has_current_phase = tour_phase_journey_home
+		}
+		localization_key = FR_tour_phase_journey_home # Retour
+	}
+	text = {
+		trigger = {
+			has_activity_type = activity_gruesome_festival
+			has_current_phase = gruesome_festival_phase
+		}
+		localization_key = FR_gruesome_festival_phase # Fête sacrificielle
+	}
+	text = {
+		trigger = {
+			has_activity_type = activity_hunt
+			has_current_phase = hunt_phase
+		}
+		localization_key = FR_hunt_phase # Chasse
+	}
+	text = {
+		localization_key = FR_activity_phase_fallback
 		fallback = yes
 	}
 }
