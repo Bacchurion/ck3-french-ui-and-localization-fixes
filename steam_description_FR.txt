@@ -10,6 +10,8 @@ Lorsque c'est possible, les corrections sont appliquées aux textes plutôt qu'a
 [list]
 [*] Contrats vassaliques : ajustement de la taille du texte des obligations pour qu'il ne dépasse plus du cadre
 [*] Couronnements : le texte d'intention "Impressionner les personnes présentes" ne dépasse plus du bouton
+[*] Débat : le texte d'intention d'augmentation de la puissance du mouvement a été raccourci et ne dépasse plus du bouton
+[*] Inspection : les intentions sont renommées pour ne plus dépasser du bouton
 [*] Intrigue : Taille des colonnes et des éléments de la liste des agents potentiels corrigée pour se caler sur l'UI des fantoches
 [*] Paramètre des messages : l'interface ne dépasse plus de la fenêtre
 [*] Personnage : les emblèmes des pays Mercenaires et Écclésiastiques n'affichent plus une décoration dans la partie diplomatie qui décale tout l'affichage

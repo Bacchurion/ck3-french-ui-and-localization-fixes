@@ -1,6 +1,9 @@
 ﻿l_french:
   holy_order_imperial_canonesses_female: "Chanoinesse"
 
+  # Fix missing loc
+  Movement: "mouvement"
+
   # Festival japonais => "la fête"
   FR_activity_festival: "la"
   FR_activity_festival_Le: "la "
