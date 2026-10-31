@@ -8,3 +8,6 @@
 
  # FIX "de se unir"
  unite_the_western_slavs_decision_desc: "Nous étions un seul peuple lorsque nous sommes arrivés sur ces terres. Au fil des ans, nous nous sommes dispersés et divisés en plusieurs tribus. Alors que des forces étrangères sont à nos portes, il est temps de s'unir de nouveau."
+
+# On affiche explicitement pourquoi le lieu est invalide pour canoniser un saint
+pam_choose_consecration_site_occupied_tt: "Un [GetPlayer.Custom('PamSaintOrAncestorNounGeneric')] est déjà présent sur ce lieu de consécration"
