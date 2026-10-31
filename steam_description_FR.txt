@@ -60,6 +60,7 @@ Sans cela, on observe des "le fête", "au Examen de la capitale", etc
 [*] Artéfacts : retrait des termes "Pin" / "Badge" résiduels de la localisation anglaise en fin de nom pour les insignes de pèlerin
 [*] Collège des cardinaux : les noms des principes ont bien tous une majuscule
 [*] Collège des cardinaux : fix du nom du rite dominant affiché à la place du rite du personnage
+[*] Complots : le nom des complots ne s'affichent plus avec le mauvais déterminant (ex: "échec du assassinat")
 [*] Correction de "au Papauté" => "au Pape" ou "à la Papauté" selon les cas (interface, décisions)
 [*] Intrigue : fix du tooltip du Retrait de la vie publique qui affichait un "')]"
 [*] Inventaire : Le nombre de revendications n'empiète plus sur le libellé du bouton
@@ -91,4 +92,4 @@ Sans cela, on observe des "le fête", "au Examen de la capitale", etc
 [*] Beaucoup de fix de casse dans la localisation de manière générale, ou de petites corrections diverses
 [/list]
 
-[url=https://github.com/Bacchurion/ck3-french-ui-and-localization-fixes]GitHub[/url]
+En cas de bug ou d'oubli, vous pouvez le remonter en commentaire ou directement sur le [url=https://github.com/Bacchurion/ck3-french-ui-and-localization-fixes]GitHub[/url]
