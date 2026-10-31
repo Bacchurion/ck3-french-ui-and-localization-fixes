@@ -24,7 +24,6 @@ Lorsque c'est possible, les corrections sont appliquées aux textes plutôt qu'a
 
 Correction des articles devant les titres mal accordés ("L'Prince-Archevêque", "L'Cardinal", "Le Archevêque", "du Abbé", etc) dans les interfaces et évènements
 Les titres concernées sont :
-
 [list]
 [*] Tous les titres ecclésiastiques ("L'Prince-Archevêque", "L'Cardinal", "Le Archevêque", "du Abbé", etc)
 [*] Les titres de régents japonais ("à l'Shogun", "l'Kampaku", etc)

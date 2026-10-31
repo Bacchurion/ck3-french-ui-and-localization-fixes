@@ -18,16 +18,7 @@ FR_le_Char = {
 
 	################### START FIX
 
-	# FIX Cardinal (priorité sur Archevêques)
-	text = {
-        trigger = {
-			is_female = no
-			portrait_is_cardinal_trigger = yes
-        }
-        localization_key = FR_le
-    }
-
-	# FIX Archevêques
+	# Archevêques (priorité sur Cardinal)
 	text = {
         trigger = {
             pam_is_antipope_trigger = no
@@ -39,20 +30,32 @@ FR_le_Char = {
                 }
             }
             pam_is_archbishop_or_higher_trigger = yes
+			has_government = ecclesiastical_government
         }
         localization_key = FR_l
     }
 
-	# FIX évèques
+	# Cardinal
+	text = {
+        trigger = {
+			is_female = no
+			portrait_is_cardinal_trigger = yes
+			has_government = ecclesiastical_government
+        }
+        localization_key = FR_le
+    }
+
+	# évèques
 	text = {
         trigger = {
 			is_landed = no
 			has_council_position = councillor_court_chaplain
+			faith = faith:catholic # Pour ne pas prendre en compte "Confesseur" orthodoxe
         }
         localization_key = FR_l
     }
 
-	# FIX ecclésiastiques (Abbés)
+	# ecclésiastiques (Abbés)
 	text = { 
         trigger = {
 			is_female = no
@@ -61,7 +64,7 @@ FR_le_Char = {
         localization_key = FR_l
     }
 
-	# FIX Tenno
+	# Tenno
 	text = { 
         trigger = {
 			is_female = yes
@@ -70,7 +73,7 @@ FR_le_Char = {
         localization_key = FR_la
     }
 
-	# FIX Kampaku (régent ritsuryo)
+	# Kampaku (régent ritsuryo)
 	text = { 
         trigger = {
 			is_female = no
@@ -91,7 +94,7 @@ FR_le_Char = {
         localization_key = FR_la
     }
 
-	# FIX Daijo-Daijin / Shogun (régent soryo)
+	# Daijo-Daijin / Shogun (régent soryo)
 	text = { 
         trigger = {
 			is_female = no
@@ -112,7 +115,7 @@ FR_le_Char = {
         localization_key = FR_la
     }
 
-	# FIX conseillers chinois
+	# conseillers chinois
 	text = { 
         trigger = {
 			tgp_is_any_minister = yes
@@ -120,7 +123,7 @@ FR_le_Char = {
         localization_key = FR_le
     }
 
-	# FIX Intendant chinois
+	# Intendant chinois
 	text = { 
         trigger = {
 			is_independent_ruler = no
@@ -143,7 +146,7 @@ FR_le_Char = {
         localization_key = FR_l
     }
 
-	# FIX dirigeant coréen
+	# dirigeant coréen
 	text = { 
         trigger = {
 			is_female = no
@@ -166,7 +169,7 @@ FR_le_Char = {
         localization_key = FR_la
     }
 
-	# Fix Khagan (empereur mongol)
+	# Khagan (empereur mongol)
 	text = { 
         trigger = {
 			is_female = no
@@ -412,6 +415,8 @@ FR_le_Char = {
 	}
 }
 
+####################################################################################################
+
 FR_du_Char = { 
 	type = character
 	log_loc_errors = no
@@ -426,16 +431,7 @@ FR_du_Char = {
 
 	################### START FIX
 
-	# FIX Cardinal (priorité sur Archevêques)
-	text = {
-        trigger = {
-			is_female = no
-			portrait_is_cardinal_trigger = yes
-        }
-        localization_key = FR_du
-    }
-
-	# FIX Archevêques
+	# Archevêques (priorité sur Cardinal)
 	text = {
         trigger = {
             pam_is_antipope_trigger = no
@@ -447,21 +443,33 @@ FR_du_Char = {
                 }
             }
             pam_is_archbishop_or_higher_trigger = yes
+			has_government = ecclesiastical_government
         }
         localization_key = FR_del
     }
 
-	# FIX évèques
+	# Cardinal
+	text = {
+        trigger = {
+			is_female = no
+			portrait_is_cardinal_trigger = yes
+			has_government = ecclesiastical_government
+        }
+        localization_key = FR_du
+    }
+
+	# évèques
 	text = {
         trigger = {
 			is_landed = no
 			has_council_position = councillor_court_chaplain
+			faith = faith:catholic
         }
         localization_key = FR_del
     }
 
 
-	# FIX ecclésiastiques (Abbés)
+	# ecclésiastiques (Abbés)
 	text = { 
         trigger = {
 			is_female = no
@@ -470,7 +478,7 @@ FR_du_Char = {
         localization_key = FR_del
     }
 
-	# FIX Tenno
+	# Tenno
 	text = { 
         trigger = {
 			is_female = yes
@@ -479,7 +487,7 @@ FR_du_Char = {
         localization_key = FR_dela
     }
 
-	# FIX Kampaku (régent ritsuryo)
+	# Kampaku (régent ritsuryo)
 	text = { 
         trigger = {
 			is_female = no
@@ -500,7 +508,7 @@ FR_du_Char = {
         localization_key = FR_dela
     }
 
-	# FIX Daijo-Daijin / Shogun (régent soryo)
+	# Daijo-Daijin / Shogun (régent soryo)
 	text = { 
         trigger = {
 			is_female = no
@@ -521,7 +529,7 @@ FR_du_Char = {
         localization_key = FR_dela
     }
 
-	# Fix conseillers chinois
+	# conseillers chinois
 	text = { 
         trigger = {
 			tgp_is_any_minister = yes
@@ -529,7 +537,7 @@ FR_du_Char = {
         localization_key = FR_du
     }
 
-	# FIX Intendant chinois
+	# Intendant chinois
 	text = { 
         trigger = {
 			is_independent_ruler = no
@@ -552,7 +560,7 @@ FR_du_Char = {
         localization_key = FR_del
     }
 
-	# FIX dirigeant coréen
+	# dirigeant coréen
 	text = { 
         trigger = {
 			is_female = no
@@ -575,7 +583,7 @@ FR_du_Char = {
         localization_key = FR_dela
     }
 
-	# Fix Khagan (empereur mongol)
+	# Khagan (empereur mongol)
 	text = { 
         trigger = {
 			is_female = no
@@ -821,6 +829,8 @@ FR_du_Char = {
 	}
 }
 
+####################################################################################################
+
 FR_au_Char = { 
 	type = character
 	log_loc_errors = no
@@ -835,17 +845,8 @@ FR_au_Char = {
 	
 	################### START FIX
 
-	# FIX Cardinal (priorité sur Archevêques)
+	# Archevêques (priorité sur Cardinal)
 	text = {
-        trigger = {
-			is_female = no
-			portrait_is_cardinal_trigger = yes
-        }
-        localization_key = FR_au
-    }
-
-	# FIX Archevêques
-	text = { # FIX ecclésiastiques (Archevêques)
         trigger = {
             pam_is_antipope_trigger = no
             holds_landed_title = no
@@ -856,21 +857,33 @@ FR_au_Char = {
                 }
             }
             pam_is_archbishop_or_higher_trigger = yes
+			has_government = ecclesiastical_government
         }
         localization_key = FR_a_l
     }
 
-	# FIX évèques
+	# Cardinal 
+	text = {
+        trigger = {
+			is_female = no
+			portrait_is_cardinal_trigger = yes
+			has_government = ecclesiastical_government
+        }
+        localization_key = FR_au
+    }
+
+	# évèques
 	text = {
         trigger = {
 			is_landed = no
 			has_council_position = councillor_court_chaplain
+			faith = faith:catholic
         }
         localization_key = FR_a_l
     }
 
 
-	# FIX ecclésiastiques (Abbés)
+	# ecclésiastiques (Abbés)
 	text = { 
         trigger = {
 			is_female = no
@@ -879,7 +892,7 @@ FR_au_Char = {
         localization_key = FR_a_l
     }
 
-	# FIX Tenno
+	# Tenno
 	text = { 
         trigger = {
 			is_female = yes
@@ -888,7 +901,7 @@ FR_au_Char = {
         localization_key = FR_a_la
     }
 
-	# FIX Kampaku (régent ritsuryo)
+	# Kampaku (régent ritsuryo)
 	text = { 
         trigger = {
 			is_female = no
@@ -909,7 +922,7 @@ FR_au_Char = {
         localization_key = FR_a_la
     }
 
-	# FIX Daijo-Daijin / Shogun (régent soryo)
+	# Daijo-Daijin / Shogun (régent soryo)
 	text = { 
         trigger = {
 			is_female = no
@@ -930,7 +943,7 @@ FR_au_Char = {
         localization_key = FR_a_la
     }
 
-	# Fix conseillers chinois
+	# conseillers chinois
 	text = { 
         trigger = {
 			tgp_is_any_minister = yes
@@ -938,7 +951,7 @@ FR_au_Char = {
         localization_key = FR_au
     }
 
-	# FIX Intendant chinois
+	# Intendant chinois
 	text = { 
         trigger = {
 			is_independent_ruler = no
@@ -961,7 +974,7 @@ FR_au_Char = {
         localization_key = FR_a_l
     }
 
-	# FIX dirigeant coréen
+	# dirigeant coréen
 	text = { 
         trigger = {
 			is_female = no
@@ -984,7 +997,7 @@ FR_au_Char = {
         localization_key = FR_a_la
     }
 
-	# Fix Khagan (empereur mongol)
+	# Khagan (empereur mongol)
 	text = { 
         trigger = {
 			is_female = no
