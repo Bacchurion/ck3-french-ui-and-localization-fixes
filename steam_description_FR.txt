@@ -30,6 +30,7 @@ Les titres concernées sont :
 [*] Les titres de conseillers chinois ("L'Ministre", "de l'Grand Chancelier", etc) ainsi que des vassaux
 [*] Les dirigeants coréens (Jipjeong)
 [*] Les empereurs mongols (Khagan)
+[*] Les empereurs indiens (Samrat)
 [*] Les Chanoinesses sont appelées ainsi et non plus "Princesses"
 [*] Les versions féminines sont correctement accordées
 [*] Les blocs de maison japonais sont correctement genrés au masculin
@@ -81,6 +82,7 @@ Sans cela, on observe des "le fête", "au Examen de la capitale", etc
 
 [h2]Notifications[/h2]
 [list]
+[*] Étudier le rite : correction du texte pour gérer le cas de la 3e personne du singulier
 [*] Innovation de la route de la soie : correction du texte de notification pour l'assimilation des idées venues d’Orient
 [*] Ordre monastique fondé : inversion du nom et de l'adjectif dans le titre affiché
 [*] Passage de "Vous a <action réalisée>" à "Vous avez <action réalisée>" à plusieurs endroits

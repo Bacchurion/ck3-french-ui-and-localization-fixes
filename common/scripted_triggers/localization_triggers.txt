@@ -1,0 +1,40 @@
+# Le / La
+# Du / De la
+# Au / À la
+use_gendered_loc = {
+    OR = {
+        any_held_title = { is_head_of_faith = yes }
+        title_is_grand_patriarch = yes
+        any_spouse = { title_is_grand_patriarch = yes }
+        title_is_kampaku = yes
+        title_is_shogun = yes
+        title_is_gugwang = yes
+        title_is_khagan = yes
+        title_is_tenno = yes
+        title_is_samrat = yes
+        title_is_patriarch_special = yes
+        any_spouse = { title_is_samrat = yes }
+        has_character_flag = devaraja_flag
+        title_is_hwangje = yes
+        any_spouse = { title_is_hwangje = yes }
+
+        is_prince_or_princess = yes
+        is_faction_leader = yes
+    }
+}
+
+# L'
+# De l'
+# À l'
+use_neutral_loc = {
+    OR = {
+        title_is_archbishop = yes # Archevêque
+        title_is_abbot = yes # Abbé
+        title_is_chinese_steward = yes # Intendant chinois
+        any_spouse = { title_is_emperor_default = yes } # Empereurs ou Impératrices consort
+        title_is_emir = yes # Émir
+        any_spouse = { title_is_emir = yes }
+        title_is_amir_al_umara = yes
+        any_spouse = { title_is_amir_al_umara = yes }
+    }
+}

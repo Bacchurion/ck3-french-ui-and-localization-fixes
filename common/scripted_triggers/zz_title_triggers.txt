@@ -1,0 +1,203 @@
+﻿title_is_grand_patriarch = {
+    highest_held_title_tier = tier_empire
+    has_government = clan_government
+    any_held_title = { is_head_of_faith = no }
+}
+
+#title_is_cardinal = {
+#    portrait_is_cardinal_trigger = yes
+#    has_government = ecclesiastical_government
+#}
+
+title_is_archbishop = {
+    pam_is_antipope_trigger = no
+    holds_landed_title = no
+    OR = {
+        faith = faith:catholic
+        rite = {
+            rite_has_doctrine = special_doctrine_is_western_christian_faith
+        }
+    }
+    pam_is_archbishop_or_higher_trigger = yes
+    has_government = ecclesiastical_government
+    NOT = { has_trait = saint }
+}
+
+# Exception aux règles normales, suit clerical_region_duchy_patriarchate
+title_is_patriarch_special = {
+    #highest_held_title_tier = tier_kingdom
+    has_government = ecclesiastical_government
+    has_religion = religion:christianity_religion
+    OR = {
+        has_title = title:d_et_alexandria 
+        has_title = title:d_et_antioch
+        has_title = title:d_et_aquileia
+        has_title = title:d_et_armenia
+        has_title = title:d_et_jerusalem
+    }
+}
+
+title_is_abbot = {
+    government_has_flag = government_is_monastic_holy_order
+    NOT = { has_trait = saint }
+}
+
+title_is_kampaku = {
+    has_government = japan_administrative_government
+    has_title = title:e_japan
+    NOT = { has_title = title:k_chrysanthemum_throne }
+}
+
+# Daijo-Daijin pour admin, Shogun pour féodal
+title_is_shogun = {
+    has_government = japan_feudal_government
+    has_title = title:e_japan
+    NOT = { has_title = title:k_chrysanthemum_throne }
+}
+
+# Dirigeant coréen
+title_is_gugwang = {
+    has_title = title:e_goryeo
+    culture = {
+        has_cultural_pillar = heritage_korean
+    }
+}
+
+# Dirigeant corée hors de corée
+title_is_hwangje = {
+    is_independent_ruler = yes
+    highest_held_title_tier >= tier_kingdom
+    culture = { has_cultural_pillar = heritage_korean }
+}
+
+# Intendant chinois, titre pour un vassal de niveau royaume
+title_is_chinese_steward = {
+    is_independent_ruler = no
+    highest_held_title_tier = tier_kingdom
+
+    OR = {
+        has_government = celestial_government
+        has_government = meritocratic_government
+        has_government = steppe_admin_government
+    }
+
+    OR = {
+        vassal_contract_has_flag = celestial_province_standard
+        vassal_contract_has_flag = celestial_province_metropolitan
+        vassal_contract_has_flag = celestial_province_industrial
+        vassal_contract_has_flag = meritocratic_province_standard
+        vassal_contract_has_flag = meritocratic_province_industrial
+    }
+}
+
+# Empereur mongol
+title_is_khagan = {
+    highest_held_title_tier = tier_empire
+    has_government = nomad_government
+}
+
+# "Empereur" par défaut, sans falvor (Basileus, Kaiser, etc)
+title_is_emperor_default = {
+    highest_held_title_tier = tier_empire
+    NOR = {
+        title_is_grand_patriarch = yes
+        title_is_samrat = yes
+        title_is_hwangje = yes
+        has_character_flag = devaraja_flag
+        has_title = title:k_chrysanthemum_throne
+        culture = { has_cultural_pillar = heritage_central_germanic } # Kaiser
+        culture = { has_name_list = name_list_greek } # Basileus
+        AND = { # emperor_feudal_male_altaic_group (Khagan)
+            OR = {
+                has_government = feudal_government
+                has_government = clan_government
+                has_government = tribal_government
+            }
+            OR = {
+                culture = { has_cultural_pillar = heritage_mongolic }
+                culture = { has_cultural_pillar = heritage_turkic }
+            }
+        }
+        has_government = tribal_government # emperor_tribal_male (Grand roi), emperor_tribal_female (Grande reine)
+    }
+}
+
+title_is_emir = {
+    is_female = no
+    highest_held_title_tier = tier_duchy
+    holds_landed_title = yes
+    NOT = { joined_faction.faction_leader = this }
+
+    OR = {
+        # Duc musulman clanique ou administratif, toute culture.
+        AND = {
+            religion = religion:islam_religion
+            OR = {
+                has_government = clan_government
+                has_government = administrative_government
+            }
+        }
+
+        # Exceptions culturelles.
+        AND = {
+            culture = { has_cultural_pillar = heritage_arabic }
+            OR = {
+                has_government = feudal_government
+                has_government = clan_government
+                has_government = administrative_government
+            }
+        }
+        AND = {
+            culture = { has_cultural_pillar = heritage_berber }
+            OR = {
+                has_government = feudal_government
+                has_government = clan_government
+                has_government = tribal_government
+                has_government = administrative_government
+            }
+        }
+        AND = {
+            culture = { has_name_list = name_list_beja }
+            OR = {
+                has_government = feudal_government
+                has_government = clan_government
+                has_government = tribal_government
+                has_government = administrative_government
+                has_government = republic_government
+            }
+        }
+        AND = {
+            culture = { has_cultural_pillar = heritage_iberian }
+            has_government = clan_government
+        }
+    }
+}
+
+title_is_amir_al_umara = {
+    highest_held_title_tier = tier_kingdom
+    religion = religion:islam_religion
+    OR = {
+        has_government = clan_government
+        has_government = administrative_government
+        has_government = tribal_government
+        has_government = feudal_government
+    }
+    culture = { has_cultural_pillar = heritage_berber }
+    is_independent_ruler = yes
+}
+
+title_is_tenno = {
+    has_title = title:k_chrysanthemum_throne
+}
+
+title_is_samrat = {
+    highest_held_title_tier = tier_empire
+    OR = {
+        culture = { has_cultural_pillar = heritage_dravidian }
+        culture = { has_cultural_pillar = heritage_indo_aryan }
+    }
+}
+
+title_is_mufti = {
+    religion = religion:islam_religion
+}

@@ -7,191 +7,132 @@
 FR_le_Char = { 
 	type = character
 	log_loc_errors = no
+	################### START FIX
+
+	text = { 
+        trigger = {
+			is_female = no
+			OR = {
+				use_gendered_loc = yes
+			}
+		}
+        localization_key = FR_le
+    }
+
+	text = { 
+        trigger = {
+			is_female = yes
+			OR = {
+				use_gendered_loc = yes
+				is_queen_mother = yes
+	 			is_empress_mother = yes
+			}
+		}
+        localization_key = FR_la
+    }
+
+	text = { 
+        trigger = {
+			use_neutral_loc = yes
+		}
+        localization_key = FR_l
+    }
+
+	# Ministre chinois (titres non genrés)
+	text = { 
+        trigger = {
+			tgp_is_any_minister = yes
+		}
+        localization_key = FR_le
+    }
+
+	# text = { 
+    #     trigger = {
+	# 		is_female = no
+	# 		OR = {
+	# 			title_is_grand_patriarch = yes
+	# 			any_spouse = { title_is_grand_patriarch = yes }
+	# 			title_is_kampaku = yes
+	# 			title_is_shogun = yes
+	# 			title_is_gugwang = yes
+	# 			title_is_khagan = yes
+	# 			title_is_tenno = yes
+	# 			title_is_samrat = yes
+	# 			title_is_patriarch_special = yes
+	# 			any_spouse = { title_is_samrat = yes }
+	# 			has_character_flag = devaraja_flag
+	# 			title_is_hwangje = yes
+	# 			any_spouse = { title_is_hwangje = yes }
+
+	# 			is_prince_or_princess = yes
+	# 			is_faction_leader = yes
+	# 		}
+	# 	}
+    #     localization_key = FR_le
+    # }
+
+	# # Ministre chinois (titres non genrés)
+	# text = { 
+    #     trigger = {
+	# 		OR = {
+	# 			tgp_is_any_minister = yes
+	# 		}
+	# 	}
+    #     localization_key = FR_le
+    # }
+
+	# text = { 
+    #     trigger = {
+	# 		OR = {
+	# 			title_is_archbishop = yes # Archevêque
+	# 			title_is_abbot = yes # Abbé
+	# 			title_is_chinese_steward = yes # Intendant chinois
+	# 			any_spouse = { title_is_emperor_default = yes } # Empereurs ou Impératrices consort
+	# 			title_is_emir = yes # Émir
+	# 			any_spouse = { title_is_emir = yes }
+	# 			title_is_amir_al_umara = yes
+	# 			any_spouse = { title_is_amir_al_umara = yes }
+	# 		}
+	# 	}
+    #     localization_key = FR_l
+    # }
+
+	# text = { 
+    #     trigger = {
+	# 		is_female = yes
+	# 		OR = { # Grande patriarche
+	# 			title_is_grand_patriarch = yes
+	# 			any_spouse = { title_is_grand_patriarch = yes }
+	# 			title_is_kampaku = yes
+	# 			title_is_shogun = yes
+	# 			title_is_gugwang = yes
+	# 			title_is_khagan = yes
+	# 			title_is_tenno = yes
+	# 			title_is_samrat = yes
+	# 			any_spouse = { title_is_samrat = yes }
+	# 			title_is_patriarch_special = yes
+	# 			has_character_flag = devaraja_flag
+	# 			title_is_hwangje = yes
+	# 			any_spouse = { title_is_hwangje = yes }
+
+	# 			is_prince_or_princess = yes
+	# 			is_queen_mother = yes
+	# 			is_empress_mother = yes
+	# 			is_faction_leader = yes
+	# 		}
+			
+	# 	}
+    #     localization_key = FR_la
+    # }
+	
+	################### END FIX
+
 	text = { # chef de foi
 		trigger = {
-			# FIX chef de foi femme
-			is_female = no
 			any_held_title = { is_head_of_faith = yes }
 		}
 		localization_key = FR_le
 	}
-
-	################### START FIX
-
-	# Archevêques (priorité sur Cardinal)
-	text = {
-        trigger = {
-            pam_is_antipope_trigger = no
-            holds_landed_title = no
-            OR = {
-                faith = faith:catholic
-                rite = {
-                    rite_has_doctrine = special_doctrine_is_western_christian_faith
-                }
-            }
-            pam_is_archbishop_or_higher_trigger = yes
-			has_government = ecclesiastical_government
-        }
-        localization_key = FR_l
-    }
-
-	# Cardinal
-	text = {
-        trigger = {
-			is_female = no
-			portrait_is_cardinal_trigger = yes
-			has_government = ecclesiastical_government
-        }
-        localization_key = FR_le
-    }
-
-	# évèques
-	text = {
-        trigger = {
-			is_landed = no
-			has_council_position = councillor_court_chaplain
-			faith = faith:catholic # Pour ne pas prendre en compte "Confesseur" orthodoxe
-        }
-        localization_key = FR_l
-    }
-
-	# ecclésiastiques (Abbés)
-	text = { 
-        trigger = {
-			is_female = no
-			government_has_flag = government_is_monastic_holy_order
-        }
-        localization_key = FR_l
-    }
-
-	# Tenno
-	text = { 
-        trigger = {
-			is_female = yes
-			has_title = title:k_chrysanthemum_throne
-        }
-        localization_key = FR_la
-    }
-
-	# Kampaku (régent ritsuryo)
-	text = { 
-        trigger = {
-			is_female = no
-			has_government = japan_administrative_government
-			has_title = title:e_japan
-			NOT = { has_title = title:k_chrysanthemum_throne }
-        }
-        localization_key = FR_le
-    }
-
-	text = { 
-        trigger = {
-			is_female = yes
-			has_government = japan_administrative_government
-			has_title = title:e_japan
-			NOT = { has_title = title:k_chrysanthemum_throne }
-        }
-        localization_key = FR_la
-    }
-
-	# Daijo-Daijin / Shogun (régent soryo)
-	text = { 
-        trigger = {
-			is_female = no
-			has_government = japan_feudal_government
-			has_title = title:e_japan
-			NOT = { has_title = title:k_chrysanthemum_throne }
-        }
-        localization_key = FR_le
-    }
-
-	text = { 
-        trigger = {
-			is_female = yes
-			has_government = japan_feudal_government
-			has_title = title:e_japan
-			NOT = { has_title = title:k_chrysanthemum_throne }
-        }
-        localization_key = FR_la
-    }
-
-	# conseillers chinois
-	text = { 
-        trigger = {
-			tgp_is_any_minister = yes
-        }
-        localization_key = FR_le
-    }
-
-	# Intendant chinois
-	text = { 
-        trigger = {
-			is_independent_ruler = no
-			highest_held_title_tier = tier_kingdom
-
-			OR = {
-				has_government = celestial_government
-				has_government = meritocratic_government
-				has_government = steppe_admin_government
-			}
-
-			OR = {
-				vassal_contract_has_flag = celestial_province_standard
-				vassal_contract_has_flag = celestial_province_metropolitan
-				vassal_contract_has_flag = celestial_province_industrial
-				vassal_contract_has_flag = meritocratic_province_standard
-				vassal_contract_has_flag = meritocratic_province_industrial
-			}
-		}
-        localization_key = FR_l
-    }
-
-	# dirigeant coréen
-	text = { 
-        trigger = {
-			is_female = no
-			has_title = title:e_goryeo
-			culture = {
-				has_cultural_pillar = heritage_korean
-			}
-		}
-        localization_key = FR_le
-    }
-
-	text = { 
-        trigger = {
-			is_female = yes
-			has_title = title:e_goryeo
-			culture = {
-				has_cultural_pillar = heritage_korean
-			}
-		}
-        localization_key = FR_la
-    }
-
-	# Khagan (empereur mongol)
-	text = { 
-        trigger = {
-			is_female = no
-			highest_held_title_tier = tier_empire
-			has_government = nomad_government
-
-		}
-        localization_key = FR_le
-    }
-
-	text = { 
-        trigger = {
-			is_female = yes
-			highest_held_title_tier = tier_empire
-			has_government = nomad_government
-
-		}
-        localization_key = FR_la
-    }
-	
-	################### END FIX
-
 	text = {
 		trigger = {
 			OR = {
@@ -420,192 +361,54 @@ FR_le_Char = {
 FR_du_Char = { 
 	type = character
 	log_loc_errors = no
-	text = { # chef de foi
-		trigger = {
-			# FIX chef de foi femme
-			is_female = no
-			any_held_title = { is_head_of_faith = yes }
-		}
-		localization_key = FR_du
-	}
-
+	
 	################### START FIX
 
-	# Archevêques (priorité sur Cardinal)
-	text = {
-        trigger = {
-            pam_is_antipope_trigger = no
-            holds_landed_title = no
-            OR = {
-                faith = faith:catholic
-                rite = {
-                    rite_has_doctrine = special_doctrine_is_western_christian_faith
-                }
-            }
-            pam_is_archbishop_or_higher_trigger = yes
-			has_government = ecclesiastical_government
-        }
-        localization_key = FR_del
-    }
-
-	# Cardinal
-	text = {
-        trigger = {
-			is_female = no
-			portrait_is_cardinal_trigger = yes
-			has_government = ecclesiastical_government
-        }
-        localization_key = FR_du
-    }
-
-	# évèques
-	text = {
-        trigger = {
-			is_landed = no
-			has_council_position = councillor_court_chaplain
-			faith = faith:catholic
-        }
-        localization_key = FR_del
-    }
-
-
-	# ecclésiastiques (Abbés)
 	text = { 
         trigger = {
 			is_female = no
-			government_has_flag = government_is_monastic_holy_order
-        }
-        localization_key = FR_del
-    }
-
-	# Tenno
-	text = { 
-        trigger = {
-			is_female = yes
-			has_title = title:k_chrysanthemum_throne
-        }
-        localization_key = FR_dela
-    }
-
-	# Kampaku (régent ritsuryo)
-	text = { 
-        trigger = {
-			is_female = no
-			has_government = japan_administrative_government
-			has_title = title:e_japan
-			NOT = { has_title = title:k_chrysanthemum_throne }
-        }
+			OR = {
+				use_gendered_loc = yes
+			}
+		}
         localization_key = FR_du
     }
 
 	text = { 
         trigger = {
 			is_female = yes
-			has_government = japan_administrative_government
-			has_title = title:e_japan
-			NOT = { has_title = title:k_chrysanthemum_throne }
-        }
+			OR = {
+				use_gendered_loc = yes
+				is_queen_mother = yes
+	 			is_empress_mother = yes
+			}
+		}
         localization_key = FR_dela
-    }
-
-	# Daijo-Daijin / Shogun (régent soryo)
-	text = { 
-        trigger = {
-			is_female = no
-			has_government = japan_feudal_government
-			has_title = title:e_japan
-			NOT = { has_title = title:k_chrysanthemum_throne }
-        }
-        localization_key = FR_du
     }
 
 	text = { 
         trigger = {
-			is_female = yes
-			has_government = japan_feudal_government
-			has_title = title:e_japan
-			NOT = { has_title = title:k_chrysanthemum_throne }
-        }
-        localization_key = FR_dela
+			use_neutral_loc = yes
+		}
+        localization_key = FR_del
     }
 
-	# conseillers chinois
+	# Ministre chinois (titres non genrés)
 	text = { 
         trigger = {
 			tgp_is_any_minister = yes
-        }
-        localization_key = FR_du
-    }
-
-	# Intendant chinois
-	text = { 
-        trigger = {
-			is_independent_ruler = no
-			highest_held_title_tier = tier_kingdom
-
-			OR = {
-				has_government = celestial_government
-				has_government = meritocratic_government
-				has_government = steppe_admin_government
-			}
-
-			OR = {
-				vassal_contract_has_flag = celestial_province_standard
-				vassal_contract_has_flag = celestial_province_metropolitan
-				vassal_contract_has_flag = celestial_province_industrial
-				vassal_contract_has_flag = meritocratic_province_standard
-				vassal_contract_has_flag = meritocratic_province_industrial
-			}
-		}
-        localization_key = FR_del
-    }
-
-	# dirigeant coréen
-	text = { 
-        trigger = {
-			is_female = no
-			has_title = title:e_goryeo
-			culture = {
-				has_cultural_pillar = heritage_korean
-			}
 		}
         localization_key = FR_du
-    }
-
-	text = { 
-        trigger = {
-			is_female = yes
-			has_title = title:e_goryeo
-			culture = {
-				has_cultural_pillar = heritage_korean
-			}
-		}
-        localization_key = FR_dela
-    }
-
-	# Khagan (empereur mongol)
-	text = { 
-        trigger = {
-			is_female = no
-			highest_held_title_tier = tier_empire
-			has_government = nomad_government
-
-		}
-        localization_key = FR_du
-    }
-
-	text = { 
-        trigger = {
-			is_female = yes
-			highest_held_title_tier = tier_empire
-			has_government = nomad_government
-
-		}
-        localization_key = FR_dela
     }
 
 	################### END FIX
 
+	text = { # chef de foi
+		trigger = {
+			any_held_title = { is_head_of_faith = yes }
+		}
+		localization_key = FR_du
+	}
 	text = {
 		trigger = {
 			OR = {
@@ -834,192 +637,54 @@ FR_du_Char = {
 FR_au_Char = { 
 	type = character
 	log_loc_errors = no
-	text = { # chef de foi
-		trigger = {
-			# FIX chef de foi femme
-			is_female = no
-			any_held_title = { is_head_of_faith = yes }
-		}
-		localization_key = FR_au
-	}
 	
 	################### START FIX
 
-	# Archevêques (priorité sur Cardinal)
-	text = {
-        trigger = {
-            pam_is_antipope_trigger = no
-            holds_landed_title = no
-            OR = {
-                faith = faith:catholic
-                rite = {
-                    rite_has_doctrine = special_doctrine_is_western_christian_faith
-                }
-            }
-            pam_is_archbishop_or_higher_trigger = yes
-			has_government = ecclesiastical_government
-        }
-        localization_key = FR_a_l
-    }
-
-	# Cardinal 
-	text = {
-        trigger = {
-			is_female = no
-			portrait_is_cardinal_trigger = yes
-			has_government = ecclesiastical_government
-        }
-        localization_key = FR_au
-    }
-
-	# évèques
-	text = {
-        trigger = {
-			is_landed = no
-			has_council_position = councillor_court_chaplain
-			faith = faith:catholic
-        }
-        localization_key = FR_a_l
-    }
-
-
-	# ecclésiastiques (Abbés)
 	text = { 
         trigger = {
 			is_female = no
-			government_has_flag = government_is_monastic_holy_order
-        }
-        localization_key = FR_a_l
-    }
-
-	# Tenno
-	text = { 
-        trigger = {
-			is_female = yes
-			has_title = title:k_chrysanthemum_throne
-        }
-        localization_key = FR_a_la
-    }
-
-	# Kampaku (régent ritsuryo)
-	text = { 
-        trigger = {
-			is_female = no
-			has_government = japan_administrative_government
-			has_title = title:e_japan
-			NOT = { has_title = title:k_chrysanthemum_throne }
-        }
+			OR = {
+				use_gendered_loc = yes
+			}
+		}
         localization_key = FR_au
     }
 
 	text = { 
         trigger = {
 			is_female = yes
-			has_government = japan_administrative_government
-			has_title = title:e_japan
-			NOT = { has_title = title:k_chrysanthemum_throne }
-        }
+			OR = {
+				use_gendered_loc = yes
+				is_queen_mother = yes
+	 			is_empress_mother = yes
+			}
+		}
         localization_key = FR_a_la
-    }
-
-	# Daijo-Daijin / Shogun (régent soryo)
-	text = { 
-        trigger = {
-			is_female = no
-			has_government = japan_feudal_government
-			has_title = title:e_japan
-			NOT = { has_title = title:k_chrysanthemum_throne }
-        }
-        localization_key = FR_au
     }
 
 	text = { 
         trigger = {
-			is_female = yes
-			has_government = japan_feudal_government
-			has_title = title:e_japan
-			NOT = { has_title = title:k_chrysanthemum_throne }
-        }
-        localization_key = FR_a_la
+			use_neutral_loc = yes
+		}
+        localization_key = FR_a_l
     }
 
-	# conseillers chinois
+	# Ministre chinois (titres non genrés)
 	text = { 
         trigger = {
 			tgp_is_any_minister = yes
-        }
-        localization_key = FR_au
-    }
-
-	# Intendant chinois
-	text = { 
-        trigger = {
-			is_independent_ruler = no
-			highest_held_title_tier = tier_kingdom
-
-			OR = {
-				has_government = celestial_government
-				has_government = meritocratic_government
-				has_government = steppe_admin_government
-			}
-
-			OR = {
-				vassal_contract_has_flag = celestial_province_standard
-				vassal_contract_has_flag = celestial_province_metropolitan
-				vassal_contract_has_flag = celestial_province_industrial
-				vassal_contract_has_flag = meritocratic_province_standard
-				vassal_contract_has_flag = meritocratic_province_industrial
-			}
-		}
-        localization_key = FR_a_l
-    }
-
-	# dirigeant coréen
-	text = { 
-        trigger = {
-			is_female = no
-			has_title = title:e_goryeo
-			culture = {
-				has_cultural_pillar = heritage_korean
-			}
 		}
         localization_key = FR_au
-    }
-
-	text = { 
-        trigger = {
-			is_female = yes
-			has_title = title:e_goryeo
-			culture = {
-				has_cultural_pillar = heritage_korean
-			}
-		}
-        localization_key = FR_a_la
-    }
-
-	# Khagan (empereur mongol)
-	text = { 
-        trigger = {
-			is_female = no
-			highest_held_title_tier = tier_empire
-			has_government = nomad_government
-
-		}
-        localization_key = FR_au
-    }
-
-	text = { 
-        trigger = {
-			is_female = yes
-			highest_held_title_tier = tier_empire
-			has_government = nomad_government
-
-		}
-        localization_key = FR_a_la
     }
 
 	################### END FIX
 
+	text = { # chef de foi
+		trigger = {
+			any_held_title = { is_head_of_faith = yes }
+		}
+		localization_key = FR_au
+	}
 	text = {
 		trigger = {
 			OR = {
@@ -1239,6 +904,26 @@ FR_au_Char = {
 	}
 	text = {
 		localization_key = FR_a_accent
+		fallback = yes
+	}
+}
+
+####################################################################################################
+
+FR_du_Char_L = { 
+	type = character
+	log_loc_errors = no
+	text = {
+		localization_key = FR_du_Char
+		fallback = yes
+	}
+}
+
+FR_le_Char_P = { 
+	type = character
+	log_loc_errors = no
+	text = {
+		localization_key = FR_le_Char
 		fallback = yes
 	}
 }

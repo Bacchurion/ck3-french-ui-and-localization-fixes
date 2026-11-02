@@ -23,3 +23,8 @@ msg_silk_road_innovation_visit_desc: "[new_trinket.Custom('FR_le_Char_U_Pi')|U][
 ################### Astuces
 
 action_can_make_clerical_puppet_label: "@theological_agent_puppet_icon! Votre [actor.GetCouncillorPosition( 'councillor_court_chaplain' ).GetPositionName|l] peut être fait fantoche"
+
+################### Popup
+
+# Ajustement pour la 3e personne pluriel
+study_faith_interaction.accept.study_faith_ask_directly: "[recipient.Custom('FR_le_Char_U_Pi')|U][recipient.GetShortUIName|U] [Select_CString(recipient.IsLocalPlayer,'l\\'aiderez','vous aidera')] personnellement"
