@@ -401,6 +401,14 @@ FR_du_Char = {
         localization_key = FR_du
     }
 
+	# Possessif Saint ("de Saint Pierre")
+	text = {
+        trigger = {
+			has_trait = saint
+		}
+        localization_key = FR_de
+    }
+
 	################### END FIX
 
 	text = { # chef de foi
