@@ -124,3 +124,8 @@ scheme_critical_moments.8043.t: "Échec du complot [scheme.GetNameNoTooltip|l]"
 scheme_critical_moments.8061.t: "Réussite du complot [scheme.GetNameNoTooltip|l]"
 scheme_critical_moments.8067.t: "Échec du complot [scheme.GetNameNoTooltip|l]"
 spymaster_task.2003.desc: "Mon [councillor.GetCouncilTitle|l] est inhabituellement forme[councillor.Custom('FR_LLle')] lorsqu’[councillor.GetSheHe] m’approche à la Cour : « [councillor_liege.Custom('FR_MonseigneurMadame')|U], vous êtes-vous déjà dit qu’agir dans l’ombre pourrait ne pas être le meilleur moyen d’obtenir ce que vous voulez ? ». C’est une déclaration surprenante, mais [councillor.GetSheHe] en vient finalement aux faits.\n\n« Il semble que... eh bien, tous les agents du complot [scheme.GetName] ont cessé de répondre à mes messages. C’est comme si rien ne s’était passé. »"
+
+################### Interactions
+
+admin_liege_modify_vassal_contract_interaction: "Modifier l’administration [GetPlayer.Custom('GetProvinceConceptWithArticleNoTooltip')]"
+admin_liege_modify_vassal_contract_interaction_desc: "Changer l’administration [puppet_or_actor.Custom('GetProvinceConceptWithArticleNoTooltip')] [recipient.Custom('FR_du_Char_U_Pi')][recipient.GetShortUINameNoTooltip]"

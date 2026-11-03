@@ -63,6 +63,7 @@ Sans cela, on observe des "le fête", "au Examen de la capitale", etc
 [*] Collège des cardinaux : fix du nom du rite dominant affiché à la place du rite du personnage
 [*] Complots : le nom des complots ne s'affichent plus avec le mauvais déterminant (ex: "échec du assassinat")
 [*] Correction de "au Papauté" => "au Pape" ou "à la Papauté" selon les cas (interface, décisions)
+[*] Interaction "Modification de l’administration" : déterminant dynamique ("la province", "le circuit")
 [*] Intrigue : fix du tooltip du Retrait de la vie publique qui affichait un "')]"
 [*] Inventaire : Le nombre de revendications n'empiète plus sur le libellé du bouton
 [*] Personnage : Le nom du rite a bien une majuscule

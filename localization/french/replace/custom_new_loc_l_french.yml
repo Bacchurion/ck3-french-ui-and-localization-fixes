@@ -55,3 +55,7 @@
 
   # Ajout d'un cas pour afficher "Vos" pour des funérailles
   ACTIVITY_FULL_NAME: "[Select_CString(Character.IsLocalPlayer, Select_CString(EqualTo_string(ActivityType.GetKey, 'activity_funeral'), 'Vos ', 'Votre '), '')][Select_CString(Character.IsLocalPlayer,ActivityType.GetNameNoTooltip,'')|l][Select_CString(Character.IsLocalPlayer,'',ActivityType.GetNameNoTooltip)][Character.LocalPlayerString('', 'Loc_FR_du_GetShortUINameNoTooltip')]"
+
+  THEME_CONCEPT_WITH_ARTICLE_NO_TOOLTIP: "du thème"
+  CIRCUIT_CONCEPT_WITH_ARTICLE_NO_TOOLTIP: "du circuit"
+  PROVINCE_CONCEPT_WITH_ARTICLE_NO_TOOLTIP: "de la province"

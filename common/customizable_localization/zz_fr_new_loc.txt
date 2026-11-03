@@ -1,0 +1,26 @@
+﻿# Permet de retourner "la province", "le circuit" dans les interactions (concept de province localisé)
+GetProvinceConceptWithArticleNoTooltip = {
+    type = character
+
+    text = {
+        trigger = {
+            top_liege.culture ?= { has_cultural_pillar = heritage_byzantine }
+        }
+        localization_key = THEME_CONCEPT_WITH_ARTICLE_NO_TOOLTIP
+    }
+
+    text = {
+        trigger = {
+            top_liege ?= {
+                government_has_flag = government_is_celestial
+            }
+        }
+        localization_key = CIRCUIT_CONCEPT_WITH_ARTICLE_NO_TOOLTIP
+    }
+
+    text = {
+        trigger = { always = no }
+        fallback = yes
+        localization_key = PROVINCE_CONCEPT_WITH_ARTICLE_NO_TOOLTIP
+    }
+}
