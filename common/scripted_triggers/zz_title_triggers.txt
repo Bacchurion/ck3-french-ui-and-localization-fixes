@@ -4,14 +4,16 @@
     any_held_title = { is_head_of_faith = no }
 }
 
-#title_is_cardinal = {
-#    portrait_is_cardinal_trigger = yes
-#    has_government = ecclesiastical_government
-#}
+# title_is_cardinal = {
+#     portrait_is_cardinal_trigger = yes
+#     has_government = ecclesiastical_government
+# }
 
 title_is_archbishop = {
     pam_is_antipope_trigger = no
-    holds_landed_title = no
+    primary_title = {
+        has_clerical_region = yes
+    }
     OR = {
         faith = faith:catholic
         rite = {
