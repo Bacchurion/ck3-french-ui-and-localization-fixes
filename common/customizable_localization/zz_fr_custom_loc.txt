@@ -9,6 +9,14 @@ FR_le_Char = {
 	log_loc_errors = no
 	################### START FIX
 
+	# Ministre chinois (titres non genrés)
+	text = { 
+        trigger = {
+			tgp_is_any_minister = yes
+		}
+        localization_key = FR_le
+    }
+
 	text = { 
         trigger = {
 			is_female = no
@@ -36,14 +44,6 @@ FR_le_Char = {
 			use_neutral_loc = yes
 		}
         localization_key = FR_l
-    }
-
-	# Ministre chinois (titres non genrés)
-	text = { 
-        trigger = {
-			tgp_is_any_minister = yes
-		}
-        localization_key = FR_le
     }
 	
 	################### END FIX
@@ -285,6 +285,22 @@ FR_du_Char = {
 	
 	################### START FIX
 
+	# Ministre chinois (titres non genrés)
+	text = { 
+        trigger = {
+			tgp_is_any_minister = yes
+		}
+        localization_key = FR_du
+    }
+
+	# Possessif Saint ("de Saint Pierre")
+	text = {
+        trigger = {
+			has_trait = saint
+		}
+        localization_key = FR_de
+    }
+
 	text = { 
         trigger = {
 			is_female = no
@@ -313,23 +329,6 @@ FR_du_Char = {
 		}
         localization_key = FR_del
     }
-
-	# Ministre chinois (titres non genrés)
-	text = { 
-        trigger = {
-			tgp_is_any_minister = yes
-		}
-        localization_key = FR_du
-    }
-
-	# Possessif Saint ("de Saint Pierre")
-	text = {
-        trigger = {
-			has_trait = saint
-		}
-        localization_key = FR_de
-    }
-
 	################### END FIX
 
 	text = { # chef de foi
@@ -569,6 +568,14 @@ FR_au_Char = {
 	
 	################### START FIX
 
+	# Ministre chinois (titres non genrés)
+	text = { 
+        trigger = {
+			tgp_is_any_minister = yes
+		}
+        localization_key = FR_au
+    }
+
 	text = { 
         trigger = {
 			is_female = no
@@ -596,14 +603,6 @@ FR_au_Char = {
 			use_neutral_loc = yes
 		}
         localization_key = FR_a_l
-    }
-
-	# Ministre chinois (titres non genrés)
-	text = { 
-        trigger = {
-			tgp_is_any_minister = yes
-		}
-        localization_key = FR_au
     }
 
 	################### END FIX
