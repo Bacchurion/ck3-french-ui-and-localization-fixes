@@ -33,7 +33,6 @@ FR_le_Char = {
 			OR = {
 				use_gendered_loc = yes
 				is_queen_mother = yes
-	 			is_empress_mother = yes
 			}
 		}
         localization_key = FR_la
