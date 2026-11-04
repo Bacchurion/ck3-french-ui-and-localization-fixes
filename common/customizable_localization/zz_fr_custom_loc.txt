@@ -838,6 +838,14 @@ FR_au_Char = {
 
 ####################################################################################################
 
+FR_le_Char_L = {
+	type = character
+	log_loc_errors = no
+	text = {
+		localization_key = FR_le_Char
+		fallback = yes
+	}
+}
 FR_du_Char_L = { 
 	type = character
 	log_loc_errors = no
