@@ -134,3 +134,4 @@ admin_liege_modify_vassal_contract_interaction_desc: "Changer l’administration
 
 # Modif du formatage pour qu'il soit plus visible, notamment dans le GP de construction de cathédrale
 GREAT_PROJECT_OWNER_LABEL: "#high Propriétaire :#!"
+GREAT_PROJECT_CONSTRUCTION_TIME_UNTIL_COMPLETION: "#high Achevé dans [GreatProject.GetConstructionEndDate.GetTimeToDate|V]#!"
