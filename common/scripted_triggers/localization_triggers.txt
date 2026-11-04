@@ -17,6 +17,7 @@ use_gendered_loc = {
         has_character_flag = devaraja_flag
         title_is_hwangje = yes
         any_spouse = { title_is_hwangje = yes }
+        title_is_caliph = yes
 
         is_prince_or_princess = yes
         is_faction_leader = yes
@@ -31,6 +32,7 @@ use_neutral_loc = {
         title_is_archbishop = yes # Archevêque
         title_is_abbot = yes # Abbé
         title_is_chinese_steward = yes # Intendant chinois
+        title_is_emperor_default = yes
         any_spouse = { title_is_emperor_default = yes } # Empereurs ou Impératrices consort
         title_is_emir = yes # Émir
         any_spouse = { title_is_emir = yes }

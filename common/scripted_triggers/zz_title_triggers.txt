@@ -11,6 +11,7 @@
 
 title_is_archbishop = {
     pam_is_antipope_trigger = no
+    holds_landed_title = no
     primary_title = {
         has_clerical_region = yes
     }
@@ -105,6 +106,7 @@ title_is_emperor_default = {
         title_is_grand_patriarch = yes
         title_is_samrat = yes
         title_is_hwangje = yes
+        title_is_caliph = yes
         has_character_flag = devaraja_flag
         has_title = title:k_chrysanthemum_throne
         culture = { has_cultural_pillar = heritage_central_germanic } # Kaiser
@@ -121,6 +123,26 @@ title_is_emperor_default = {
             }
         }
         has_government = tribal_government # emperor_tribal_male (Grand roi), emperor_tribal_female (Grande reine)
+    }
+}
+
+title_is_caliph = {
+    highest_held_title_tier = tier_empire
+    OR = {
+        AND = {
+            highest_held_title_tier >= tier_kingdom
+            OR = {
+                has_government = theocracy_government
+                has_government = ecclesiastical_government
+                has_government = clan_government
+            }
+            religion = religion:islam_religion
+        }
+        OR = {
+            has_title = title:d_sunni
+            has_title = title:d_shiite
+            has_title = title:h_dar_al_islam
+        }
     }
 }
 
