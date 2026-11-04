@@ -129,3 +129,8 @@ spymaster_task.2003.desc: "Mon [councillor.GetCouncilTitle|l] est inhabituelleme
 
 admin_liege_modify_vassal_contract_interaction: "Modifier l’administration [GetPlayer.Custom('GetProvinceConceptWithArticleNoTooltip')]"
 admin_liege_modify_vassal_contract_interaction_desc: "Changer l’administration [puppet_or_actor.Custom('GetProvinceConceptWithArticleNoTooltip')] [recipient.Custom('FR_du_Char_U_Pi')][recipient.GetShortUINameNoTooltip]"
+
+################### Grands projets
+
+# Modif du formatage pour qu'il soit plus visible, notamment dans le GP de construction de cathédrale
+GREAT_PROJECT_OWNER_LABEL: "#high Propriétaire :#!"

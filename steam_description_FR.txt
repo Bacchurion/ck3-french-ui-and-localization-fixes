@@ -11,6 +11,7 @@ Lorsque c'est possible, les corrections sont appliquées aux textes plutôt qu'a
 [*] Contrats vassaliques : ajustement de la taille du texte des obligations pour qu'il ne dépasse plus du cadre
 [*] Couronnements : le texte d'intention "Impressionner les personnes présentes" ne dépasse plus du bouton
 [*] Débat : le texte d'intention d'augmentation de la puissance du mouvement a été raccourci et ne dépasse plus du bouton
+[*] Grands projets : le texte "Propriétaire" est maintenant mis en évidence pour une meilleure lisibilité, et ne dépasse plus de la fenêtre
 [*] Inspection : les intentions sont renommées pour ne plus dépasser du bouton
 [*] Intrigue : Taille des colonnes et des éléments de la liste des agents potentiels corrigée pour se caler sur l'UI des fantoches
 [*] Paramètre des messages : l'interface ne dépasse plus de la fenêtre
@@ -31,6 +32,8 @@ Les titres concernées sont :
 [*] Les dirigeants coréens (Jipjeong)
 [*] Les empereurs mongols (Khagan)
 [*] Les empereurs indiens (Samrat)
+[*] Les devarajah
+[*] Les califes/sultants et leurs versions culturelles
 [*] Les Chanoinesses sont appelées ainsi et non plus "Princesses"
 [*] Les versions féminines sont correctement accordées
 [*] Les blocs de maison japonais sont correctement genrés au masculin
