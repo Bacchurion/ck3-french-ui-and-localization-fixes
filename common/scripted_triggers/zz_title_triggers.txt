@@ -149,6 +149,7 @@ title_is_caliph = {
 title_is_emir = {
     is_female = no
     highest_held_title_tier = tier_duchy
+    
     holds_landed_title = yes
     NOT = { joined_faction.faction_leader = this }
 
@@ -197,6 +198,7 @@ title_is_emir = {
     }
 }
 
+# Par défaut Sultan, sauf exceptions culturelles pour les Amir al-Umara (berbères) et Amir e-Amiram (iranien)
 title_is_amir_al_umara = {
     highest_held_title_tier = tier_kingdom
     religion = religion:islam_religion
@@ -207,6 +209,18 @@ title_is_amir_al_umara = {
         has_government = feudal_government
     }
     culture = { has_cultural_pillar = heritage_berber }
+    is_independent_ruler = yes
+}
+
+title_is_amir_e_amiram = {
+    highest_held_title_tier = tier_kingdom
+    religion = religion:islam_religion
+    OR = {
+        has_government = clan_government
+        has_government = administrative_government
+        has_government = feudal_government
+    }
+    culture = { has_cultural_pillar = heritage_iranian }
     is_independent_ruler = yes
 }
 

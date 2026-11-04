@@ -38,5 +38,7 @@ use_neutral_loc = {
         any_spouse = { title_is_emir = yes }
         title_is_amir_al_umara = yes
         any_spouse = { title_is_amir_al_umara = yes }
+        title_is_amir_e_amiram = yes
+        any_spouse = { title_is_amir_e_amiram = yes }
     }
 }
