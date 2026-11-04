@@ -1,4 +1,4 @@
-# Le / La
+﻿# Le / La
 # Du / De la
 # Au / À la
 use_gendered_loc = {

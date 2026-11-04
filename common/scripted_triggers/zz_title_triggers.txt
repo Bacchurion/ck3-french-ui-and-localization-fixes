@@ -12,6 +12,7 @@
 title_is_archbishop = {
     pam_is_antipope_trigger = no
     holds_landed_title = no
+    exists = primary_title
     primary_title = {
         has_clerical_region = yes
     }
