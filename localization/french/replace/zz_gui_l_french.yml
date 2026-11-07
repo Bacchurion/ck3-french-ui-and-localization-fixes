@@ -47,6 +47,10 @@
  # Fix pipe sans effet + format vert illisible dans l'interface
  special_contract: "[Concept( 'vassal_contract', 'Contrat spécial' )]"
 
+ # Ajout "pas" manquant
+ SUBJECT_CONTRACT_LIEGE_IS_NOT_RIGHTFUL_LIEGE_NOTICE: "[SubjectContract.GetLiege.GetNameOrMe|U] [SelectLocalization( SubjectContract.GetLiege.IsPlayer, 'n’êtes pas', 'n’est pas' )] [SelectLocalization( SubjectContract.GetSubject.IsPlayer, 'votre', 'le' )] [rightful_liege|El][SelectLocalization( SubjectContract.GetSubject.IsPlayer, '', ' de ce sujet' )]"
+
+
  ################### Effets
 
  # Uppercase
