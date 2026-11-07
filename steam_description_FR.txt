@@ -65,6 +65,7 @@ Sans cela, on observe des "le fête", "au Examen de la capitale", etc
 [*] Collège des cardinaux : les noms des principes ont bien tous une majuscule
 [*] Collège des cardinaux : fix du nom du rite dominant affiché à la place du rite du personnage
 [*] Complots : le nom des complots ne s'affichent plus avec le mauvais déterminant (ex: "échec du assassinat")
+[*] Contrats vassaliques : ajout d'un "pas" manquans dans le warning si vous n'êtes pas le seigneur lige
 [*] Correction de "au Papauté" => "au Pape" ou "à la Papauté" selon les cas (interface, décisions)
 [*] Interaction "Modification de l’administration" : déterminant dynamique ("la province", "le circuit")
 [*] Intrigue : fix du tooltip du Retrait de la vie publique qui affichait un "')]"
@@ -91,6 +92,7 @@ Sans cela, on observe des "le fête", "au Examen de la capitale", etc
 [*] Innovation de la route de la soie : correction du texte de notification pour l'assimilation des idées venues d’Orient
 [*] Ordre monastique fondé : inversion du nom et de l'adjectif dans le titre affiché
 [*] Passage de "Vous a <action réalisée>" à "Vous avez <action réalisée>" à plusieurs endroits
+[*] Succession par nomination "XXX en tête" : correction du détemrinant pour le nom du titre visé
 [/list]
 
 [h2]Divers[/h2]

@@ -5,6 +5,9 @@
 # Inversion nom et adjectif
 monastic_holy_order_founded_title: "Ordre monastique [LEFT_CHARACTER.GetFaith.GetAdherentNameNoTooltip] fondé"
 
+# du <Titre> => de <Titre>
+msg_governor_candidate_promoted_leading: "[GetPlayer.Custom2('RelationToMeShort', LEFT_CHARACTER.Self)|U] [Select_CString(LEFT_CHARACTER.IsLocalPlayer,'êtes','est')] en tête dans la succession de [TITLE.GetNameNoTierNoTooltip|V]"
+
 ################### Toast
 
 # Fix "vous  renvoyé XXX"
