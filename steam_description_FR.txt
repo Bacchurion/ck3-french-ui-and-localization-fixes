@@ -70,6 +70,7 @@ Sans cela, on observe des "le fête", "au Examen de la capitale", etc
 [*] Intrigue : fix du tooltip du Retrait de la vie publique qui affichait un "')]"
 [*] Inventaire : Le nombre de revendications n'empiète plus sur le libellé du bouton
 [*] Personnage : Le nom du rite a bien une majuscule
+[*] Principes : Reformulation d'un effet du principe Adaptabilité pour plus de clarté
 [*] Religions : Le texte d'attitude envers les rites est correctement mis en forme et n'est plus tronqué
 [/list]
 
