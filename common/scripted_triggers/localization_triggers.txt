@@ -6,6 +6,9 @@ use_gendered_loc = {
         any_held_title = { is_head_of_faith = yes }
         title_is_grand_patriarch = yes
         any_spouse = { title_is_grand_patriarch = yes }
+        title_is_cardinal = yes
+        title_is_confessor = yes
+        title_is_prince_or_duke_archbishop = yes
         title_is_kampaku = yes
         title_is_shogun = yes
         title_is_gugwang = yes

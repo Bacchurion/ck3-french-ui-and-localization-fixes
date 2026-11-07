@@ -4,44 +4,139 @@
     any_held_title = { is_head_of_faith = no }
 }
 
-# title_is_cardinal = {
-#     portrait_is_cardinal_trigger = yes
-#     has_government = ecclesiastical_government
-# }
+title_is_cardinal = {
+    has_government = ecclesiastical_government
+    exists = clerical_elector_title
+    primary_title ?= clerical_elector_title
+    pam_is_antipope_trigger = no
+    NOT = { religious_head_or_challenger ?= this }
+    NOT = { has_trait = saint }
+}
+
+title_is_confessor = {
+    has_council_position = councillor_court_chaplain
+    is_ruler = no
+    court_owner ?= {
+        religion = religion:christianity_religion
+        government_has_flag = government_is_theocracy
+    }
+}
 
 title_is_archbishop = {
-    pam_is_antipope_trigger = no
-    holds_landed_title = no
-    exists = primary_title
-    primary_title = {
-        has_clerical_region = yes
-    }
+    has_government = ecclesiastical_government
+
     OR = {
         faith = faith:catholic
         rite = {
             rite_has_doctrine = special_doctrine_is_western_christian_faith
         }
     }
-    pam_is_archbishop_or_higher_trigger = yes
-    has_government = ecclesiastical_government
+
+    pam_is_antipope_trigger = no
+    NOT = { religious_head_or_challenger ?= this }
     NOT = { has_trait = saint }
+
+    OR = {
+        # Titulaire personnel d’une région cléricale.
+        any_held_title = {
+            tier = tier_duchy
+            has_clerical_region = yes
+        }
+
+        # Chapelain de la cour d’un archevêché.
+        AND = {
+            has_council_position = councillor_court_chaplain
+            liege.primary_title ?= {
+                tier = tier_duchy
+                has_clerical_region = yes
+            }
+        }
+    }
+
+    # Aucun comté/duché territorial permettant un préfixe.
+    NOT = {
+        any_held_title = {
+            tier = tier_county
+            is_landless_type_title = no
+        }
+    }
+    NOT = {
+        any_held_title = {
+            tier = tier_duchy
+            is_landless_type_title = no
+        }
+    }
 }
 
 # Évèque / Évèchesse
 title_is_bishop = {
+    has_government = ecclesiastical_government
+    title_is_confessor = no
+
     OR = {
-        # Décommenter si on veut prendre en compte les évèques non dirigeant de la cour
-        #AND = {
-        #    is_landed = no
-        #    has_council_position = councillor_court_chaplain
-        #}
-        AND = {
-            is_landed = yes
-            highest_held_title_tier = tier_county
-            has_government = ecclesiastical_government
+        has_council_position = councillor_court_chaplain
+        highest_held_title_tier = tier_barony
+    }
+
+    OR = {
+        faith = faith:catholic
+        rite = {
+            rite_has_doctrine = special_doctrine_is_western_christian_faith
         }
     }
-    faith = faith:catholic # Pour ne pas prendre en compte "Confesseur" orthodoxe
+
+    pam_is_antipope_trigger = no
+    NOT = { religious_head_or_challenger ?= this }
+    NOT = { exists = clerical_elector_title }
+    NOT = { has_trait = saint }
+
+    # Sinon GetActualBishopTitle produit archevêque ou davantage.
+    NOT = {
+        any_held_title = {
+            tier = tier_duchy
+            has_clerical_region = yes
+        }
+    }
+    NOT = {
+        liege.primary_title ?= {
+            tier = tier_duchy
+            has_clerical_region = yes
+        }
+    }
+}
+
+title_is_prince_or_duke_archbishop = {
+    has_government = ecclesiastical_government
+
+    OR = {
+        faith = faith:catholic
+        rite = {
+            rite_has_doctrine = special_doctrine_is_western_christian_faith
+        }
+    }
+
+    pam_is_antipope_trigger = no
+    NOT = { religious_head_or_challenger ?= this }
+    NOT = { exists = clerical_elector_title }
+    NOT = { has_trait = saint }
+
+    # Charge d’archevêque.
+    any_held_title = {
+        tier = tier_duchy
+        has_clerical_region = yes
+    }
+
+    # Pouvoir territorial donnant le préfixe.
+    OR = {
+        any_held_title = {
+            tier = tier_county
+            is_landless_type_title = no
+        }
+        any_held_title = {
+            tier = tier_duchy
+            is_landless_type_title = no
+        }
+    }
 }
 
 # Exception aux règles normales, suit clerical_region_duchy_patriarchate
