@@ -5,9 +5,7 @@
 }
 
 title_is_cardinal = {
-    has_government = ecclesiastical_government
-    exists = clerical_elector_title
-    primary_title ?= clerical_elector_title
+    has_character_flag = cardinal_flag
     pam_is_antipope_trigger = no
     NOT = { religious_head_or_challenger ?= this }
     NOT = { has_trait = saint }

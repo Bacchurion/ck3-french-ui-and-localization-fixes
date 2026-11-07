@@ -2,6 +2,15 @@
 # Du / De la
 # Au / À la
 use_gendered_loc = {
+
+    # Gestion de la priorité pour les perso qui satisfont plusieurs conditions mais dont la résultante
+    # est la loc neutre. use_gendered_loc étant check en premier, on peut match ici pour une condition A alors que
+    # qu'on match également une condition B dans le trigger neutre et que c'est la version neutre qui prime
+    OR = {
+        title_is_archbishop = no
+        title_is_cardinal = yes
+    }
+
     OR = {
         any_held_title = { is_head_of_faith = yes }
         title_is_grand_patriarch = yes
