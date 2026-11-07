@@ -34,10 +34,12 @@ Les titres concernées sont :
 [*] Les empereurs indiens (Samrat)
 [*] Les devarajah
 [*] Les califes/sultants et leurs versions culturelles
+[*] Les fantoches
+[*] Les titres du Moyen-Orient
+[*] Les titres d'Asie Mineure
 [*] Les Chanoinesses sont appelées ainsi et non plus "Princesses"
 [*] Les versions féminines sont correctement accordées
 [*] Les blocs de maison japonais sont correctement genrés au masculin
-[*] Les fantoches
 [/list]
 
 [h2]Articles des activités[/h2]
