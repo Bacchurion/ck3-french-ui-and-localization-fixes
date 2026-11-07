@@ -310,6 +310,15 @@ title_is_emir = {
     }
 }
 
+# Si un perso détient ces titres, il a une flavor prioritaire sur la plupart des autres titres
+title_has_special_prince_flavor = {
+    OR = {
+        has_title = title:k_switzerland
+        has_title = title:k_armenian_principality
+        has_title = title:k_saxony
+    }
+}
+
 # Par défaut Sultan, sauf exceptions culturelles pour les Amir al-Umara (berbères) et Amir e-Amiram (iranien)
 title_is_amir_al_umara = {
     highest_held_title_tier = tier_kingdom
@@ -334,6 +343,7 @@ title_is_amir_e_amiram = {
     }
     culture = { has_cultural_pillar = heritage_iranian }
     is_independent_ruler = yes
+    title_has_special_prince_flavor = no
 }
 
 title_is_tenno = {
