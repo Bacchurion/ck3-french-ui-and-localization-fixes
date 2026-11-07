@@ -264,6 +264,8 @@ title_is_emir = {
     
     holds_landed_title = yes
     NOT = { joined_faction.faction_leader = this }
+    title_has_khorezmshah_flavor = no
+    title_has_independent_iranian_duke_flavor = no
 
     OR = {
         # Duc musulman clanique ou administratif, toute culture.
@@ -317,6 +319,26 @@ title_has_special_prince_flavor = {
         has_title = title:k_armenian_principality
         has_title = title:k_saxony
     }
+}
+
+title_has_khorezmshah_flavor = {
+    has_title = title:d_khorezm
+    culture = { has_cultural_pillar = heritage_iranian }
+    OR = {
+        has_government = feudal_government
+        has_government = clan_government
+        has_government = administrative_government
+    }
+}
+
+title_has_independent_iranian_duke_flavor = {
+    highest_held_title_tier = tier_duchy
+    culture = { has_cultural_pillar = heritage_iranian }
+    OR = {
+        has_government = feudal_government
+        has_government = clan_government
+    }
+    is_independent_ruler = yes
 }
 
 # Par défaut Sultan, sauf exceptions culturelles pour les Amir al-Umara (berbères) et Amir e-Amiram (iranien)
