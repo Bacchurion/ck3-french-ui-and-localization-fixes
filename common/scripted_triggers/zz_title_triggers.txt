@@ -6,6 +6,8 @@
 
 title_is_cardinal = {
     has_character_flag = cardinal_flag
+    exists = clerical_elector_title
+    primary_title ?= clerical_elector_title
     pam_is_antipope_trigger = no
     NOT = { religious_head_or_challenger ?= this }
     NOT = { has_trait = saint }
@@ -22,6 +24,7 @@ title_is_confessor = {
 
 title_is_archbishop = {
     has_government = ecclesiastical_government
+    title_is_confessor = no
 
     OR = {
         faith = faith:catholic
@@ -29,6 +32,8 @@ title_is_archbishop = {
             rite_has_doctrine = special_doctrine_is_western_christian_faith
         }
     }
+
+    title_is_cardinal = no
 
     pam_is_antipope_trigger = no
     NOT = { religious_head_or_challenger ?= this }
@@ -51,19 +56,8 @@ title_is_archbishop = {
         }
     }
 
-    # Aucun comté/duché territorial permettant un préfixe.
-    NOT = {
-        any_held_title = {
-            tier = tier_county
-            is_landless_type_title = no
-        }
-    }
-    NOT = {
-        any_held_title = {
-            tier = tier_duchy
-            is_landless_type_title = no
-        }
-    }
+    # Aucun pouvoir territorial donnant un préfixe.
+    title_is_prince_or_duke_archbishop = no
 }
 
 # Évèque / Évèchesse
