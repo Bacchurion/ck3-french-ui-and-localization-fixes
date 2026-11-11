@@ -132,6 +132,9 @@ spymaster_task.2003.desc: "Mon [councillor.GetCouncilTitle|l] est inhabituelleme
 # Reformulation d'un effet du principe Adaptabilité
 doctrine_parameter_allow_adopt_any_holy_site: "Permet l’adoption de [holy_sites|El] de n’importe quelle [faith|El] si [core_tenet|El] d’un [mainline_rite|El]"
 
+# Fix formulation et espace manquant
+THEY_GET_ELDER: "[TARGET_CHARACTER.Custom('FR_le_Char_U_Pi')|U][TARGET_CHARACTER.GetShortUIName|U] [TARGET_CHARACTER.LocalPlayerString( 'devenez l’', 'devient l’')][Concept('elder',Select_CString(TARGET_CHARACTER.IsFemale,'aînée','aîné'))|E][CHARACTER.LocalPlayerString( '', 'Loc_FR_du_GetShortUIName' )]"
+
 ################### Interactions
 
 admin_liege_modify_vassal_contract_interaction: "Modifier l’administration [GetPlayer.Custom('GetProvinceConceptWithArticleNoTooltip')]"
