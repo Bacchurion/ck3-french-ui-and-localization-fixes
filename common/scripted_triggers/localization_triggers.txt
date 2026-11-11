@@ -29,7 +29,12 @@ use_gendered_loc = {
         has_trait = saint
 
         is_prince_or_princess = yes
-        is_faction_leader = yes
+
+        # Pour éviter que les titres neutres ne basculent en genré lors des rébellions
+        AND = {
+            is_faction_leader = yes
+            use_neutral_loc = no
+        }
     }
 }
 
@@ -52,5 +57,10 @@ use_neutral_loc = {
         any_spouse = { title_is_amir_e_amiram = yes }
         pam_is_antipope_trigger = yes
         is_empress_mother = yes
+    }
+}
+
+use_prioritary_neutral_loc = {
+    OR = {
     }
 }
