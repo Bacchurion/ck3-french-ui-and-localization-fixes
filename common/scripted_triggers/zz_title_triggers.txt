@@ -217,6 +217,7 @@ title_is_emperor_default = {
         title_is_samrat = yes
         title_is_hwangje = yes
         title_is_caliph = yes
+        tgp_is_any_minister = yes
         has_character_flag = devaraja_flag
         has_title = title:k_chrysanthemum_throne
         culture = { has_cultural_pillar = heritage_central_germanic } # Kaiser
