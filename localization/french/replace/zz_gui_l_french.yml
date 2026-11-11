@@ -150,3 +150,7 @@ GREAT_PROJECT_CONSTRUCTION_TIME_UNTIL_COMPLETION: "#high Achevé dans [GreatProj
 
 # fix "de la hégémonie de XXX"
 catalyst_new_dynasty_inherits_desc: "Une autre [house|E] hérite de [GetTitleByKey('h_china').GetDefinitiveName|l]"
+
+################### Atouts
+
+first_of_the_people_perk_effect: "Efficacité de [accept_culture|El] : #P +30%#!\nAugmentation de l’[county_opinion|El] du [county|El] d’un [realm|El] que vous [Concept('traveling','traversez')|E]"
