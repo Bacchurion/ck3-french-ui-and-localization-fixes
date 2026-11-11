@@ -148,6 +148,10 @@ title_is_patriarch_special = {
 # Abbé / Abbesse
 title_is_abbot = {
     government_has_flag = government_is_monastic_holy_order
+    OR = {
+        has_religion = religion:christianity_religion
+        has_religion = religion:buddhism_religion
+    }
     NOT = { has_trait = saint }
 }
 
