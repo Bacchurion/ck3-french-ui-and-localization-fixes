@@ -220,8 +220,22 @@ title_is_emperor_default = {
         tgp_is_any_minister = yes
         has_character_flag = devaraja_flag
         has_title = title:k_chrysanthemum_throne
-        culture = { has_cultural_pillar = heritage_central_germanic } # Kaiser
-        culture = { has_name_list = name_list_greek } # Basileus
+        top_liege = { # emperor_feudal_male_german (Kaiser) : règle top_liege par défaut => culture ET gouvernement du suzerain suprême
+            culture = { has_cultural_pillar = heritage_central_germanic }
+            OR = {
+                has_government = feudal_government
+                has_government = tribal_government
+                has_government = administrative_government
+            }
+        }
+        AND = { # emperor_feudal_male_greek (Basileus) : top_liege = no, only_independent = yes
+            is_independent_ruler = yes
+            OR = {
+                has_government = feudal_government
+                has_government = administrative_government
+            }
+            culture = { has_name_list = name_list_greek }
+        }
         AND = { # emperor_feudal_male_altaic_group (Khagan)
             OR = {
                 has_government = feudal_government
