@@ -83,6 +83,12 @@
  game_concept_external_ruler_puppets: "Dirigeants laïcs fantoches"
  external_ruler_puppet: "Dirigeant laïc fantoche"
 
+ # Raccourcicement du texte
+ SCHEME_WINDOW_PROGRESS_FROZEN: "#weak Complot suspendu car [Scheme.GetFrozenReason|l]#!"
+ FREEZE_REASON_TARGET_TRAVELING: "[SCHEME.GetTargetCharacter.GetShortUINameNoTooltip] voyage."
+
+
+
  ################### Inventaire
 
  # Retrait du "Mes" pour raccourcir le texte
