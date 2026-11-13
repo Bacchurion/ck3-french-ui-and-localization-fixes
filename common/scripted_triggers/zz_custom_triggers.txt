@@ -2,7 +2,131 @@
     primary_title.tier < tier_kingdom
     any_parent = {
         even_if_dead = yes
-        primary_title.tier >= tier_kingdom
+        parent_gives_ruler_child_flavor = yes
+    }
+}
+
+# Scope : le parent souverain ; PREV = l'enfant.
+# Reproduit les flavorizations special = ruler_child de vanilla (common/flavorization).
+# MAJ PATCH/DLC : basé sur vanilla 1.20.1.2. À chaque mise à jour, relister les entrées
+# « special = ruler_child » de common/flavorization/*.txt et répercuter ajouts/changements
+# (gouvernements, héritages, name_lists, only_independent/only_vassals, top_liege).
+parent_gives_ruler_child_flavor = {
+    OR = {
+        # Sans rang : héritages iranien / indien / Asie du Sud-Est / tangoute (top_liege = no)
+        AND = {
+            primary_title.tier >= tier_kingdom
+            OR = {
+                culture = { has_cultural_pillar = heritage_iranian }
+                culture = { has_cultural_pillar = heritage_dravidian }
+                culture = { has_cultural_pillar = heritage_indo_aryan }
+                culture = { has_cultural_pillar = heritage_burman }
+                culture = { has_cultural_pillar = heritage_tai }
+                culture = { has_cultural_pillar = heritage_mon_khmer }
+                AND = {
+                    culture = { has_cultural_pillar = heritage_austronesian }
+                    OR = {
+                        religion = religion:hinduism_religion
+                        religion = religion:buddhism_religion
+                        religion = religion:jainism_religion
+                    }
+                }
+                AND = {
+                    primary_title.tier = tier_kingdom
+                    culture = { has_name_list = name_list_tangut }
+                }
+            }
+        }
+        # Shinnō (fils seulement)
+        AND = {
+            has_title = title:k_chrysanthemum_throne
+            prev = { is_female = no }
+        }
+        # Duché : Gōngzi (culture Han du suzerain suprême)
+        AND = {
+            primary_title.tier = tier_duchy
+            top_liege = { culture = { has_name_list = name_list_han } }
+            OR = {
+                has_government = feudal_government
+                has_government = clan_government
+                has_government = meritocratic_government
+                has_government = celestial_government
+                has_government = republic_government
+                has_government = steppe_admin_government
+            }
+        }
+        # Royaume
+        AND = {
+            primary_title.tier = tier_kingdom
+            OR = {
+                has_government = feudal_government
+                has_government = clan_government
+                AND = {
+                    is_independent_ruler = yes
+                    OR = {
+                        has_government = administrative_government
+                        has_government = meritocratic_government
+                        has_government = steppe_admin_government
+                    }
+                }
+                AND = {
+                    culture = { has_name_list = name_list_han }
+                    OR = {
+                        has_government = celestial_government
+                        has_government = meritocratic_government
+                        has_government = steppe_admin_government
+                        AND = {
+                            is_independent_ruler = no
+                            has_government = republic_government
+                        }
+                    }
+                }
+            }
+        }
+        # Empire
+        AND = {
+            primary_title.tier = tier_empire
+            OR = {
+                has_government = feudal_government
+                has_government = clan_government
+                has_government = meritocratic_government
+                AND = {
+                    is_independent_ruler = yes
+                    OR = {
+                        has_government = administrative_government
+                        has_government = steppe_admin_government
+                    }
+                }
+                AND = {
+                    culture = { has_name_list = name_list_han }
+                    OR = {
+                        has_government = celestial_government
+                        has_government = steppe_admin_government
+                        AND = {
+                            is_independent_ruler = no
+                            has_government = republic_government
+                        }
+                    }
+                }
+            }
+        }
+        # Hégémonie
+        AND = {
+            primary_title.tier = tier_hegemony
+            OR = {
+                has_government = administrative_government
+                has_government = meritocratic_government
+                has_government = steppe_admin_government
+                has_government = celestial_government
+                AND = {
+                    culture = { has_name_list = name_list_han }
+                    OR = {
+                        has_government = feudal_government
+                        has_government = clan_government
+                    }
+                }
+            }
+        }
     }
 }
 

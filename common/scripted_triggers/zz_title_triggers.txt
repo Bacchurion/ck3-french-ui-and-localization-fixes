@@ -210,6 +210,9 @@ title_is_khagan = {
 }
 
 # "Empereur" par défaut, sans falvor (Basileus, Kaiser, etc)
+# MAJ PATCH/DLC : basé sur vanilla 1.20.1.2. À chaque mise à jour, relister les entrées
+# « emperor_* » (special = holder, tier = empire) de common/flavorization/*.txt et exclure ici
+# celles dont la loc FR ne commence pas par une voyelle (attention à la règle top_liege par défaut).
 title_is_emperor_default = {
     highest_held_title_tier = tier_empire
     NOR = {
