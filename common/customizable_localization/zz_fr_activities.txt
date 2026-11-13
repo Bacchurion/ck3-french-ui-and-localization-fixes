@@ -282,6 +282,13 @@ FR_ActivityPhase_template = {
 		}
 		localization_key = FR_activity_elision # Examen palatial
 	}
+	text = {
+		trigger = {
+			has_activity_type = activity_roaming
+			has_current_phase = phase_roaming
+		}
+		localization_key = FR_activity_elision # Itinérance
+	}
 	# END FIX
 	
 	text = {
