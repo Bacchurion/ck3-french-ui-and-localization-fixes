@@ -228,6 +228,41 @@ title_is_emperor_default = {
                 has_government = administrative_government
             }
         }
+        top_liege = { # Flavors top_liege par défaut, gouvernements feudal/clan/tribal/admin/republic (Sultan, Akanhene, Alafin, Boqor, Kaya Magha, Soma…)
+            OR = {
+                has_government = feudal_government
+                has_government = clan_government
+                has_government = tribal_government
+                has_government = administrative_government
+                has_government = republic_government
+            }
+            OR = {
+                culture = { has_name_list = name_list_beja }              # Sultan
+                culture = { has_cultural_pillar = heritage_central_african } # Sultan
+                culture = { has_cultural_pillar = heritage_sahelian }
+                culture = { has_cultural_pillar = heritage_senegambian }
+                culture = { has_cultural_pillar = heritage_akan }
+                culture = { has_cultural_pillar = heritage_yoruba }
+                culture = { has_name_list = name_list_somali }
+                culture = { has_name_list = name_list_afar }
+            }
+        }
+        top_liege = { # Flavors top_liege par défaut, sans republic
+            OR = {
+                AND = {
+                    OR = { has_government = feudal_government has_government = clan_government has_government = tribal_government has_government = administrative_government }
+                    OR = { culture = { has_name_list = name_list_hausa } culture = { has_cultural_pillar = heritage_berber } }
+                }
+                AND = {
+                    OR = { has_government = feudal_government has_government = clan_government has_government = administrative_government has_government = republic_government }
+                    culture = { has_name_list = name_list_ethiopian }
+                }
+                AND = {
+                    OR = { has_government = feudal_government has_government = clan_government has_government = administrative_government }
+                    OR = { culture = { has_name_list = name_list_turkish } culture = { has_cultural_pillar = heritage_iranian } }
+                }
+            }
+        }
         AND = { # emperor_feudal_male_greek (Basileus) : top_liege = no, only_independent = yes
             is_independent_ruler = yes
             OR = {
