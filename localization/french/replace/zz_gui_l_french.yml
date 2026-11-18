@@ -152,3 +152,8 @@ GREAT_PROJECT_CONSTRUCTION_TIME_UNTIL_COMPLETION: "#high Achevé dans [GreatProj
 catalyst_new_dynasty_inherits_desc: "Une autre [house|E] hérite de [GetTitleByKey('h_china').GetDefinitiveName|l]"
 
 ################### Atouts
+
+################### Commerce
+
+PROFIT_TRADE_ROUTE_NAME: "La [AddLocalizationIf( GreaterThan_int32( TradeRoute.GetNameNumber, '(int32)1' ), 'TRADE_ROUTE_NAME_ORDINAL' )]route [TradeGoodType.Custom('FR_De_TradeGood')] de [TradeRoute.GetOwner.GetPrimaryTitle.GetAdjectiveNoTooltip]"
+COMMISSION_TRADE_ROUTE_NAME: "La [AddLocalizationIf( GreaterThan_int32( TradeRoute.GetNameNumber, '(int32)1' ), 'TRADE_ROUTE_NAME_ORDINAL' )]route [TradeGoodType.Custom('FR_De_TradeGood')] [TradeRoute.GetCommissioner.GetPrimaryTitle.GetAdjectiveNoTooltip]"

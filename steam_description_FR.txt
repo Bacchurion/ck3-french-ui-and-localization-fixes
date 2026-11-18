@@ -65,6 +65,7 @@ Sans cela, on observe des "le fête", "au Examen de la capitale", etc
 [*] Artéfacts : retrait des termes "Pin" / "Badge" résiduels de la localisation anglaise en fin de nom pour les insignes de pèlerin
 [*] Collège des cardinaux : les noms des principes ont bien tous une majuscule
 [*] Collège des cardinaux : fix du nom du rite dominant affiché à la place du rite du personnage
+[*] Commerce : correction du nom des routes commerciales (ex: "La route Vin Compagnie XXX" => "La route du vin de Compagnie XXX")
 [*] Complots : le nom des complots ne s'affichent plus avec le mauvais déterminant (ex: "échec du assassinat")
 [*] Contrats vassaliques : ajout d'un "pas" manquans dans le warning si vous n'êtes pas le seigneur lige
 [*] Correction de "au Papauté" => "au Pape" ou "à la Papauté" selon les cas (interface, décisions)

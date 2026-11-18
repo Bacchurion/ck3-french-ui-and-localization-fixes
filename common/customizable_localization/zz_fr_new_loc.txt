@@ -24,3 +24,64 @@ GetProvinceConceptWithArticleNoTooltip = {
         localization_key = PROVINCE_CONCEPT_WITH_ARTICLE_NO_TOOLTIP
     }
 }
+
+# Possessif pour les biens marchands (de la Bière, du Vin, etc.)
+# Si la clé <bien>_name_FR_De n'existe pas (bien ajouté par un mod, par ex.), on retombe sur le nom de base.
+# MAJ PATCH/DLC : liste calquée sur GetTradeGood (vanilla gdp_custom_loc.txt), à update si des biens sont ajoutés.
+FR_De_TradeGood = {
+    type = all
+    log_loc_errors = no
+    if_invalid_loc = fallback_to_next_entry
+
+    text = { trigger = { this = trade_good_type:trade_good_alum } localization_key = trade_good_alum_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_amber } localization_key = trade_good_amber_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_beer } localization_key = trade_good_beer_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_books_paper } localization_key = trade_good_books_paper_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_cattle } localization_key = trade_good_cattle_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_ceramics } localization_key = trade_good_ceramics_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_cheese } localization_key = trade_good_cheese_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_copper } localization_key = trade_good_copper_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_cotton } localization_key = trade_good_cotton_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_dyes } localization_key = trade_good_dyes_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_fish } localization_key = trade_good_fish_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_flax } localization_key = trade_good_flax_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_fruit } localization_key = trade_good_fruit_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_furs } localization_key = trade_good_furs_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_gems } localization_key = trade_good_gems_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_glass } localization_key = trade_good_glass_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_gold } localization_key = trade_good_gold_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_grain } localization_key = trade_good_grain_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_hemp } localization_key = trade_good_hemp_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_honey } localization_key = trade_good_honey_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_horses } localization_key = trade_good_horses_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_incense } localization_key = trade_good_incense_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_iron } localization_key = trade_good_iron_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_ivory } localization_key = trade_good_ivory_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_jade } localization_key = trade_good_jade_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_jewelry } localization_key = trade_good_jewelry_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_lacquerware } localization_key = trade_good_lacquerware_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_leather } localization_key = trade_good_leather_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_meat } localization_key = trade_good_meat_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_medicaments } localization_key = trade_good_medicaments_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_millet } localization_key = trade_good_millet_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_oil } localization_key = trade_good_oil_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_rice } localization_key = trade_good_rice_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_salt } localization_key = trade_good_salt_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_silk } localization_key = trade_good_silk_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_silver } localization_key = trade_good_silver_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_spices } localization_key = trade_good_spices_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_stone } localization_key = trade_good_stone_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_sugar } localization_key = trade_good_sugar_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_tea } localization_key = trade_good_tea_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_textiles } localization_key = trade_good_textiles_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_wine } localization_key = trade_good_wine_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_wood } localization_key = trade_good_wood_name_FR_De }
+    text = { trigger = { this = trade_good_type:trade_good_wool } localization_key = trade_good_wool_name_FR_De }
+
+    # Fallback : nom de base
+    text = {
+        trigger = { always = yes }
+        fallback = yes
+        localization_key = FR_De_TradeGood_fallback
+    }
+}
