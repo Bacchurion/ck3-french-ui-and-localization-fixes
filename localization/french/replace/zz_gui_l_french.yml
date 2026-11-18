@@ -44,9 +44,6 @@
 
 ################### Contrat vassalique
 
- # Fix pipe sans effet + format vert illisible dans l'interface
- special_contract: "[Concept( 'vassal_contract', 'Contrat spécial' )]"
-
  # Ajout "pas" manquant
  SUBJECT_CONTRACT_LIEGE_IS_NOT_RIGHTFUL_LIEGE_NOTICE: "[SubjectContract.GetLiege.GetNameOrMe|U] [SelectLocalization( SubjectContract.GetLiege.IsPlayer, 'n’êtes pas', 'n’est pas' )] [SelectLocalization( SubjectContract.GetSubject.IsPlayer, 'votre', 'le' )] [rightful_liege|El][SelectLocalization( SubjectContract.GetSubject.IsPlayer, '', ' de ce sujet' )]"
 
@@ -113,9 +110,6 @@ THEY_LEASE_OUT_TO_HOLY_ORDER_EFFECT: "[TITLE.GetHolder.Custom('FR_le_Char_U_Pi')
 
 # Fix "du [SCHEME.GetName]" se traduisant par "du assassinat" ou autre
 FORBID_FROM_SCHEME_EFFECT_THIRD: "[CHARACTER.Custom('FR_le_Char_U_Pi')|U][CHARACTER.GetShortUIName] ne fera plus partie du complot [SCHEME.GetName|Vl] contre [SCHEME.GetTarget.GetName]"
-SCHEME_EXPOSE_OWNER_EFFECT: "[CHARACTER.LocalPlayerString( 'Vous révèle', 'Révèle' )][CHARACTER.LocalPlayerString( '', 'Loc_FR_le_GetShortUIName' )] comme l’initiat[CHARACTER.Custom('FR_EurRice')] du complot [SCHEME.GetName|Vl]"
-THEY_ARE_EXPOSED_AS_AGENT_IN_SCHEME_NAME: "[TARGET_CHARACTER.Custom('FR_le_Char_U_Pi')|U][TARGET_CHARACTER.GetShortUIName] [TARGET_CHARACTER.LocalPlayerString( 'êtes', 'est' )] découvert[TARGET_CHARACTER.Custom('FR_E')] comme [agent|El][TARGET_CHARACTER.Custom('FR_E')|E] du complot [SCHEME.GetName|Vl] [SCHEME.GetTargetCharacter.LocalPlayerString( 'vous ', '' )]ciblant[SCHEME.GetTargetCharacter.LocalPlayerString( '', 'Loc_FR_le_GetShortUIName' )]"
-THEY_HAVE_BEEN_EXPOSED_AS_AGENT_IN_SCHEME_NAME: "[TARGET_CHARACTER.Custom('FR_le_Char_U_Pi')|U][TARGET_CHARACTER.GetShortUIName] [TARGET_CHARACTER.LocalPlayerString( 'avez', 'a' )] été découvert[TARGET_CHARACTER.Custom('FR_E')] comme [agent|El][TARGET_CHARACTER.Custom('FR_E')|E] du complot [SCHEME.GetName|Vl] [SCHEME.GetTargetCharacter.LocalPlayerString( 'vous ', '' )]ciblant[SCHEME.GetTargetCharacter.LocalPlayerString( '', 'Loc_FR_le_GetShortUIName' )]"
 scheme_critical_moments.1253.t: "Échec de la [scheme.GetNameNoTooltip|l]"
 scheme_critical_moments.1243.t: "Échec de la [scheme.GetNameNoTooltip|l]"
 hostile_scheme_discovery.3001.intro: "[agent.Custom('FR_le_Char_Pi')|U][agent.GetTitledFirstName], mon agent du complot [scheme.GetName|l] [court_owner.Custom('FR_du_Char_Pi')][court_owner.GetTitledFirstName], a été découvert[agent.Custom('FR_E')] !"
@@ -150,7 +144,7 @@ admin_liege_modify_vassal_contract_interaction_desc: "Changer l’administration
 
 # Modif du formatage pour qu'il soit plus visible, notamment dans le GP de construction de cathédrale
 GREAT_PROJECT_OWNER_LABEL: "#high Propriétaire :#!"
-GREAT_PROJECT_CONSTRUCTION_TIME_UNTIL_COMPLETION: "#high Achevé dans [GreatProject.GetConstructionEndDate.GetTimeToDate|V]#!"
+GREAT_PROJECT_CONSTRUCTION_TIME_UNTIL_COMPLETION: "#high Achevé dans [GreatProject.GetConstructionTimeLeft|V]#!"
 
 ################### Situations
 
@@ -158,5 +152,3 @@ GREAT_PROJECT_CONSTRUCTION_TIME_UNTIL_COMPLETION: "#high Achevé dans [GreatProj
 catalyst_new_dynasty_inherits_desc: "Une autre [house|E] hérite de [GetTitleByKey('h_china').GetDefinitiveName|l]"
 
 ################### Atouts
-
-first_of_the_people_perk_effect: "Efficacité de [accept_culture|El] : #P +30%#!\nAugmentation de l’[county_opinion|El] du [county|El] d’un [realm|El] que vous [Concept('traveling','traversez')|E]"

@@ -286,6 +286,19 @@ title_is_emperor_default = {
             }
         }
         has_government = tribal_government # emperor_tribal_male (Grand roi), emperor_tribal_female (Grande reine)
+        AND = { # emperor_republic_* (Grand consul, Grand archonte, Grand gonfaloniere, Prince Sérénissime, Princeps, Mégas éparque), sauf Autocrate qui garde « l' »
+            has_government = republic_government
+            NOR = {
+                AND = { # emperor_republic_life_*_roman (prio 111)
+                    culture = { has_name_list = name_list_roman }
+                    has_realm_law = republic_assembly_term_length_indefinite
+                }
+                AND = { # emperor_republic_hereditary_* (prio 107), hors variante latine (Prince Sérénissime, prio 110)
+                    has_realm_law = republican_despot_succession_law
+                    NOT = { culture = { has_cultural_pillar = heritage_latin } }
+                }
+            }
+        }
     }
 }
 

@@ -189,13 +189,14 @@
 										text_single = {
 											name = "acceptance"
 											layoutpolicy_horizontal = expanding
+											autoresize = no
 
 											text = "[CharacterListItem.GetText( 'acceptance' )]"
 											align = nobaseline|right
 
 											tooltip = "[CharacterListItem.GetText( 'acceptance_desc' )]"
 											# not sure why it is needed, but without alwaystransparent, the button the text is on will not highlight
-											alwaystransparent = yes
+											alwaystransparent = yes 
 										}
 									}
 								}
