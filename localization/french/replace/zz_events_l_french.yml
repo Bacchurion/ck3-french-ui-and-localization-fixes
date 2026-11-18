@@ -41,3 +41,6 @@
 
  # Fix scope owner -> target
  seduce_outcome.2307.a: "Embrassez-moi encore m[target.Custom('FR_OnA')] [target.Custom2('InsultNoun', ROOT.Char)] [target.Custom2('InsultAdjective', ROOT.Char)] !"
+
+ # Fix scope (host dans ma reproduction du bug, voir si d'autres cas peuvent survenir)
+ hunt.0080.death: "[host.Custom('FR_le_Char_Pi')|U][host.GetTitledFirstName] [host.GetDeathReasonHideKiller]. Il a été décidé de l’annulation de la chasse et du retour du groupe chez lui."
