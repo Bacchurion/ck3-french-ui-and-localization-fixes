@@ -42,7 +42,17 @@
  # Affichage du rite du perso et non pas du rite principal
  CARDINALS_VIEW_YOU_WILL_CHANGE_RITE: "Si élu à la [Character.GetFaith.GetCollegeElectionTitle.GetNameNoTooltip], vous pourrez modifier le [Character.GetRite.GetName|l] et changer ses [core_tenets|El] et [doctrines|El]"
 
-################### Contrat vassalique
+ ################### Commerce
+
+ PROFIT_TRADE_ROUTE_NAME: "La [AddLocalizationIf( GreaterThan_int32( TradeRoute.GetNameNumber, '(int32)1' ), 'TRADE_ROUTE_NAME_ORDINAL' )]route [TradeGoodType.Custom('FR_De_TradeGood')] de [TradeRoute.GetOwner.GetPrimaryTitle.GetAdjectiveNoTooltip]"
+ COMMISSION_TRADE_ROUTE_NAME: "La [AddLocalizationIf( GreaterThan_int32( TradeRoute.GetNameNumber, '(int32)1' ), 'TRADE_ROUTE_NAME_ORDINAL' )]route [TradeGoodType.Custom('FR_De_TradeGood')] [TradeRoute.GetCommissioner.GetPrimaryTitle.GetAdjectiveNoTooltip]"
+
+ ################### Contrats
+
+ # Double "la" (contenu dans le nom de la route)
+ negotiate_tolls_desc: "Les droits [TaskContract.GetTarget.Custom('FR_du_Char_Pi')][TaskContract.GetTarget.GetTitledFirstName] sur le [TaskContract.MakeScope.Var('task_contract_market').TradeMarket.GetName|l] réduisent nos profits sur [TaskContract.MakeScope.Var('task_contract_route').TradeRoute.GetName|l], mais peut-être pourrons-nous trouver un accord..."
+
+ ################### Contrat vassalique
 
  # Ajout "pas" manquant
  SUBJECT_CONTRACT_LIEGE_IS_NOT_RIGHTFUL_LIEGE_NOTICE: "[SubjectContract.GetLiege.GetNameOrMe|U] [SelectLocalization( SubjectContract.GetLiege.IsPlayer, 'n’êtes pas', 'n’est pas' )] [SelectLocalization( SubjectContract.GetSubject.IsPlayer, 'votre', 'le' )] [rightful_liege|El][SelectLocalization( SubjectContract.GetSubject.IsPlayer, '', ' de ce sujet' )]"
@@ -54,13 +64,24 @@
  change_appointment_investment_global_investor: "[CHARACTER.Custom('FR_le_Char_U_Pi')|U][CHARACTER.GetShortUIName|U] [Select_CString(CHARACTER.IsLocalPlayer,'soutenez','soutient')] [Select_CString(TARGET_CHARACTER.IsLocalPlayer,'votre','la')] [Concept('candidate_score','candidature')|E][TARGET_CHARACTER.LocalPlayerString('', 'Loc_FR_du_GetShortUIName')] pour [TITLE.GetName] avec $EFFECTIVE_CHANGE|P0$$INVESTMENT_CAP_WARNING$"
  change_appointment_investment_third_investor: "[CHARACTER.Custom('FR_le_Char_U_Pi')|U][CHARACTER.GetShortUIName|U] [Select_CString(CHARACTER.IsLocalPlayer,'soutenez','soutient')] [Select_CString(TARGET_CHARACTER.IsLocalPlayer,'votre','la')] [Concept('candidate_score','candidature')|E][TARGET_CHARACTER.LocalPlayerString('', 'Loc_FR_du_GetShortUIName')] pour [TITLE.GetName] avec $EFFECTIVE_CHANGE|P0$$INVESTMENT_CAP_WARNING$"
 
-#################### Guerre
+ ################### Grands projets
+
+ # Modif du formatage pour qu'il soit plus visible, notamment dans le GP de construction de cathédrale
+ GREAT_PROJECT_OWNER_LABEL: "#high Propriétaire :#!"
+ GREAT_PROJECT_CONSTRUCTION_TIME_UNTIL_COMPLETION: "#high Achevé dans [GreatProject.GetConstructionTimeLeft|V]#!"
+
+ #################### Guerre
 
  # Fix text "Vous" + accord de genre
  japan_install_bloc_member_cb_victory_desc: "[attacker.Custom('FR_le_Char_U_Pi')|U][attacker.GetShortUIName|U] [attacker.LocalPlayerString('saisirez', 'saisira')] les [titles|El] contestés pour le [attacker.GetConfederation.GetName], et décidera comment les distribuer."
 
  # Ajout espace pour le coût de la redirection d'une guerre sainte
  CHANGE_GHW_TARGET_COST: "Coût : [ChangeGHWTargetWindow.GetCost]"
+
+ ################### Interactions
+
+ admin_liege_modify_vassal_contract_interaction: "Modifier l’administration [GetPlayer.Custom('GetProvinceConceptWithArticleNoTooltip')]"
+ admin_liege_modify_vassal_contract_interaction_desc: "Changer l’administration [puppet_or_actor.Custom('GetProvinceConceptWithArticleNoTooltip')] [recipient.Custom('FR_du_Char_U_Pi')][recipient.GetShortUINameNoTooltip]"
 
  ################### Intrigue
  
@@ -84,8 +105,6 @@
  SCHEME_WINDOW_PROGRESS_FROZEN: "#weak Complot suspendu car [Scheme.GetFrozenReason|l]#!"
  FREEZE_REASON_TARGET_TRAVELING: "[SCHEME.GetTargetCharacter.GetShortUINameNoTooltip] voyage."
 
-
-
  ################### Inventaire
 
  # Retrait du "Mes" pour raccourcir le texte
@@ -103,57 +122,39 @@
  # Fix mise en forme
  RITE_VIEW_THEIR_VIEW: "Ils nous considèrent comme #medium [Rite.GetRelationNameTo( GetPlayer.GetRite )|l]#L #V #medium s#!#!#!#!"
 
-################### Tooltip
+ ################### Situations
 
-TRIGGER_BLOCKER_GROUP: "Nécessite $BLOCKER|l$"
-THEY_LEASE_OUT_TO_HOLY_ORDER_EFFECT: "[TITLE.GetHolder.Custom('FR_le_Char_U_Pi')|U][TITLE.GetHolder.GetShortUIName|U] [Select_CString(TITLE.GetHolder.IsLocalPlayer,'baillez','baille')] à rente [TITLE.GetName] à un ordre ([HOLY_ORDER.GetName])"
+ # fix "de la hégémonie de XXX"
+ catalyst_new_dynasty_inherits_desc: "Une autre [house|E] hérite de [GetTitleByKey('h_china').GetDefinitiveName|l]"
 
-# Fix "du [SCHEME.GetName]" se traduisant par "du assassinat" ou autre
-FORBID_FROM_SCHEME_EFFECT_THIRD: "[CHARACTER.Custom('FR_le_Char_U_Pi')|U][CHARACTER.GetShortUIName] ne fera plus partie du complot [SCHEME.GetName|Vl] contre [SCHEME.GetTarget.GetName]"
-scheme_critical_moments.1253.t: "Échec de la [scheme.GetNameNoTooltip|l]"
-scheme_critical_moments.1243.t: "Échec de la [scheme.GetNameNoTooltip|l]"
-hostile_scheme_discovery.3001.intro: "[agent.Custom('FR_le_Char_Pi')|U][agent.GetTitledFirstName], mon agent du complot [scheme.GetName|l] [court_owner.Custom('FR_du_Char_Pi')][court_owner.GetTitledFirstName], a été découvert[agent.Custom('FR_E')] !"
-scheme_critical_moments.8002.t: "Réussite du complot [scheme.GetNameNoTooltip|l]"
-scheme_critical_moments.8003.t: "Échec du complot [scheme.GetNameNoTooltip|l]"
-scheme_critical_moments.8012.t: "Réussite du complot [scheme.GetNameNoTooltip|l]"
-scheme_critical_moments.8013.t: "Échec du complot [scheme.GetNameNoTooltip|l]"
-scheme_critical_moments.8022.t: "Réussite du complot [scheme.GetNameNoTooltip|l]"
-scheme_critical_moments.8023.t: "Échec du complot [scheme.GetNameNoTooltip|l]"
-scheme_critical_moments.8032.t: "Réussite du complot [scheme.GetNameNoTooltip|l]"
-scheme_critical_moments.8033.t: "Échec du complot [scheme.GetNameNoTooltip|l]"
-scheme_critical_moments.8052.t: "Réussite du complot [scheme.GetNameNoTooltip|l]"
-scheme_critical_moments.8053.t: "Échec du complot [scheme.GetNameNoTooltip|l]"
-scheme_critical_moments.8042.t: "Réussite du complot [scheme.GetNameNoTooltip|l]"
-scheme_critical_moments.8043.t: "Échec du complot [scheme.GetNameNoTooltip|l]"
-scheme_critical_moments.8061.t: "Réussite du complot [scheme.GetNameNoTooltip|l]"
-scheme_critical_moments.8067.t: "Échec du complot [scheme.GetNameNoTooltip|l]"
-spymaster_task.2003.desc: "Mon [councillor.GetCouncilTitle|l] est inhabituellement forme[councillor.Custom('FR_LLle')] lorsqu’[councillor.GetSheHe] m’approche à la Cour : « [councillor_liege.Custom('FR_MonseigneurMadame')|U], vous êtes-vous déjà dit qu’agir dans l’ombre pourrait ne pas être le meilleur moyen d’obtenir ce que vous voulez ? ». C’est une déclaration surprenante, mais [councillor.GetSheHe] en vient finalement aux faits.\n\n« Il semble que... eh bien, tous les agents du complot [scheme.GetName] ont cessé de répondre à mes messages. C’est comme si rien ne s’était passé. »"
+ ################### Tooltip
 
-# Reformulation d'un effet du principe Adaptabilité
-doctrine_parameter_allow_adopt_any_holy_site: "Permet l’adoption de [holy_sites|El] de n’importe quelle [faith|El] si [core_tenet|El] d’un [mainline_rite|El]"
+ TRIGGER_BLOCKER_GROUP: "Nécessite $BLOCKER|l$"
+ THEY_LEASE_OUT_TO_HOLY_ORDER_EFFECT: "[TITLE.GetHolder.Custom('FR_le_Char_U_Pi')|U][TITLE.GetHolder.GetShortUIName|U] [Select_CString(TITLE.GetHolder.IsLocalPlayer,'baillez','baille')] à rente [TITLE.GetName] à un ordre ([HOLY_ORDER.GetName])"
 
-# Fix formulation et espace manquant
-THEY_GET_ELDER: "[TARGET_CHARACTER.Custom('FR_le_Char_U_Pi')|U][TARGET_CHARACTER.GetShortUIName|U] [TARGET_CHARACTER.LocalPlayerString( 'devenez l’', 'devient l’')][Concept('elder',Select_CString(TARGET_CHARACTER.IsFemale,'aînée','aîné'))|E][CHARACTER.LocalPlayerString( '', 'Loc_FR_du_GetShortUIName' )]"
+ # Fix "du [SCHEME.GetName]" se traduisant par "du assassinat" ou autre
+ FORBID_FROM_SCHEME_EFFECT_THIRD: "[CHARACTER.Custom('FR_le_Char_U_Pi')|U][CHARACTER.GetShortUIName] ne fera plus partie du complot [SCHEME.GetName|Vl] contre [SCHEME.GetTarget.GetName]"
+ scheme_critical_moments.1253.t: "Échec de la [scheme.GetNameNoTooltip|l]"
+ scheme_critical_moments.1243.t: "Échec de la [scheme.GetNameNoTooltip|l]"
+ hostile_scheme_discovery.3001.intro: "[agent.Custom('FR_le_Char_Pi')|U][agent.GetTitledFirstName], mon agent du complot [scheme.GetName|l] [court_owner.Custom('FR_du_Char_Pi')][court_owner.GetTitledFirstName], a été découvert[agent.Custom('FR_E')] !"
+ scheme_critical_moments.8002.t: "Réussite du complot [scheme.GetNameNoTooltip|l]"
+ scheme_critical_moments.8003.t: "Échec du complot [scheme.GetNameNoTooltip|l]"
+ scheme_critical_moments.8012.t: "Réussite du complot [scheme.GetNameNoTooltip|l]"
+ scheme_critical_moments.8013.t: "Échec du complot [scheme.GetNameNoTooltip|l]"
+ scheme_critical_moments.8022.t: "Réussite du complot [scheme.GetNameNoTooltip|l]"
+ scheme_critical_moments.8023.t: "Échec du complot [scheme.GetNameNoTooltip|l]"
+ scheme_critical_moments.8032.t: "Réussite du complot [scheme.GetNameNoTooltip|l]"
+ scheme_critical_moments.8033.t: "Échec du complot [scheme.GetNameNoTooltip|l]"
+ scheme_critical_moments.8052.t: "Réussite du complot [scheme.GetNameNoTooltip|l]"
+ scheme_critical_moments.8053.t: "Échec du complot [scheme.GetNameNoTooltip|l]"
+ scheme_critical_moments.8042.t: "Réussite du complot [scheme.GetNameNoTooltip|l]"
+ scheme_critical_moments.8043.t: "Échec du complot [scheme.GetNameNoTooltip|l]"
+ scheme_critical_moments.8061.t: "Réussite du complot [scheme.GetNameNoTooltip|l]"
+ scheme_critical_moments.8067.t: "Échec du complot [scheme.GetNameNoTooltip|l]"
+ spymaster_task.2003.desc: "Mon [councillor.GetCouncilTitle|l] est inhabituellement forme[councillor.Custom('FR_LLle')] lorsqu’[councillor.GetSheHe] m’approche à la Cour : « [councillor_liege.Custom('FR_MonseigneurMadame')|U], vous êtes-vous déjà dit qu’agir dans l’ombre pourrait ne pas être le meilleur moyen d’obtenir ce que vous voulez ? ». C’est une déclaration surprenante, mais [councillor.GetSheHe] en vient finalement aux faits.\n\n« Il semble que... eh bien, tous les agents du complot [scheme.GetName] ont cessé de répondre à mes messages. C’est comme si rien ne s’était passé. »"
 
-################### Interactions
+ # Reformulation d'un effet du principe Adaptabilité
+ doctrine_parameter_allow_adopt_any_holy_site: "Permet l’adoption de [holy_sites|El] de n’importe quelle [faith|El] si [core_tenet|El] d’un [mainline_rite|El]"
 
-admin_liege_modify_vassal_contract_interaction: "Modifier l’administration [GetPlayer.Custom('GetProvinceConceptWithArticleNoTooltip')]"
-admin_liege_modify_vassal_contract_interaction_desc: "Changer l’administration [puppet_or_actor.Custom('GetProvinceConceptWithArticleNoTooltip')] [recipient.Custom('FR_du_Char_U_Pi')][recipient.GetShortUINameNoTooltip]"
-
-################### Grands projets
-
-# Modif du formatage pour qu'il soit plus visible, notamment dans le GP de construction de cathédrale
-GREAT_PROJECT_OWNER_LABEL: "#high Propriétaire :#!"
-GREAT_PROJECT_CONSTRUCTION_TIME_UNTIL_COMPLETION: "#high Achevé dans [GreatProject.GetConstructionTimeLeft|V]#!"
-
-################### Situations
-
-# fix "de la hégémonie de XXX"
-catalyst_new_dynasty_inherits_desc: "Une autre [house|E] hérite de [GetTitleByKey('h_china').GetDefinitiveName|l]"
-
-################### Atouts
-
-################### Commerce
-
-PROFIT_TRADE_ROUTE_NAME: "La [AddLocalizationIf( GreaterThan_int32( TradeRoute.GetNameNumber, '(int32)1' ), 'TRADE_ROUTE_NAME_ORDINAL' )]route [TradeGoodType.Custom('FR_De_TradeGood')] de [TradeRoute.GetOwner.GetPrimaryTitle.GetAdjectiveNoTooltip]"
-COMMISSION_TRADE_ROUTE_NAME: "La [AddLocalizationIf( GreaterThan_int32( TradeRoute.GetNameNumber, '(int32)1' ), 'TRADE_ROUTE_NAME_ORDINAL' )]route [TradeGoodType.Custom('FR_De_TradeGood')] [TradeRoute.GetCommissioner.GetPrimaryTitle.GetAdjectiveNoTooltip]"
+ # Fix formulation et espace manquant
+ THEY_GET_ELDER: "[TARGET_CHARACTER.Custom('FR_le_Char_U_Pi')|U][TARGET_CHARACTER.GetShortUIName|U] [TARGET_CHARACTER.LocalPlayerString( 'devenez l’', 'devient l’')][Concept('elder',Select_CString(TARGET_CHARACTER.IsFemale,'aînée','aîné'))|E][CHARACTER.LocalPlayerString( '', 'Loc_FR_du_GetShortUIName' )]"

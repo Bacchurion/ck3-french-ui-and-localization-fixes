@@ -8,6 +8,9 @@ monastic_holy_order_founded_title: "Ordre monastique [LEFT_CHARACTER.GetFaith.Ge
 # du <Titre> => de <Titre>
 msg_governor_candidate_promoted_leading: "[GetPlayer.Custom2('RelationToMeShort', LEFT_CHARACTER.Self)|U] [Select_CString(LEFT_CHARACTER.IsLocalPlayer,'êtes','est')] en tête dans la succession de [TITLE.GetNameNoTierNoTooltip|V]"
 
+# De la la <route commerciale>
+msg_trade_route_income_changed.desc: "Revenu de [trade_route.GetName|lV] $INCOME_CHANGE$$CAUSES$"
+
 ################### Toast
 
 # Fix "vous  renvoyé XXX"
