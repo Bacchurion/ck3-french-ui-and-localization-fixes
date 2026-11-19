@@ -110,6 +110,11 @@
  # Retrait du "Mes" pour raccourcir le texte
  INVENTORY_TAB_CLAIMS_HIS_HER_MY: "$INVENTORY_TAB_CLAIMS|U$"
 
+ ################### Pays
+
+ # Espace manquant
+ company_purpose_artisan_effects: "$EFFECT_LIST_BULLET$Les [associates|El] peuvent avoir de l’[inspiration|El][inspiration_i|E]\n$EFFECT_LIST_BULLET$Débloque la [decision|El] [GetDecisionWithKey('craft_artifact_decision').GetName]\n$EFFECT_LIST_BULLET$Débloque l’[travel_option|El] [GetTravelOption('adventurers_gather_inspiration_option').GetName]\n$EFFECT_LIST_BULLET$Débloque l’[character_interaction|El] #V #EMP $fund_inspiration_interaction$#!#!\n$EFFECT_LIST_BULLET$Débloque l’[character_interaction|El]#V #EMP  $merchant_sponsor_construction_interaction$#!#!\n$EFFECT_LIST_BULLET$Débloque les [trade_opportunities|El] #V #EMP $support_guilds_contract$#!#!\n$EFFECT_LIST_BULLET$Peut accéder à des [deputies|El] spéciaux :\n$BULLET_WITH_TAB$#TOOLTIP:COURT_POSITION_TYPE,antiquarian_court_position #L $antiquarian_merchant$#!#!\n\n#F La richesse se mesure à l’aune de ses moyens.#!"
+
  ################### Personnage
 
  # Upppercase du nom du rite
