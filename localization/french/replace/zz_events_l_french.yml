@@ -46,7 +46,14 @@
  hunt.0080.death: "[host.Custom('FR_le_Char_Pi')|U][host.GetTitledFirstName] [host.GetDeathReasonHideKiller]. Il a été décidé de l’annulation de la chasse et du retour du groupe chez lui."
 
  # Fix double "la" (le nom de la route commerciale le contient déjà)
-gdp_merchant_trade_opportunity.9050.reason_trader_changed: "[trade_opportunity_route.GetName] n’a plus le négociant dont dépendait l'opportunité."
+ gdp_merchant_trade_opportunity.9050.reason_trader_changed: "[trade_opportunity_route.GetName] n’a plus le négociant dont dépendait l'opportunité."
 
-# "de la famille de la XXX" => "de la famille XXX"
-gdp_trade_good_flavor.1047.desc: "[tgf_trader.GetFirstName], m[tgf_trader.Custom('FR_OnA')] négociant[tgf_trader.Custom('FR_E')], est hors de ses gonds : [tgf_rival.GetFirstName], de la [tgf_rival.Custom('GetTgfCompanyWord')|l] [tgf_rival.GetHouse.GetBaseNameNoTooltip] vend [tgf_good.Custom('GetTradeGood')] au marché de [tgf_source_county.GetNameNoTier] pour un prix si dérisoire que même le transport doit coûter plus cher.\n\nCette histoire éveille ma curiosité. À ce prix là, difficile de passer à côté... Je devrais peut-être acheter le tout."
+ # "de la famille de la XXX" => "de la famille XXX"
+ gdp_trade_good_flavor.1047.desc: "[tgf_trader.GetFirstName], m[tgf_trader.Custom('FR_OnA')] négociant[tgf_trader.Custom('FR_E')], est hors de ses gonds : [tgf_rival.GetFirstName], de la [tgf_rival.Custom('GetTgfCompanyWord')|l] [tgf_rival.GetHouse.GetBaseNameNoTooltip] vend [tgf_good.Custom('GetTradeGood')] au marché de [tgf_source_county.GetNameNoTier] pour un prix si dérisoire que même le transport doit coûter plus cher.\n\nCette histoire éveille ma curiosité. À ce prix là, difficile de passer à côté... Je devrais peut-être acheter le tout."
+
+ # Reformulation de la demande
+ gdp_merchant.0060.desc: "C’est difficile à écrire et à admettre, mais je dois bien avouer que j’ai de plus en plus de mal à supporter les désagréments de la route et les disputes incessantes sur les marchés.\n\nPourriez-vous demander mon retour au siège de la compagnie, au moins pour un certain temps ?"
+ 
+ # Reformulation
+ gdp_merchant_trade_opportunity.1021.desc: "Obsédé[ROOT.Char.Custom('FR_E')] par ces scélérats de [target.GetPrimaryTitle.GetName], je suis pris[ROOT.Char.Custom('FR_E')] au dépourvu par l’approche [other_merchant.Custom('FR_du_Char_Pi')][other_merchant.GetTitledFirstName] de [other_merchant.GetPrimaryTitle.GetName], un[other_merchant.Custom('FR_E')] autre concurrent[other_merchant.Custom('FR_E')] sur les [task_contract_location.Custom('GetRegionalMarketTermGlossPlural')|l] de [local_market.GetShortName].\n\n« Je vous salue », commence-t-[other_merchant.Custom('FR_IlElle')]. « J’ai entendu parler de vos difficultés avec [Select_CString(target.IsFemale,'cette colporteuse','ce colporteur')] de [target.GetPrimaryTitle.GetName], [target.Custom('FR_le_Char_Pi')][target.GetTitledFirstName]. Peut-être pourrions-nous nous entraider ? »"
+

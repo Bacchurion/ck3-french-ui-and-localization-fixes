@@ -10,4 +10,7 @@
  unite_the_western_slavs_decision_desc: "Nous étions un seul peuple lorsque nous sommes arrivés sur ces terres. Au fil des ans, nous nous sommes dispersés et divisés en plusieurs tribus. Alors que des forces étrangères sont à nos portes, il est temps de s'unir de nouveau."
 
  # Fix accord
-laamp_become_adventurer_tt: "#mixed_value #BER [THIS.Char.Custom('FR_le_Char_U_Pi')|U][THIS.Char.GetShortUIName|U] [Select_CString(THIS.Char.IsLocalPlayer,'établirez','établira')] un [camp|El] d’[adventurer|El]#!#!"
+ laamp_become_adventurer_tt: "#mixed_value #BER [THIS.Char.Custom('FR_le_Char_U_Pi')|U][THIS.Char.GetShortUIName|U] [Select_CString(THIS.Char.IsLocalPlayer,'établirez','établira')] un [camp|El] d’[adventurer|El]#!#!"
+
+ # Reformulation
+ gdp_improve_trade_expertise_decision_confirm: "Les assigner à une seule route"

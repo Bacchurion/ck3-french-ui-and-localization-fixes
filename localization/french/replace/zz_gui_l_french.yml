@@ -52,6 +52,8 @@
  # Double "la" (contenu dans le nom de la route)
  negotiate_tolls_desc: "Les droits [TaskContract.GetTarget.Custom('FR_du_Char_Pi')][TaskContract.GetTarget.GetTitledFirstName] sur le [TaskContract.MakeScope.Var('task_contract_market').TradeMarket.GetName|l] réduisent nos profits sur [TaskContract.MakeScope.Var('task_contract_route').TradeRoute.GetName|l], mais peut-être pourrons-nous trouver un accord..."
 
+ build_category_connections_desc: "Il y a toujours plus à apprendre pour le commerce concernant [TaskContract.MakeScope.Var('task_contract_trade_category').TradeGoodCategoryType.GetName], et notre production de [TaskContract.MakeScope.Var('task_contract_trade_good').TradeGoodType.GetName] est passée dans de nombreuses mains sur le [TaskContract.MakeScope.Var('task_contract_market').TradeMarket.GetName|l]."
+
  ################### Contrat vassalique
 
  # Ajout "pas" manquant
@@ -114,6 +116,7 @@
 
  # Espace manquant
  company_purpose_artisan_effects: "$EFFECT_LIST_BULLET$Les [associates|El] peuvent avoir de l’[inspiration|El][inspiration_i|E]\n$EFFECT_LIST_BULLET$Débloque la [decision|El] [GetDecisionWithKey('craft_artifact_decision').GetName]\n$EFFECT_LIST_BULLET$Débloque l’[travel_option|El] [GetTravelOption('adventurers_gather_inspiration_option').GetName]\n$EFFECT_LIST_BULLET$Débloque l’[character_interaction|El] #V #EMP $fund_inspiration_interaction$#!#!\n$EFFECT_LIST_BULLET$Débloque l’[character_interaction|El]#V #EMP  $merchant_sponsor_construction_interaction$#!#!\n$EFFECT_LIST_BULLET$Débloque les [trade_opportunities|El] #V #EMP $support_guilds_contract$#!#!\n$EFFECT_LIST_BULLET$Peut accéder à des [deputies|El] spéciaux :\n$BULLET_WITH_TAB$#TOOLTIP:COURT_POSITION_TYPE,antiquarian_court_position #L $antiquarian_merchant$#!#!\n\n#F La richesse se mesure à l’aune de ses moyens.#!"
+ company_purpose_creditor_effects: "$EFFECT_LIST_BULLET$Débloque le [casus_belli|El] [seize_realm_cb|E]\n$EFFECT_LIST_BULLET$Débloque l’[character_interaction|El] #V #EMP  $sponsor_war_interaction$#!#! \n$EFFECT_LIST_BULLET$Lorsque ciblé par l’[character_interaction|El] #V #EMP $merchant_patron_request_interaction$#!#!, les récompenses peuvent inclure des [strong_hooks|El] @unspent_strong_hook_icon! #F ($strong_indebted_hook|l$)#!\n$EFFECT_LIST_BULLET$Utiliser des [hooks|El][hook_i|E] sur des personnages [Concept('landed', 'terriens')|E] procure de la [dynasty_prestige|El][dynasty_prestige_i|E] selon leur [title_tier|El]\n$EFFECT_LIST_BULLET$Débloque les [trade_opportunities|El] [SelectLocalization( HasDlcFeature( 'by_god_alone' ), 'company_purpose_creditor_pam_effects', '' )]#V #EMP  $seek_debtors_contract$#!#!\n$EFFECT_LIST_BULLET$Peut accéder à un [deputy|El] spécial :\n$BULLET_WITH_TAB$[GetCourtPositionType('bailiff_court_position').GetName()]\n\n#F C’est dans l’adversité que réside l’opportunité.#!"
 
  ################### Personnage
 
