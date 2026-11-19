@@ -57,3 +57,5 @@
  # Reformulation
  gdp_merchant_trade_opportunity.1021.desc: "Obsédé[ROOT.Char.Custom('FR_E')] par ces scélérats de [target.GetPrimaryTitle.GetName], je suis pris[ROOT.Char.Custom('FR_E')] au dépourvu par l’approche [other_merchant.Custom('FR_du_Char_Pi')][other_merchant.GetTitledFirstName] de [other_merchant.GetPrimaryTitle.GetName], un[other_merchant.Custom('FR_E')] autre concurrent[other_merchant.Custom('FR_E')] sur les [task_contract_location.Custom('GetRegionalMarketTermGlossPlural')|l] de [local_market.GetShortName].\n\n« Je vous salue », commence-t-[other_merchant.Custom('FR_IlElle')]. « J’ai entendu parler de vos difficultés avec [Select_CString(target.IsFemale,'cette colporteuse','ce colporteur')] de [target.GetPrimaryTitle.GetName], [target.Custom('FR_le_Char_Pi')][target.GetTitledFirstName]. Peut-être pourrions-nous nous entraider ? »"
 
+ # Reformulation titre
+ gdp_trade_good_flavor.1011.t: "Le prix [tgf_good.Custom('FR_De_TradeGood')]"
