@@ -115,6 +115,10 @@
  # Upppercase du nom du rite
  RITE_CHARACTER_WINDOW: "[Rite.GetAdjectiveNoTooltip|U]"
 
+ ################### Relations de maison
+
+ #house_relation_reason_sabotage_competition_decrease_desc: "[char.Custom('FR_le_Char_U_Pi')|U][char.GetShortUIName|U] [Select_CString(char.IsLocalPlayer,'avez','a')] défié [target_char.Custom('FR_le_Char_U_Pi')][target_char.GetShortUIName] pour le contrôle du marché"
+
  ################### Religion
 
  # Texte plus court + fix mise en forme

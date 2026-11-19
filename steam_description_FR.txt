@@ -88,6 +88,7 @@ Sans cela, on observe des "le fête", "au Examen de la capitale", etc
 [*] [b]pam_the_christian_church.*[/b] : fix de toutes les occurences de "l'Chrétienté" en "la Chrétienté"
 [*] [b]"Un serment historique"[/b] : fix des libelles tronqués des serments "Subvenir aux besoins des pauvres", "Subvenir aux besoins des fidèles" et "Devenir le meilleur chasseur"
 [*] [b]"Une conclusion prématurée"[/b] : fix du texte de l'évènement qui ne s'affiche que partiellement si l'hôte d'une chasse meurt pendant celle-ci
+[*] [b]"Une opportunité manquée"[/b] : Le "La" du nom de la route commerciale ne s'affiche plus en doublon
 [/list]
 
 [h2]Notifications[/h2]

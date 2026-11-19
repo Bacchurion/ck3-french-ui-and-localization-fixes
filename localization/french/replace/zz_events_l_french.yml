@@ -44,3 +44,6 @@
 
  # Fix scope (host dans ma reproduction du bug, voir si d'autres cas peuvent survenir)
  hunt.0080.death: "[host.Custom('FR_le_Char_Pi')|U][host.GetTitledFirstName] [host.GetDeathReasonHideKiller]. Il a été décidé de l’annulation de la chasse et du retour du groupe chez lui."
+
+ # Fix double "la" (le nom de la route commerciale le contient déjà)
+gdp_merchant_trade_opportunity.9050.reason_trader_changed: "[trade_opportunity_route.GetName] n’a plus le négociant dont dépendait l'opportunité."
