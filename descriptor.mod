@@ -1,10 +1,10 @@
-version="1.6.3"
+version="1.7"
 tags={
-	"1.20 'Crozier'"
+	"1.21 'Florin'"
 	"Fixes"
 	"Translation"
 	"Interface"
 }
 name="Interfaces et traductions françaises corrigées"
-supported_version="1.20.*"
+supported_version="1.21.*"
 remote_file_id="3819282189"
