@@ -47,3 +47,6 @@
 
  # Fix double "la" (le nom de la route commerciale le contient déjà)
 gdp_merchant_trade_opportunity.9050.reason_trader_changed: "[trade_opportunity_route.GetName] n’a plus le négociant dont dépendait l'opportunité."
+
+# "de la famille de la XXX" => "de la famille XXX"
+gdp_trade_good_flavor.1047.desc: "[tgf_trader.GetFirstName], m[tgf_trader.Custom('FR_OnA')] négociant[tgf_trader.Custom('FR_E')], est hors de ses gonds : [tgf_rival.GetFirstName], de la [tgf_rival.Custom('GetTgfCompanyWord')|l] [tgf_rival.GetHouse.GetBaseNameNoTooltip] vend [tgf_good.Custom('GetTradeGood')] au marché de [tgf_source_county.GetNameNoTier] pour un prix si dérisoire que même le transport doit coûter plus cher.\n\nCette histoire éveille ma curiosité. À ce prix là, difficile de passer à côté... Je devrais peut-être acheter le tout."
