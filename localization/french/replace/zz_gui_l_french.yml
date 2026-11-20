@@ -53,6 +53,10 @@
  negotiate_tolls_desc: "Les droits [TaskContract.GetTarget.Custom('FR_du_Char_Pi')][TaskContract.GetTarget.GetTitledFirstName] sur le [TaskContract.MakeScope.Var('task_contract_market').TradeMarket.GetName|l] réduisent nos profits sur [TaskContract.MakeScope.Var('task_contract_route').TradeRoute.GetName|l], mais peut-être pourrons-nous trouver un accord..."
 
  build_category_connections_desc: "Il y a toujours plus à apprendre pour le commerce concernant [TaskContract.MakeScope.Var('task_contract_trade_category').TradeGoodCategoryType.GetName], et notre production de [TaskContract.MakeScope.Var('task_contract_trade_good').TradeGoodType.GetName] est passée dans de nombreuses mains sur le [TaskContract.MakeScope.Var('task_contract_market').TradeMarket.GetName|l]."
+ 
+ # Première personne + reformulation
+ ADD_TOLL_EXCEPTION_EFFECT: "[TARGET_CHARACTER.Custom('FR_le_Char_U_P')|U][TARGET_CHARACTER.GetUIName|U] [Select_CString(TARGET_CHARACTER.IsLocalPlayer,'obtiendrez','obtiendra')] des [tolls|El] [TOLL_LEVEL.GetName] #weak ([TOLL_LEVEL.GetRouteOwnerTollRate|N%0])#! sur le [TRADE_MARKET.GetName|l] jusqu’au #V $END_DATE$#!"
+ ADD_TOLL_EXCEPTION_EFFECT_FIRST: "Vous obtiendrez des [tolls|El] [TOLL_LEVEL.GetName] #weak ([TOLL_LEVEL.GetRouteOwnerTollRate|N%0])#! sur le [TRADE_MARKET.GetName|l]"
 
  ################### Contrat vassalique
 

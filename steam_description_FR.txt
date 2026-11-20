@@ -72,6 +72,7 @@ Sans cela, on observe des "le fête", "au Examen de la capitale", etc
 [*] Commerce : correction du nom des routes commerciales (ex: "La route Vin Compagnie XXX" => "La route du vin de Compagnie XXX")
 [*] Complots : le nom des complots ne s'affichent plus avec le mauvais déterminant (ex: "échec du assassinat")
 [*] Contrats vassaliques : ajout d'un "pas" manquans dans le warning si vous n'êtes pas le seigneur lige
+[*] Contrats commerciaux : reformulation des gain/perte des droits de marché dans les effets
 [*] Correction de "au Papauté" => "au Pape" ou "à la Papauté" selon les cas (interface, décisions)
 [*] Interaction "Modification de l’administration" : déterminant dynamique ("la province", "le circuit")
 [*] Intrigue : fix du tooltip du Retrait de la vie publique qui affichait un "')]"
