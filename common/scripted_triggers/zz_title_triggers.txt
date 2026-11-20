@@ -107,9 +107,12 @@ title_is_prince_or_duke_archbishop = {
         }
     }
 
+    # un cardinal dont le titre principal est l'archevêché reste prince-archevêque
+    # (le trigger du cardinal vérifie le titre principal)
+    title_is_cardinal = no
+
     pam_is_antipope_trigger = no
     NOT = { religious_head_or_challenger ?= this }
-    NOT = { exists = clerical_elector_title }
     NOT = { has_trait = saint }
 
     # Charge d’archevêque.
