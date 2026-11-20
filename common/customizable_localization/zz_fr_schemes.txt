@@ -1,0 +1,191 @@
+﻿
+FR_Scheme_FullAction = { 
+	type = scheme
+	log_loc_errors = no
+
+    ################### START FIX
+
+    # Parainner les guildes en XXX
+    text = {
+		trigger = {
+			scheme_type = merchant_support_guilds_trade_opportunity_scheme
+		}
+		localization_key = FR_Scheme_FullAction_merchant_support_guilds
+	}
+
+    ################### END FIX
+
+	text = {
+		trigger = {
+			scheme_target_character = { is_local_player = yes }
+			scheme_type = abduct
+		}
+		localization_key = FR_Scheme_FullAction_abduct_you
+	}
+	text = {
+		trigger = {
+			scheme_target_character = { is_local_player = yes }
+			scheme_type = befriend
+		}
+		localization_key = FR_Scheme_FullAction_befriend_you
+	}
+	text = {
+		trigger = {
+			scheme_target_character = { is_local_player = yes }
+			scheme_type = claim_throne
+		}
+		localization_key = FR_Scheme_FullAction_claim_throne_you
+	}
+	text = {
+		trigger = {
+			scheme_target_character = { is_local_player = yes }
+			scheme_type = convert_to_witchcraft
+		}
+		localization_key = FR_Scheme_FullAction_convert_to_witchcraft_you
+	}
+	text = {
+		trigger = {
+			scheme_target_character = { is_local_player = yes }
+			scheme_type = courting
+		}
+		localization_key = FR_Scheme_FullAction_courting_you
+	}
+	text = {
+		trigger = {
+			scheme_target_character = { is_local_player = yes }
+			scheme_type = elope
+		}
+		localization_key = FR_Scheme_FullAction_elope_you
+	}
+	text = {
+		trigger = {
+			scheme_target_character = { is_local_player = yes }
+			scheme_type = fabricate_hook
+		}
+		localization_key = FR_Scheme_FullAction_fabricate_hook_you
+	}
+	text = {
+		trigger = {
+			scheme_target_character = { is_local_player = yes }
+			scheme_type = learn_language
+		}
+		localization_key = FR_Scheme_FullAction_learn_language_you
+	}
+	text = {
+		trigger = {
+			scheme_target_character = { is_local_player = yes }
+			scheme_type = murder
+		}
+		localization_key = FR_Scheme_FullAction_murder_you
+	}
+	text = {
+		trigger = {
+			scheme_target_character = { is_local_player = yes }
+			scheme_type = overthrow_regent
+		}
+		localization_key = FR_Scheme_FullAction_overthrow_regent_you
+	}
+	text = {
+		trigger = {
+			scheme_target_character = { is_local_player = yes }
+			scheme_type = seduce
+		}
+		localization_key = FR_Scheme_FullAction_seduce_you
+	}
+	text = {
+		trigger = {
+			scheme_target_character = { is_local_player = yes }
+			scheme_type = steal_back_artifact
+		}
+		localization_key = FR_Scheme_FullAction_steal_back_artifact_you
+	}
+	text = {
+		trigger = {
+			scheme_target_character = { is_local_player = yes }
+			scheme_type = sway
+		}
+		localization_key = FR_Scheme_FullAction_sway_you
+	}
+	text = {
+		trigger = {
+			scheme_type = abduct
+		}
+		localization_key = FR_Scheme_FullAction_abduct
+	}
+	text = {
+		trigger = {
+			scheme_type = befriend
+		}
+		localization_key = FR_Scheme_FullAction_befriend
+	}
+	text = {
+		trigger = {
+			scheme_type = claim_throne
+		}
+		localization_key = FR_Scheme_FullAction_claim_throne
+	}
+	text = {
+		trigger = {
+			scheme_type = convert_to_witchcraft
+		}
+		localization_key = FR_Scheme_FullAction_convert_to_witchcraft
+	}
+	text = {
+		trigger = {
+			scheme_type = courting
+		}
+		localization_key = FR_Scheme_FullAction_courting
+	}
+	text = {
+		trigger = {
+			scheme_type = elope
+		}
+		localization_key = FR_Scheme_FullAction_elope
+	}
+	text = {
+		trigger = {
+			scheme_type = fabricate_hook
+		}
+		localization_key = FR_Scheme_FullAction_fabricate_hook
+	}
+	text = {
+		trigger = {
+			scheme_type = learn_language
+		}
+		localization_key = FR_Scheme_FullAction_learn_language
+	}
+	text = {
+		trigger = {
+			scheme_type = murder
+		}
+		localization_key = FR_Scheme_FullAction_murder
+	}
+	text = {
+		trigger = {
+			scheme_type = overthrow_regent
+		}
+		localization_key = FR_Scheme_FullAction_overthrow_regent
+	}
+	text = {
+		trigger = {
+			scheme_type = seduce
+		}
+		localization_key = FR_Scheme_FullAction_seduce
+	}
+	text = {
+		trigger = {
+			scheme_type = steal_back_artifact
+		}
+		localization_key = FR_Scheme_FullAction_steal_back_artifact
+	}
+	text = {
+		trigger = {
+			scheme_type = sway
+		}
+		localization_key = FR_Scheme_FullAction_sway
+	}
+	text = {
+		localization_key = FR_Scheme_FullAction_fallback
+		fallback = yes
+	}
+}

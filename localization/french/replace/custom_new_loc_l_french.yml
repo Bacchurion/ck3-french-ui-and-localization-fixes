@@ -59,3 +59,6 @@
   THEME_CONCEPT_WITH_ARTICLE_NO_TOOLTIP: "du thème"
   CIRCUIT_CONCEPT_WITH_ARTICLE_NO_TOOLTIP: "du circuit"
   PROVINCE_CONCEPT_WITH_ARTICLE_NO_TOOLTIP: "de la province"
+
+  # Parainner les guildes en XXX
+  FR_Scheme_FullAction_merchant_support_guilds: "[ROOT.GetScheme.GetActionName] en [ROOT.GetScheme.GetTarget.GetNameNoTooltip]"

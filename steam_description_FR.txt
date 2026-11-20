@@ -76,6 +76,7 @@ Sans cela, on observe des "le fête", "au Examen de la capitale", etc
 [*] Correction de "au Papauté" => "au Pape" ou "à la Papauté" selon les cas (interface, décisions)
 [*] Interaction "Modification de l’administration" : déterminant dynamique ("la province", "le circuit")
 [*] Intrigue : fix du tooltip du Retrait de la vie publique qui affichait un "')]"
+[*] Intrigue : fix du nom du complot de parrainage des guildes
 [*] Inventaire : Le nombre de revendications n'empiète plus sur le libellé du bouton
 [*] Personnage : Le nom du rite a bien une majuscule
 [*] Principes : Reformulation d'un effet du principe Adaptabilité pour plus de clarté
