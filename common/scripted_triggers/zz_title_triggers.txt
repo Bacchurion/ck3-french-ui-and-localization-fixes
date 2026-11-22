@@ -422,7 +422,7 @@ title_is_amir_al_umara = {
     is_independent_ruler = yes
 }
 
-title_is_amir_e_amiram = {
+title_is_amir_e_amiran = {
     highest_held_title_tier = tier_kingdom
     religion = religion:islam_religion
     OR = {
@@ -431,7 +431,6 @@ title_is_amir_e_amiram = {
         has_government = feudal_government
     }
     culture = { has_cultural_pillar = heritage_iranian }
-    is_independent_ruler = yes
     title_has_special_prince_flavor = no
 }
 
