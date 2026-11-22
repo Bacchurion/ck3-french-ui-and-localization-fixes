@@ -26,6 +26,9 @@ tgp_bloc_change_cohesion_festival_tt: "[icon.Custom('FR_le_Char_U_Pi')|U][icon.G
 # Fix Innovation de la route de la soie
 msg_silk_road_innovation_visit_desc: "[new_trinket.Custom('FR_le_Char_U_Pi')|U][new_trinket.GetShortUIName|U] [Select_CString(new_trinket.IsLocalPlayer,'avez','a')] assimilé de nouvelles idées venues d’Orient en visitant le célèbre marché de [market_temp.GetNameNoTier]"
 
+# Fix mauvaise variable + mauvaise conjugaison
+ho_loan_forgiven_lender_tt: "Le [loan|El] de $VALUE|0V$[gold_i|E] que [TARGET_CHARACTER.Custom('FR_le_Char_U_Pi')][TARGET_CHARACTER.GetShortUIName] [Select_CString(TARGET_CHARACTER.IsLocalPlayer,'aviez','avait')] accordé[CHARACTER.LocalPlayerString('', 'Loc_FR_au_GetShortUIName')] a été effacé"
+
 ################### Astuces
 
 action_can_make_clerical_puppet_label: "@theological_agent_puppet_icon! Votre [actor.GetCouncillorPosition( 'councillor_court_chaplain' ).GetPositionName|l] peut être fait fantoche"
