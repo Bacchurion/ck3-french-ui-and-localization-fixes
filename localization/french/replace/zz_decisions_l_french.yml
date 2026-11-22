@@ -14,3 +14,6 @@
 
  # Reformulation
  gdp_improve_trade_expertise_decision_confirm: "Les assigner à une seule route"
+
+ # Passé => futur
+ become_merchant_tt: "#mixed_value #BER [THIS.Char.Custom('FR_le_Char_U_Pi')|U][THIS.Char.GetShortUIName|U] [Select_CString(THIS.Char.IsLocalPlayer,'fonderez','fondera')] une [company|El] [Concept('merchant', 'marchande')|E]#!#!"
