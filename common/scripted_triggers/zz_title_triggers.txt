@@ -449,3 +449,9 @@ title_is_samrat = {
 title_is_mufti = {
     religion = religion:islam_religion
 }
+
+title_is_gonfaloniere = {
+    highest_held_title_tier = tier_empire
+    has_government = republic_government
+    culture = { has_cultural_pillar = heritage_latin }
+}

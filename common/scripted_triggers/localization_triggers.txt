@@ -27,6 +27,7 @@ use_gendered_loc = {
         any_spouse = { title_is_hwangje = yes }
         title_is_caliph = yes
         has_trait = saint
+        title_is_gonfaloniere = yes
 
         is_prince_or_princess = yes
 
