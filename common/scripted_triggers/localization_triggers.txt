@@ -58,6 +58,7 @@ use_neutral_loc = {
         any_spouse = { title_is_amir_e_amiran = yes }
         pam_is_antipope_trigger = yes
         is_empress_mother = yes
+        title_is_episcopus = yes
     }
 }
 

@@ -455,3 +455,12 @@ title_is_gonfaloniere = {
     has_government = republic_government
     culture = { has_cultural_pillar = heritage_latin }
 }
+
+title_is_episcopus = {
+    OR = {
+        faith = faith:orthodox
+        rite = { rite_has_doctrine = special_doctrine_is_eastern_christian_faith }
+    }
+    has_council_position = councillor_court_chaplain
+    liege ?= { highest_held_title_tier >= tier_duchy }
+}

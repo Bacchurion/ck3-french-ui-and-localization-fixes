@@ -42,6 +42,7 @@ Les titres concernées sont :
 [*] Les titres d'Asie Mineure
 [*] Les Chanoinesses sont appelées ainsi et non plus "Princesses"
 [*] Les versions féminines sont correctement accordées
+[*] Les titres républicains
 [*] Les blocs de maison japonais sont correctement genrés au masculin
 [/list]
 
@@ -67,6 +68,7 @@ Sans cela, on observe des "le fête", "au Examen de la capitale", etc
 [h2]Localisation[/h2]
 [list]
 [*] Artéfacts : retrait des termes "Pin" / "Badge" résiduels de la localisation anglaise en fin de nom pour les insignes de pèlerin
+[*] Chasse : correction de la résolution d'une variable en erreur dans la description de l'activité
 [*] Collège des cardinaux : les noms des principes ont bien tous une majuscule
 [*] Collège des cardinaux : fix du nom du rite dominant affiché à la place du rite du personnage
 [*] Commerce : correction du nom des routes commerciales (ex: "La route Vin Compagnie XXX" => "La route du vin de Compagnie XXX")
