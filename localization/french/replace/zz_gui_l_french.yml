@@ -178,5 +178,11 @@
 
  # Prise en compte 2e personne pluriel
  commission_merchant_interaction_tt: "[commissioned_merchant.Custom('FR_le_Char_U_Pi')|U][commissioned_merchant.GetShortUIName|U] [commissioned_merchant.LocalPlayerString('créerez', 'créera')] une [commission_route|El] apportant [target.GetNameWithIcon] sur le [trade_market.GetName|l] pendant #V 10 ans#!"
-add_trade_good_price_modifier_recipient_character: "[CHARACTER.Custom('FR_le_Char_U_Pi')|U][CHARACTER.GetShortUIName|U] [CHARACTER.LocalPlayerString( 'obtenez', 'obtient')]"
+ add_trade_good_price_modifier_recipient_character: "[CHARACTER.Custom('FR_le_Char_U_Pi')|U][CHARACTER.GetShortUIName|U] [CHARACTER.LocalPlayerString( 'obtenez', 'obtient')]"
+
+ # Fix resolution variable $hunt_fame$ et $hunt_prestige$
+ # Split des variables en 2 lignes de loc spécifiques + redéfinition (celles de base sont en Uppercase et |l ne fonctionne pas car entrée de glossaire)
+ activity_hunt_host_desc_prestige_prestige: "du [prestige|Eql][prestige_i|E]"
+ activity_hunt_host_desc_prestige_fame: "de la [prestige_experience|Eql][prestige_experience_i|E]"
+ activity_hunt_host_desc_prestige: "$BULLET_WITH_TAB$Les participants peuvent gagner [SelectLocalization( GetPlayer.GetGovernment.HasGovernmentFlag( 'government_is_merchant' ), 'activity_hunt_host_desc_prestige_fame', 'activity_hunt_host_desc_prestige_prestige' )]\n$BULLET_WITH_TAB$Les participants peuvent gagner de la [legitimacy|El] [legitimacy_i]\n$BULLET_WITH_TAB$Les participants peuvent perdre du [stress|El][stress_loss_i]\n"
 
